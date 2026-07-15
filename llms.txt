@@ -1,10 +1,10 @@
 # EPI Marketplace
 
-> Loja especializada em Equipamentos de Proteção Individual (EPIs) certificados pelo Ministério do Trabalho e Emprego (MTE) do Brasil. Parceiro oficial da Serveq, fabricante com mais de 20 anos de experiência em segurança do trabalho.
+> Loja especializada em Equipamentos de Proteção Individual (EPIs) certificados pelo Ministério do Trabalho e Emprego (MTE) do Brasil. Produtos de alta qualidade de fabricantes referência com mais de 20 anos de experiência em segurança do trabalho.
 
 ## Sobre
 
-A EPI Marketplace é uma distribuidora autorizada da Serveq, comercializando mais de 200 produtos de segurança individual para eletricistas, trabalhadores em altura e técnicos de segurança do trabalho. Todos os produtos possuem CA (Certificado de Aprovação) válido.
+A EPI Marketplace é uma distribuidora de EPIs, comercializando mais de 200 produtos de segurança individual para eletricistas, trabalhadores em altura e técnicos de segurança do trabalho. Todos os produtos possuem CA (Certificado de Aprovação) válido.
 
 **Contato:** (11) 94149-3029 · contato@epimarketplace.com.br  
 **Loja online:** https://www.mercadolivre.com.br/pagina/epimarketplace  
@@ -66,4 +66,3 @@ Sim. Construtoras, concessionárias e empresas podem solicitar orçamento via Wh
 - [Catálogo de produtos](https://epimarketplace.com.br/produtos)
 - [Blog de segurança do trabalho](https://epimarketplace.com.br/blog)
 - [Contato e orçamento](https://epimarketplace.com.br/contato)
-- [Fabricante Serveq](https://serveq.com.br)
