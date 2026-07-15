@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de EPIs — EPI Marketplace</title>
+  <!-- SEO -->
+  <title>Catálogo de EPIs — EPI Marketplace | Equipamentos Certificados</title>
+  <meta name="description" content="Catálogo completo de EPIs certificados (CA/MTE): cintos paraquedistas, luvas isolantes classe 2, capacetes, ferramentas para linha viva. NR-10 e NR-35.">
+  <link rel="canonical" href="https://epimarketplace.com.br/produtos">
+  <meta property="og:title" content="Catálogo de EPIs — EPI Marketplace">
+  <meta property="og:description" content="Mais de 200 produtos certificados para eletricistas e segurança no trabalho.">
+  <meta property="og:url" content="https://epimarketplace.com.br/produtos">
+  
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/produtos.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Catálogo de EPIs — EPI Marketplace",
+    "description": "Catálogo completo de equipamentos de proteção individual certificados",
+    "url": "https://epimarketplace.com.br/produtos",
+    "provider": { "@type": "Organization", "name": "EPI Marketplace" }
+  }
+  </script>
+</head>
+<body>
+
+<!-- SKIP LINK — Accessibility -->
+<a href="#catalog" class="skip-link">Pular para o catálogo de produtos</a>
+
+<!-- ============================================================
+     NAVIGATION
+============================================================ -->
+<nav id="navbar" class="scrolled" role="navigation" aria-label="Navegação principal">
+  <div class="container">
+    <div class="navbar__inner">
+
+      <!-- Logo -->
+      <a href="/" class="navbar__logo" aria-label="EPI Marketplace — Página inicial">
+        <img src="img/logo.png" alt="EPI Marketplace" width="160" height="48"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <div class="navbar__logo-text" style="display:none">
+          <span class="name">EPI Marketplace</span>
+          <span class="tagline">EPIs Certificados</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="navbar__links" role="menubar">
+        <a href="produtos.html" role="menuitem" aria-current="page">Produtos</a>
+        <a href="sobre.html" role="menuitem">Sobre</a>
+        <a href="blog.html" role="menuitem">Blog</a>
+        <a href="contato.html" role="menuitem">Contato</a>
+      </div>
+
+      <!-- CTA + Burger -->
+      <a href="https://www.mercadolivre.com.br/pagina/epimarketplace"
+         target="_blank" rel="noopener noreferrer"
+         class="navbar__cta" id="nav-ml-cta" aria-label="Abrir loja no Mercado Livre (abre em nova aba)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+          <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+        Ver no Mercado Livre
+      </a>
+
+      <button class="navbar__burger" id="burger-btn"
+              aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu"
+              type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="navbar__mobile" id="mobile-menu" role="menu" aria-hidden="true">
+      <a href="produtos.html" role="menuitem">Produtos</a>
+      <a href="sobre.html" role="menuitem">Sobre</a>
+      <a href="blog.html" role="menuitem">Blog</a>
+      <a href="contato.html" role="menuitem">Contato</a>
+      <a href="https://www.mercadolivre.com.br/pagina/epimarketplace"
+         target="_blank" rel="noopener noreferrer" role="menuitem"
+         class="mobile-ml-link">Ver loja no Mercado Livre ↗</a>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="page-header" role="banner">
+  <div class="container">
+    <div class="page-header__inner">
+      <nav class="breadcrumb" aria-label="Caminho de navegação">
+        <a href="index.html">Início</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Produtos</span>
+      </nav>
+      <h1 class="page-header__title">Catálogo de <span>Produtos</span></h1>
+      <p class="page-header__desc">
+        Mais de 200 produtos certificados para segurança no trabalho. 
+        Todos com CA aprovado pelo Ministério do Trabalho.
+      </p>
+    </div>
+  </div>
+</header>
+
+<!-- PRODUCTS CATALOG -->
+<main id="catalog" class="section" role="main">
+  <div class="container">
+    <div class="catalog__layout">
+
+      <!-- SIDEBAR FILTERS -->
+      <aside class="catalog__sidebar" aria-label="Filtros de produtos">
+
+        <div class="sidebar-section">
+          <h2 class="sidebar-title">Categorias</h2>
+          <nav class="sidebar-cats" role="list">
+            <a href="?categoria=all"    class="sidebar-cat active" role="listitem" data-filter="all">Todos os produtos <span>200+</span></a>
+            <a href="?categoria=altura" class="sidebar-cat" role="listitem" data-filter="altura">Trabalho em Altura <span>29</span></a>
+            <a href="?categoria=linha-viva" class="sidebar-cat" role="listitem" data-filter="linha-viva">Linha Viva <span>66</span></a>
+            <a href="?categoria=epis"   class="sidebar-cat" role="listitem" data-filter="epi">EPIs / Ferramentas <span>13</span></a>
+            <a href="?categoria=grampos" class="sidebar-cat" role="listitem" data-filter="grampos">Grampos / Cabeçotes <span>16</span></a>
+            <a href="?categoria=bolsas" class="sidebar-cat" role="listitem" data-filter="bolsas">Bolsas e Organizadores <span>16</span></a>
+            <a href="?categoria=carretilhas" class="sidebar-cat" role="listitem" data-filter="carretilhas">Carretilhas / Roldanas <span>12</span></a>
+            <a href="?categoria=aterramento" class="sidebar-cat" role="listitem" data-filter="aterramento">Conjunto de Aterramento <span>9</span></a>
+            <a href="?categoria=esticadores" class="sidebar-cat" role="listitem" data-filter="esticadores">Esticadores / Esporas <span>9</span></a>
+            <a href="?categoria=selas" class="sidebar-cat" role="listitem" data-filter="selas">Selas / Cintas / Colar <span>9</span></a>
+            <a href="?categoria=sinalizacao" class="sidebar-cat" role="listitem" data-filter="sinalizacao">Sinalização <span>7</span></a>
+            <a href="?categoria=guincho" class="sidebar-cat" role="listitem" data-filter="guincho">Guincho / Talha <span>5</span></a>
+            <a href="?categoria=detector" class="sidebar-cat" role="listitem" data-filter="detector">Detector de Tensão <span>3</span></a>
+            <a href="?categoria=pega-poste" class="sidebar-cat" role="listitem" data-filter="pega-poste">Pega Poste <span>4</span></a>
+          </nav>
+        </div>
+
+        <div class="sidebar-section">
+          <h2 class="sidebar-title">Norma</h2>
+          <div class="sidebar-checks" role="group" aria-label="Filtrar por norma">
+            <label class="check-item">
+              <input type="checkbox" name="norma" value="nr10" id="check-nr10"> NR-10 (Eletricidade)
+            </label>
+            <label class="check-item">
+              <input type="checkbox" name="norma" value="nr35" id="check-nr35"> NR-35 (Trabalho em Altura)
+            </label>
+            <label class="check-item">
+              <input type="checkbox" name="norma" value="nr6" id="check-nr6"> NR-6 (EPIs Geral)
+            </label>
+          </div>
+        </div>
+
+        <div class="sidebar-section">
+          <h2 class="sidebar-title">Contato rápido</h2>
+          <p style="font-size: var(--text-sm); color: var(--clr-text-mid); line-height: var(--leading-relaxed); margin-bottom: 12px;">
+            Precisa de um produto específico ou orçamento para empresa?
+          </p>
+          <a href="https://wa.me/5511941493029?text=Olá! Preciso de um orçamento para EPIs."
+             target="_blank" rel="noopener noreferrer"
+             class="btn btn--primary" style="width: 100%; justify-content: center; font-size: var(--text-sm);">
+            Falar no WhatsApp
+          </a>
+        </div>
+
+      </aside>
+
+      <!-- PRODUCTS MAIN -->
+      <div class="catalog__main">
+
+        <!-- Toolbar -->
+        <div class="catalog__toolbar">
+          <p class="catalog__count">Mostrando <strong id="count-display">6</strong> produtos</p>
+
+          <!-- Search -->
+          <div class="catalog__search">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+            </svg>
+            <input type="search" id="product-search" placeholder="Buscar produto..." aria-label="Buscar produto">
+          </div>
+        </div>
+
+        <!-- Grid -->
+        <div class="products__grid" id="products-grid" role="list">
+
+          <!-- Linha Viva: Alicate / Tesourões -->
+          <article class="product-card reveal" data-category="linha-viva" role="listitem" aria-label="Alicate Isolado para Linha Viva">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+              <img src="https://serveq.com.br/wp-content/uploads/2019/07/linha-viva-300x300.jpg"
+                   alt="Alicate isolado para linha viva NR-10" loading="lazy" width="300" height="300">
+              <div class="product-card__badge">
+                <span class="badge badge--blue">NR-10</span>
+              </div>
+              <div class="product-card__overlay">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                <h3 class="product-card__overlay-title">Alicate Isolado 1.000V</h3>
+                <span class="badge badge--navy">Linha Viva · Alicate</span>
+              </div>
+            </div>
+            </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+              <div class="product-card__category">Linha Viva · Alicate</div>
+              <h3 class="product-card__name">Alicate Isolado 1.000V</h3>
+              <div class="product-card__specs">
+                Tipos: Universal · Bico · Corte<br>
+                Isolação: 1.000 V (testado 10 kV)<br>
+                Norma: IEC 60900:2004
+              </div>
+              <div class="product-card__price"><span class="from">a partir de</span>R$ 78,00</div>
+              <div class="product-card__actions">
+                <a href="https://www.mercadolivre.com.br/pagina/epimarketplace" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Comprar no Mercado Livre</a>
+              </div>
+            </div>
+                        </div>
+            </div></article>
+
+          <!-- Altura: Cinto Paraquedista -->
+          <article class="product-card reveal reveal--delay-1" data-category="altura" role="listitem" aria-label="Cinto Paraquedista Classe A">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+              <img src="https://serveq.com.br/wp-content/uploads/2019/07/altura-300x300.jpg"
+                   alt="Cinto paraquedista para trabalho em altura" loading="lazy" width="300" height="300">
+              <div class="product-card__badge">
+                <span class="badge badge--success">CA Cert.</span>
+              </div>
+              <div class="product-card__overlay">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                <h3 class="product-card__overlay-title">Cinto Paraquedista Classe A</h3>
+                <span class="badge badge--navy">Altura · NR-35</span>
+              </div>
+            </div>
+            </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+              <div class="product-card__category">Altura · NR-35</div>
+              <h3 class="product-card__name">Cinto Paraquedista Classe A</h3>
+              <div class="product-card__specs">
+                Tamanhos: P · M · G · GG<br>
+                Carga ruptura: 15 kN mín.<br>
+                Material: Poliéster / Aço Inox
+              </div>
+              <div class="product-card__price"><span class="from">a partir de</span>R$ 249,90</div>
+              <div class="product-card__actions">
+                <a href="https://www.mercadolivre.com.br/pagina/epimarketplace" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Comprar no Mercado Livre</a>
+              </div>
+            </div>
+                        </div>
+            </div></article>
+
+          <!-- Linha Viva: Luva Isolante -->
+          <article class="product-card reveal reveal--delay-2" data-category="linha-viva" role="listitem" aria-label="Luva Isolante Classe 2">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+              <img src="https://serveq.com.br/wp-content/uploads/2019/07/linha-viva-300x300.jpg"
+                   alt="Luva isolante classe 2 para linha viva" loading="lazy" width="300" height="300">
+              <div class="product-card__badge"><span class="badge badge--blue">NR-10</span></div>
+              <div class="product-card__overlay">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                <h3 class="product-card__overlay-title">Luva Isolante Classe 2</h3>
+                <span class="badge badge--navy">Linha Viva · Proteção</span>
+              </div>
+            </div>
+            </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+              <div class="product-card__category">Linha Viva · Proteção</div>
+              <h3 class="product-card__name">Luva Isolante Classe 2</h3>
+              <div class="product-card__specs">
+                Tamanhos: 8 · 9 · 10 · 11 · 12<br>
+                Tensão máx: 17 kV (CA) / 25 kV (CC)<br>
+                Material: Borracha natural
+              </div>
+              <div class="product-card__price"><span class="from">a partir de</span>R$ 320,00</div>
+              <div class="product-card__actions">
+                <a href="https://www.mercadolivre.com.br/pagina/epimarketplace" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Comprar no Mercado Livre</a>
+              </div>
+            </div>
+                        </div>
+            </div></article>
+
+          <!-- Ferramentas: Jogo de Chaves -->
+          <article class="product-card reveal" data-category="linha-viva" role="listitem" aria-label="Jogo de Chaves Isoladas">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+              <img src="https://serveq.com.br/wp-content/uploads/2019/07/linha-viva-300x300.jpg"
+                   alt="Jogo de chaves isoladas para eletricista" loading="lazy" width="300" height="300">
+              <div class="product-card__badge"><span class="badge badge--success">CA Cert.</span></div>
+              <div class="product-card__overlay">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                <h3 class="product-card__overlay-title">Jogo de Chaves Isoladas</h3>
+                <span class="badge badge--navy">Ferramentas Isoladas · NR-10</span>
+              </div>
+            </div>
+            </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+              <div class="product-card__category">Ferramentas Isoladas · NR-10</div>
+              <h3 class="product-card__name">Jogo de Chaves Isoladas</h3>
+              <div class="product-card__specs">
+                Tamanhos: 6 · 7 · 8 · 9 · 10 · 11 · 12<br>
+                Isolação: 1.000 V (testado 10 kV)<br>
+                Norma: IEC 60900
+              </div>
+              <div class="product-card__price"><span class="from">a partir de</span>R$ 85,00</div>
+              <div class="product-card__actions">
+                <a href="https://www.mercadolivre.com.br/pagina/epimarketplace" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Comprar no Mercado Livre</a>
+              </div>
+            </div>
+                        </div>
+            </div></article>
+
+          <!-- EPI: Capacete Classe B -->
+          <article class="product-card reveal reveal--delay-1" data-category="epi" role="listitem" aria-label="Capacete Classe B">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+              <img src="https://serveq.com.br/wp-content/uploads/2019/07/epi-300x300.jpg"
+                   alt="Capacete de segurança classe B para eletricistas" loading="lazy" width="300" height="300">
+              <div class="product-card__badge"><span class="badge badge--blue">Classe B</span></div>
+              <div class="product-card__overlay">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                <h3 class="product-card__overlay-title">Capacete Classe B — Eletricista</h3>
+                <span class="badge badge--navy">EPI · Proteção da Cabeça</span>
+              </div>
+            </div>
+            </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+              <div class="product-card__category">EPI · Proteção da Cabeça</div>
+              <h3 class="product-card__name">Capacete Classe B — Eletricista</h3>
+              <div class="product-card__specs">
+                Tensão: até 20 kV<br>
+                Suspensão: 6 pontos ajustável<br>
+                Cores: branco · amarelo · vermelho
+              </div>
+              <div class="product-card__price"><span class="from">a partir de</span>R$ 89,90</div>
+              <div class="product-card__actions">
+                <a href="https://www.mercadolivre.com.br/pagina/epimarketplace" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Comprar no Mercado Livre</a>
+              </div>
+            </div>
+                        </div>
+            </div></article>
+
+          <!-- Aterramento -->
+          <article class="product-card reveal reveal--delay-2" data-category="aterramento" role="listitem" aria-label="Conjunto de Aterramento Temporário">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+              <img src="https://serveq.com.br/wp-content/uploads/2019/09/conjunto-aterramento-300x300.jpg"
+                   alt="Conjunto de aterramento temporário para linhas elétricas" loading="lazy" width="300" height="300">
+              <div class="product-card__badge"><span class="badge badge--navy">NR-10</span></div>
+              <div class="product-card__overlay">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                <h3 class="product-card__overlay-title">Conjunto de Aterramento Temporário</h3>
+                <span class="badge badge--navy">Aterramento · NR-10</span>
+              </div>
+            </div>
+            </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+              <div class="product-card__category">Aterramento · NR-10</div>
+              <h3 class="product-card__name">Conjunto de Aterramento Temporário</h3>
+              <div class="product-card__specs">
+                Seções: 16mm² · 25mm² · 35mm²<br>
+                Comprimento: 3m · 5m · 10m<br>
+                Grampo: cobre estanhado
+              </div>
+              <div class="product-card__price"><span class="from">a partir de</span>R$ 380,00</div>
+              <div class="product-card__actions">
+                <a href="https://www.mercadolivre.com.br/pagina/epimarketplace" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Comprar no Mercado Livre</a>
+              </div>
+            </div>
+                        </div>
+            </div></article>
+
+          <!-- Sinalização -->
+          <article class="product-card reveal" data-category="sinalizacao" role="listitem" aria-label="Cone de Sinalização">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+              <img src="https://serveq.com.br/wp-content/uploads/2019/07/sinalizacao-300x300.jpg"
+                   alt="Cone de sinalização para segurança no trabalho" loading="lazy" width="300" height="300">
+              <div class="product-card__overlay">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                <h3 class="product-card__overlay-title">Cone de Sinalização 75cm</h3>
+                <span class="badge badge--navy">Sinalização · Segurança</span>
+              </div>
+            </div>
+            </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+              <div class="product-card__category">Sinalização · Segurança</div>
+              <h3 class="product-card__name">Cone de Sinalização 75cm</h3>
+              <div class="product-card__specs">
+                Alturas: 50cm · 75cm · 1m<br>
+                Material: PVC flexível<br>
+                Faixas refletivas incluídas
+              </div>
+              <div class="product-card__price"><span class="from">a partir de</span>R$ 28,00</div>
+              <div class="product-card__actions">
+                <a href="https://www.mercadolivre.com.br/pagina/epimarketplace" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Comprar no Mercado Livre</a>
+              </div>
+            </div>
+                        </div>
+            </div></article>
+
+          <!-- Talabarte -->
+          <article class="product-card reveal reveal--delay-1" data-category="altura" role="listitem" aria-label="Talabarte Y com Absorvedor">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+              <img src="https://serveq.com.br/wp-content/uploads/2019/07/altura-300x300.jpg"
+                   alt="Talabarte Y duplo com absorvedor" loading="lazy" width="300" height="300">
+              <div class="product-card__badge"><span class="badge badge--orange">Mais Vendido</span></div>
+              <div class="product-card__overlay">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                <h3 class="product-card__overlay-title">Talabarte Y com Absorvedor</h3>
+                <span class="badge badge--navy">Altura · Talabarte</span>
+              </div>
+            </div>
+            </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+              <div class="product-card__category">Altura · Talabarte</div>
+              <h3 class="product-card__name">Talabarte Y com Absorvedor</h3>
+              <div class="product-card__specs">
+                Comprimentos: 1,20m · 1,50m<br>
+                Gancho: aço forjado 2.000 kg<br>
+                Norma: ABNT NBR 15834
+              </div>
+              <div class="product-card__price"><span class="from">a partir de</span>R$ 189,90</div>
+              <div class="product-card__actions">
+                <a href="https://www.mercadolivre.com.br/pagina/epimarketplace" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Comprar no Mercado Livre</a>
+              </div>
+            </div>
+                        </div>
+            </div></article>
+
+          <!-- Detector de Tensão -->
+          <article class="product-card reveal reveal--delay-2" data-category="detector" role="listitem" aria-label="Detector de Tensão">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+              <img src="https://serveq.com.br/wp-content/uploads/2019/09/detector-de-tensao-300x300.jpg"
+                   alt="Detector de tensão acústico e visual" loading="lazy" width="300" height="300">
+              <div class="product-card__badge"><span class="badge badge--navy">NR-10</span></div>
+              <div class="product-card__overlay">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                <h3 class="product-card__overlay-title">Detector de Tensão Acústico-Visual</h3>
+                <span class="badge badge--navy">Detector de Tensão</span>
+              </div>
+            </div>
+            </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+              <div class="product-card__category">Detector de Tensão</div>
+              <h3 class="product-card__name">Detector de Tensão Acústico-Visual</h3>
+              <div class="product-card__specs">
+                Faixa: 70 V a 600 kV<br>
+                Indicação: LED + Buzzer<br>
+                Norma: IEC 61481
+              </div>
+              <div class="product-card__price"><span class="from">a partir de</span>R$ 450,00</div>
+              <div class="product-card__actions">
+                <a href="https://www.mercadolivre.com.br/pagina/epimarketplace" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">Comprar no Mercado Livre</a>
+              </div>
+            </div>
+                        </div>
+            </div></article>
+
+        </div><!-- /products-grid -->
+
+        <!-- Mercado Livre CTA -->
+        <div class="catalog__ml-cta reveal">
+          <div class="ml-cta-box">
+            <div>
+              <div class="eyebrow">Catálogo completo</div>
+              <h3 style="font-size: var(--text-2xl); font-weight: 700; margin-top: 6px;">
+                Mais de 200 produtos disponíveis na nossa loja
+              </h3>
+              <p style="color: var(--clr-text-mid); margin-top: 8px; font-size: var(--text-base);">
+                Acesse a EPI Marketplace no Mercado Livre para ver todo o catálogo 
+                com fotos detalhadas, avaliações e compra segura.
+              </p>
+            </div>
+            <a href="https://www.mercadolivre.com.br/pagina/epimarketplace"
+               target="_blank" rel="noopener noreferrer"
+               class="btn btn--primary btn--lg" id="ml-cta-catalog"
+               style="white-space: nowrap; flex-shrink: 0;">
+              Ver loja no Mercado Livre
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /catalog__main -->
+
+    </div><!-- /catalog__layout -->
+  </div>
+</main>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" aria-modal="true" role="dialog" hidden>
+  <div class="lightbox__backdrop" onclick="closeLightbox()"></div>
+  <div class="lightbox__content">
+    <button class="lightbox__close" onclick="closeLightbox()" aria-label="Fechar">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <img id="lightbox-img" src="" alt="Imagem ampliada">
+    <div class="lightbox__info">
+      <h3 id="lightbox-title"></h3>
+      <span id="lightbox-category" class="badge badge--navy"></span>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-name">EPI Marketplace</div>
+        <p class="footer__brand-desc">Parceiro oficial Serveq. Mais de 200 EPIs certificados para profissionais de segurança do trabalho.</p>
+        <address class="footer__contact" style="font-style: normal;">
+          <a href="tel:+5511941493029" aria-label="Ligar para (11) 94149-3029">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.78h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.4a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            (11) 94149-3029
+          </a>
+          <a href="mailto:contato@epimarketplace.com.br">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            contato@epimarketplace.com.br
+          </a>
+        </address>
+      </div>
+      <div>
+        <div class="footer__col-title">Categorias</div>
+        <nav class="footer__col-links" aria-label="Categorias de produtos">
+          <a href="produtos.html?categoria=altura">Trabalho em Altura</a>
+          <a href="produtos.html?categoria=linha-viva">Linha Viva</a>
+          <a href="produtos.html?categoria=epi">EPIs Gerais</a>
+          <a href="produtos.html?categoria=aterramento">Aterramento</a>
+          <a href="produtos.html?categoria=sinalizacao">Sinalização</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer__col-title">Empresa</div>
+        <nav class="footer__col-links" aria-label="Informações da empresa">
+          <a href="sobre.html">Sobre nós</a>
+          <a href="blog.html">Blog</a>
+          <a href="contato.html">Contato</a>
+          <a href="https://serveq.com.br" target="_blank" rel="noopener noreferrer">Serveq (fabricante)</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer__col-title">Comprar</div>
+        <nav class="footer__col-links" aria-label="Canais de venda">
+          <a href="https://www.mercadolivre.com.br/pagina/epimarketplace" target="_blank" rel="noopener noreferrer">Mercado Livre</a>
+          <a href="https://wa.me/5511941493029" target="_blank" rel="noopener noreferrer">WhatsApp B2B</a>
+          <a href="contato.html">Orçamento por E-mail</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__bottom-text">
+        © 2025 EPI Marketplace — Parceiro Oficial Serveq · CNPJ: a confirmar
+      </p>
+      <nav class="footer__bottom-links" aria-label="Links legais">
+        <a href="privacidade.html">Privacidade</a>
+        <a href="termos.html">Termos de Uso</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/5511941493029?text=Olá! Vim pelo site e quero mais informações."
+   target="_blank" rel="noopener noreferrer"
+   class="whatsapp-float"
+   aria-label="Abrir conversa no WhatsApp com EPI Marketplace">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a9.67 9.67 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413A11.815 11.815 0 0 0 12.05 0z"/></svg>
+</a>
+
+<script src="js/main.js" defer></script>
+<script src="js/produtos.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /privacidade.html
+Disallow: /termos.html
+
+Sitemap: https://epimarketplace.com.br/sitemap.xml
+
+# EPI Marketplace — epimarketplace.com.br

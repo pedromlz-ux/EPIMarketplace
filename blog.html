@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Dicas e Normas de EPIs | EPI Marketplace</title>
+  <meta name="description" content="Fique por dentro das novidades em segurança do trabalho, exigências da NR-10 e NR-35, e como escolher os EPIs corretos para eletricistas e linha viva.">
+  <link rel="canonical" href="https://epimarketplace.com.br/blog">
+  
+  <meta property="og:title" content="Blog — EPI Marketplace">
+  <meta property="og:description" content="Artigos e guias técnicos sobre equipamentos de proteção individual.">
+  <meta property="og:url" content="https://epimarketplace.com.br/blog">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+
+  <style>
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: var(--space-8);
+      margin-top: var(--space-12);
+    }
+    .blog-card {
+      background: var(--clr-surface);
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform var(--ease-out-quart), box-shadow var(--ease-out-quart);
+    }
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .blog-card__img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      background: var(--clr-surface-dim);
+    }
+    .blog-card__body {
+      padding: var(--space-6);
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .blog-card__tag {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--clr-orange);
+      margin-bottom: var(--space-2);
+    }
+    .blog-card__title {
+      font-size: var(--text-xl);
+      font-weight: 700;
+      color: var(--clr-navy);
+      line-height: var(--leading-tight);
+      margin-bottom: var(--space-3);
+    }
+    .blog-card__desc {
+      font-size: var(--text-sm);
+      color: var(--clr-text-mid);
+      line-height: var(--leading-relaxed);
+      margin-bottom: var(--space-4);
+      flex-grow: 1;
+    }
+    .blog-card__link {
+      font-size: var(--text-sm);
+      font-weight: 600;
+      color: var(--clr-sky);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: var(--space-1);
+    }
+    .blog-card__link:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog EPI Marketplace",
+    "url": "https://epimarketplace.com.br/blog",
+    "description": "Artigos e guias técnicos sobre equipamentos de proteção individual.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "EPI Marketplace"
+    }
+  }
+  </script>
+</head>
+<body>
+
+<!-- SKIP LINK — Accessibility -->
+<a href="#blog-main" class="skip-link">Pular para os artigos</a>
+
+<!-- ============================================================
+     NAVIGATION
+============================================================ -->
+<nav id="navbar" class="scrolled" role="navigation" aria-label="Navegação principal">
+  <div class="container">
+    <div class="navbar__inner">
+
+      <!-- Logo -->
+      <a href="/" class="navbar__logo" aria-label="EPI Marketplace — Página inicial">
+        <img src="img/logo.png" alt="EPI Marketplace" width="160" height="48"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <div class="navbar__logo-text" style="display:none">
+          <span class="name">EPI Marketplace</span>
+          <span class="tagline">EPIs Certificados</span>
+        </div>
+      </a>
+
+      <!-- Desktop Links -->
+      <div class="navbar__links" role="menubar">
+        <a href="produtos.html" role="menuitem">Produtos</a>
+        <a href="sobre.html" role="menuitem">Sobre</a>
+        <a href="blog.html" role="menuitem" aria-current="page">Blog</a>
+        <a href="contato.html" role="menuitem">Contato</a>
+      </div>
+
+      <!-- CTA + Burger -->
+      <a href="https://www.mercadolivre.com.br/pagina/epimarketplace"
+         target="_blank" rel="noopener noreferrer"
+         class="navbar__cta" id="nav-ml-cta" aria-label="Abrir loja no Mercado Livre (abre em nova aba)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+          <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+        Ver no Mercado Livre
+      </a>
+
+      <button class="navbar__burger" id="burger-btn"
+              aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu"
+              type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="navbar__mobile" id="mobile-menu" role="menu" aria-hidden="true">
+      <a href="produtos.html" role="menuitem">Produtos</a>
+      <a href="sobre.html" role="menuitem">Sobre</a>
+      <a href="blog.html" role="menuitem">Blog</a>
+      <a href="contato.html" role="menuitem">Contato</a>
+      <a href="https://www.mercadolivre.com.br/pagina/epimarketplace"
+         target="_blank" rel="noopener noreferrer" role="menuitem"
+         class="mobile-ml-link">Ver loja no Mercado Livre ↗</a>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<header class="page-header" style="background: var(--clr-navy); padding-block: var(--space-24) var(--space-12); margin-top: 72px;" role="banner">
+  <div class="container">
+    <div class="page-header__inner" style="max-width: 800px;">
+      <nav class="breadcrumb" aria-label="Caminho">
+        <a href="index.html">Início</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Blog</span>
+      </nav>
+      <h1 class="reveal" style="font-family: var(--font-display); font-weight: 900; font-size: clamp(2.5rem, 6vw, 4.5rem); color: var(--clr-text-invert); text-transform: uppercase; letter-spacing: -0.02em; line-height: 1;">
+        Conhecimento e <span style="color: var(--clr-orange)">Segurança</span>
+      </h1>
+      <p class="reveal reveal--delay-1" style="margin-top: var(--space-5); font-size: var(--text-lg); color: var(--clr-text-invert-dim); line-height: var(--leading-relaxed);">
+        Guias técnicos, dicas de conservação e atualizações sobre as normas NR-10 e NR-35.
+      </p>
+    </div>
+  </div>
+</header>
+
+<!-- BLOG MAIN -->
+<main id="blog-main" class="section" role="main">
+  <div class="container">
+        <div class="blog-grid">
+      
+      <!-- Artigo 1 -->
+      <article class="blog-card reveal">
+        <img src="https://serveq.com.br/wp-content/uploads/2019/07/epi-300x300.jpg" alt="Como escolher o EPI certo" class="blog-card__img" loading="lazy">
+        <div class="blog-card__body">
+          <span class="blog-card__tag">Guia Técnico · NR-6</span>
+          <h2 class="blog-card__title">Como escolher o EPI certo para cada atividade</h2>
+          <p class="blog-card__desc">Guia completo para selecionar o equipamento de proteção individual conforme a norma regulamentadora e a atividade exercida.</p>
+          <a href="blog/como-escolher-epi.html" class="blog-card__link">
+            Ler artigo completo
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Artigo 2 -->
+      <article class="blog-card reveal reveal--delay-1">
+        <img src="https://serveq.com.br/wp-content/uploads/2019/07/linha-viva-300x300.jpg" alt="NR10 e NR35" class="blog-card__img" loading="lazy">
+        <div class="blog-card__body">
+          <span class="blog-card__tag">Normas · Regulamentos</span>
+          <h2 class="blog-card__title">NR-10 e NR-35: o que mudou e o que você precisa saber</h2>
+          <p class="blog-card__desc">As atualizações mais recentes das normas que regem o trabalho com eletricidade e em altura — e os EPIs exigidos em cada situação.</p>
+          <a href="blog/nr10-nr35.html" class="blog-card__link">
+            Ler artigo completo
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Artigo 3 -->
+      <article class="blog-card reveal reveal--delay-2">
+        <img src="https://serveq.com.br/wp-content/uploads/2019/09/conjunto-aterramento-300x300.jpg" alt="CA de EPI" class="blog-card__img" loading="lazy">
+        <div class="blog-card__body">
+          <span class="blog-card__tag">Certificação · Segurança</span>
+          <h2 class="blog-card__title">CA de EPI: como verificar e por que é essencial</h2>
+          <p class="blog-card__desc">Saiba como consultar o Certificado de Aprovação de um EPI no sistema CNCA e por que comprar sem CA coloca sua empresa em risco.</p>
+          <a href="blog/ca-certificado.html" class="blog-card__link">
+            Ler artigo completo
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__brand-name">EPI Marketplace</div>
+        <p class="footer__brand-desc">Parceiro oficial Serveq. Mais de 200 EPIs certificados para profissionais de segurança do trabalho.</p>
+        <address class="footer__contact" style="font-style: normal;">
+          <a href="tel:+5511941493029" aria-label="Ligar para (11) 94149-3029">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.78h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.4a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            (11) 94149-3029
+          </a>
+          <a href="mailto:contato@epimarketplace.com.br">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            contato@epimarketplace.com.br
+          </a>
+        </address>
+      </div>
+      <div>
+        <div class="footer__col-title">Categorias</div>
+        <nav class="footer__col-links" aria-label="Categorias de produtos">
+          <a href="produtos.html?categoria=altura">Trabalho em Altura</a>
+          <a href="produtos.html?categoria=linha-viva">Linha Viva</a>
+          <a href="produtos.html?categoria=epi">EPIs Gerais</a>
+          <a href="produtos.html?categoria=aterramento">Aterramento</a>
+          <a href="produtos.html?categoria=sinalizacao">Sinalização</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer__col-title">Empresa</div>
+        <nav class="footer__col-links" aria-label="Informações da empresa">
+          <a href="sobre.html">Sobre nós</a>
+          <a href="blog.html">Blog</a>
+          <a href="contato.html">Contato</a>
+          <a href="https://serveq.com.br" target="_blank" rel="noopener noreferrer">Serveq (fabricante)</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer__col-title">Comprar</div>
+        <nav class="footer__col-links" aria-label="Canais de venda">
+          <a href="https://www.mercadolivre.com.br/pagina/epimarketplace" target="_blank" rel="noopener noreferrer">Mercado Livre</a>
+          <a href="https://wa.me/5511941493029" target="_blank" rel="noopener noreferrer">WhatsApp B2B</a>
+          <a href="contato.html">Orçamento por E-mail</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__bottom-text">
+        © 2025 EPI Marketplace — Parceiro Oficial Serveq · CNPJ: a confirmar
+      </p>
+      <nav class="footer__bottom-links" aria-label="Links legais">
+        <a href="privacidade.html">Privacidade</a>
+        <a href="termos.html">Termos de Uso</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/5511941493029?text=Olá! Vim pelo site e quero mais informações."
+   target="_blank" rel="noopener noreferrer"
+   class="whatsapp-float"
+   aria-label="Abrir conversa no WhatsApp com EPI Marketplace">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a9.67 9.67 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413A11.815 11.815 0 0 0 12.05 0z"/></svg>
+</a>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
