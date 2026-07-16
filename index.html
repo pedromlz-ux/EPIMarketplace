@@ -713,8 +713,227 @@
     </section>
 
     <!-- ============================================================
+     TESTIMONIALS (INFINITE SCROLL COLUMNS)
+    ============================================================ -->
+    <section class="testimonials" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="testimonials__header reveal">
+          <div class="testimonials__badge">Depoimentos</div>
+          <h2 id="testimonials-title" class="testimonials__title">O que dizem nossos clientes</h2>
+          <p class="testimonials__subtitle">Veja a opinião de quem já protege a sua equipe com as nossas soluções.</p>
+        </div>
+
+        <div class="testimonials__grid">
+          <!-- Coluna 1 -->
+          <div class="testimonials__col testimonials__col--1">
+            <div class="testimonials__track testimonials__track--1">
+              <!-- Cards 1-3 -->
+              <div class="testimonial-card">
+                <p class="testimonial-card__text">"O cinto de segurança e os talabartes superaram as expectativas em termos de conforto e segurança nas redes de alta tensão."</p>
+                <div class="testimonial-card__user">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&fit=crop&q=80" alt="Ana Souza" width="40" height="40" loading="lazy">
+                  <div class="testimonial-card__meta">
+                    <span class="testimonial-card__name">Ana Souza</span>
+                    <span class="testimonial-card__role">Gestora de Operações</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p class="testimonial-card__text">"Excelente qualidade no acabamento dos alicates isolados. O processo de compra no Mercado Livre foi super prático."</p>
+                <div class="testimonial-card__user">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&fit=crop&q=80" alt="Carlos Eduardo" width="40" height="40" loading="lazy">
+                  <div class="testimonial-card__meta">
+                    <span class="testimonial-card__name">Carlos Eduardo</span>
+                    <span class="testimonial-card__role">Técnico em Eletricidade</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p class="testimonial-card__text">"Os protetores faciais e óculos de proteção têm excelente visibilidade e resistência ao arco elétrico. Recomendo muito!"</p>
+                <div class="testimonial-card__user">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&fit=crop&q=80" alt="Mariana Reis" width="40" height="40" loading="lazy">
+                  <div class="testimonial-card__meta">
+                    <span class="testimonial-card__name">Mariana Reis</span>
+                    <span class="testimonial-card__role">Supervisora de SST</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Duplicados para Loop Infinito -->
+              <div class="testimonial-card">
+                <p class="testimonial-card__text">"O cinto de segurança e os talabartes superaram as expectativas em termos de conforto e segurança nas redes de alta tensão."</p>
+                <div class="testimonial-card__user">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&fit=crop&q=80" alt="Ana Souza" width="40" height="40" loading="lazy">
+                  <div class="testimonial-card__meta">
+                    <span class="testimonial-card__name">Ana Souza</span>
+                    <span class="testimonial-card__role">Gestora de Operações</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p class="testimonial-card__text">"Excelente qualidade no acabamento dos alicates isolados. O processo de compra no Mercado Livre foi super prático."</p>
+                <div class="testimonial-card__user">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&fit=crop&q=80" alt="Carlos Eduardo" width="40" height="40" loading="lazy">
+                  <div class="testimonial-card__meta">
+                    <span class="testimonial-card__name">Carlos Eduardo</span>
+                    <span class="testimonial-card__role">Técnico em Eletricidade</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p class="testimonial-card__text">"Os protetores faciais e óculos de proteção têm excelente visibilidade e resistência ao arco elétrico. Recomendo muito!"</p>
+                <div class="testimonial-card__user">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&fit=crop&q=80" alt="Mariana Reis" width="40" height="40" loading="lazy">
+                  <div class="testimonial-card__meta">
+                    <span class="testimonial-card__name">Mariana Reis</span>
+                    <span class="testimonial-card__role">Supervisora de SST</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna 2 -->
+          <div class="testimonials__col testimonials__col--2">
+            <div class="testimonials__track testimonials__track--2">
+              <!-- Cards 4-6 -->
+              <div class="testimonial-card">
+                <p class="testimonial-card__text">"Atendimento fantástico no orçamento B2B. As fichas técnicas e CAs dos produtos facilitaram nossa aprovação interna."</p>
+                <div class="testimonial-card__user">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&fit=crop&q=80" alt="Rodrigo Neves" width="40" height="40" loading="lazy">
+                  <div class="testimonial-card__meta">
+                    <span class="testimonial-card__name">Rodrigo Neves</span>
+                    <span class="testimonial-card__role">Diretor Executivo</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p class="testimonial-card__text">"Os mantos isolantes e ferramentas NR-10 nos deram total tranquilidade para a manutenção preventiva nas subestações."</p>
+                <div class="testimonial-card__user">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&fit=crop&q=80" alt="Fernanda Lima" width="40" height="40" loading="lazy">
+                  <div class="testimonial-card__meta">
+                    <span class="testimonial-card__name">Fernanda Lima</span>
+                    <span class="testimonial-card__role">Coordenadora de Manutenção</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p class="testimonial-card__text">"Parceria de longa data. Agilidade na entrega e compromisso constante com as normas regulamentadoras do MTE."</p>
+                <div class="testimonial-card__user">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&fit=crop&q=80" alt="Patricia Santos" width="40" height="40" loading="lazy">
+                  <div class="testimonial-card__meta">
+                    <span class="testimonial-card__name">Patricia Santos</span>
+                    <span class="testimonial-card__role">Gerente de Suprimentos</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Duplicados para Loop Infinito -->
+              <div class="testimonial-card">
+                <p class="testimonial-card__text">"Atendimento fantástico no orçamento B2B. As fichas técnicas e CAs dos produtos facilitaram nossa aprovação interna."</p>
+                <div class="testimonial-card__user">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&fit=crop&q=80" alt="Rodrigo Neves" width="40" height="40" loading="lazy">
+                  <div class="testimonial-card__meta">
+                    <span class="testimonial-card__name">Rodrigo Neves</span>
+                    <span class="testimonial-card__role">Diretor Executivo</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p class="testimonial-card__text">"Os mantos isolantes e ferramentas NR-10 nos deram total tranquilidade para a manutenção preventiva nas subestações."</p>
+                <div class="testimonial-card__user">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&fit=crop&q=80" alt="Fernanda Lima" width="40" height="40" loading="lazy">
+                  <div class="testimonial-card__meta">
+                    <span class="testimonial-card__name">Fernanda Lima</span>
+                    <span class="testimonial-card__role">Coordenadora de Manutenção</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p class="testimonial-card__text">"Parceria de longa data. Agilidade na entrega e compromisso constante com as normas regulamentadoras do MTE."</p>
+                <div class="testimonial-card__user">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&fit=crop&q=80" alt="Patricia Santos" width="40" height="40" loading="lazy">
+                  <div class="testimonial-card__meta">
+                    <span class="testimonial-card__name">Patricia Santos</span>
+                    <span class="testimonial-card__role">Gerente de Suprimentos</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coluna 3 -->
+          <div class="testimonials__col testimonials__col--3">
+            <div class="testimonials__track testimonials__track--3">
+              <!-- Cards 7-9 -->
+              <div class="testimonial-card">
+                <p class="testimonial-card__text">"Os EPIs de sinalização e proteção elétrica são duráveis e extremamente confiáveis. Nosso time de campo elogia bastante."</p>
+                <div class="testimonial-card__user">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&fit=crop&q=80" alt="Eduardo Mendes" width="40" height="40" loading="lazy">
+                  <div class="testimonial-card__meta">
+                    <span class="testimonial-card__name">Eduardo Mendes</span>
+                    <span class="testimonial-card__role">Engenheiro Eletricista</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p class="testimonial-card__text">"Excelente pós-venda. Tivemos uma dúvida com a certificação de um lote de cintos e o suporte respondeu em minutos."</p>
+                <div class="testimonial-card__user">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&fit=crop&q=80" alt="Letícia Santos" width="40" height="40" loading="lazy">
+                  <div class="testimonial-card__meta">
+                    <span class="testimonial-card__name">Letícia Santos</span>
+                    <span class="testimonial-card__role">Engenheira de Segurança</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p class="testimonial-card__text">"Compramos mensalmente os kits de aterramento e varas de manobra. Preço competitivo e entrega rápida no canteiro de obras."</p>
+                <div class="testimonial-card__user">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=80&fit=crop&q=80" alt="Roberto Silveira" width="40" height="40" loading="lazy">
+                  <div class="testimonial-card__meta">
+                    <span class="testimonial-card__name">Roberto Silveira</span>
+                    <span class="testimonial-card__role">Diretor de Infraestrutura</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Duplicados para Loop Infinito -->
+              <div class="testimonial-card">
+                <p class="testimonial-card__text">"Os EPIs de sinalização e proteção elétrica são duráveis e extremamente confiáveis. Nosso time de campo elogia bastante."</p>
+                <div class="testimonial-card__user">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&fit=crop&q=80" alt="Eduardo Mendes" width="40" height="40" loading="lazy">
+                  <div class="testimonial-card__meta">
+                    <span class="testimonial-card__name">Eduardo Mendes</span>
+                    <span class="testimonial-card__role">Engenheiro Eletricista</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p class="testimonial-card__text">"Excelente pós-venda. Tivemos uma dúvida com a certificação de um lote de cintos e o suporte respondeu em minutos."</p>
+                <div class="testimonial-card__user">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&fit=crop&q=80" alt="Letícia Santos" width="40" height="40" loading="lazy">
+                  <div class="testimonial-card__meta">
+                    <span class="testimonial-card__name">Letícia Santos</span>
+                    <span class="testimonial-card__role">Engenheira de Segurança</span>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-card">
+                <p class="testimonial-card__text">"Compramos mensalmente os kits de aterramento e varas de manobra. Preço competitivo e entrega rápida no canteiro de obras."</p>
+                <div class="testimonial-card__user">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=80&fit=crop&q=80" alt="Roberto Silveira" width="40" height="40" loading="lazy">
+                  <div class="testimonial-card__meta">
+                    <span class="testimonial-card__name">Roberto Silveira</span>
+                    <span class="testimonial-card__role">Diretor de Infraestrutura</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
      FAQ — Schema FAQPage (AI Overviews / E-E-A-T)
-============================================================ -->
+    ============================================================ -->
     <section class="section faq-section" aria-labelledby="faq-title">
       <div class="container container--narrow">
         <header class="section-header--center">
