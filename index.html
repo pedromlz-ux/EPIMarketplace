@@ -172,6 +172,19 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#1a2b5c">
+
+  <!-- =============================================
+       GOOGLE ANALYTICS 4
+       IMPORTANTE: Substitua G-XXXXXXXXXX pelo seu
+       Measurement ID em https://analytics.google.com
+  ============================================= -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script> -->
 </head>
 
 <body>
@@ -244,7 +257,7 @@
 
           <h1 id="hero-headline" class="hero-animated__headline">
             <span class="hero-animated__static">Equipamentos de Proteção</span>
-            <span class="hero-animated__dynamic-wrapper">
+            <span class="hero-animated__dynamic-wrapper" aria-live="polite">
               <span class="hero-animated__word active">Individual</span>
               <span class="hero-animated__word">Coletiva</span>
             </span>
@@ -1142,6 +1155,10 @@
           <p class="footer__brand-desc">Mais de 200 EPIs certificados para profissionais de
             segurança do trabalho.</p>
           <address class="footer__contact" style="font-style: normal;">
+            <span style="display:flex;align-items:center;gap:6px;margin-bottom:4px;opacity:0.8;font-size:0.85em;">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              São Paulo, SP — Brasil
+            </span>
             <a href="tel:+5511941493029" aria-label="Ligar para (11) 94149-3029">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 aria-hidden="true">
