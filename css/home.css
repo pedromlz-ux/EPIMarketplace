@@ -754,7 +754,7 @@
   }
 
   .hero__headline {
-    font-size: clamp(3rem, 8vw, 5rem);
+    font-size: clamp(2rem, 6vw, 3.5rem);
   }
 
   .featured__inner {
@@ -763,7 +763,7 @@
   }
 
   .featured__image-col {
-    max-width: 400px;
+    max-width: 260px;
     margin: 0 auto;
   }
 
@@ -784,7 +784,11 @@
 
   .cat-card--large {
     grid-row: span 1;
-    min-height: 300px;
+    min-height: 180px;
+  }
+
+  .cat-card {
+    min-height: 140px;
   }
 
   .products__header {
