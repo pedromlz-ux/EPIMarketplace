@@ -13,14 +13,26 @@
   <link rel="stylesheet" href="../css/home.css">
   <link rel="stylesheet" href="../css/animations.css">
   <style>
+    body {
+      background-color: var(--clr-surface-2);
+    }
     .blog-article {
       max-width: 800px;
       margin: 0 auto;
-      padding: var(--space-12) var(--space-6);
-      background: var(--clr-surface);
-      border-radius: var(--radius-lg);
-      margin-top: 120px; /* offset for fixed navbar */
+      padding: var(--space-12) var(--space-10);
+      background: white;
+      border: 1px solid var(--clr-border);
+      border-radius: var(--radius-xl);
+      margin-top: 140px; /* offset for fixed navbar */
       margin-bottom: var(--space-12);
+      box-shadow: 0 10px 30px oklch(0% 0 0 / 0.04);
+    }
+    @media (max-width: 768px) {
+      .blog-article {
+        margin-top: 110px;
+        padding: var(--space-6) var(--space-4);
+        border-radius: var(--radius-lg);
+      }
     }
     .blog-article h1 {
       font-family: var(--font-display);
