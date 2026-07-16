@@ -15,6 +15,27 @@
   let activeFilter = 'all';
   let searchTerm   = '';
 
+  function updateSidebarCounts() {
+    const counts = { all: cards.length };
+    
+    cards.forEach(card => {
+      const cat = (card.dataset.category || '').toLowerCase();
+      if (cat) {
+        counts[cat] = (counts[cat] || 0) + 1;
+      }
+    });
+
+    sidebarCats.forEach(cat => {
+      const filter = cat.dataset.filter;
+      const span = cat.querySelector('span');
+      if (span) {
+        span.textContent = counts[filter] || 0;
+      }
+    });
+  }
+
+  updateSidebarCounts();
+
   function applyFilters() {
     let visible = 0;
     cards.forEach(card => {
