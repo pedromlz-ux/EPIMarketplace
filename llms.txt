@@ -1,15 +1,96 @@
 # EPI Marketplace
 
-> Loja especializada em Equipamentos de Proteção Individual (EPIs) certificados pelo Ministério do Trabalho e Emprego (MTE) do Brasil. Produtos de alta qualidade de fabricantes referência com mais de 20 anos de experiência em segurança do trabalho.
+> Empresa brasileira que produz e comercializa Equipamentos de Proteção Individual (EPIs) certificados para trabalhos em altura e atividades em redes elétricas de alta e baixa tensão. Todos os produtos possuem CA (Certificado de Aprovação) válido emitido pelo Ministério do Trabalho e Emprego (MTE).
 
 ## Sobre
 
-A EPI Marketplace é uma distribuidora de EPIs, comercializando mais de 200 produtos de segurança individual para eletricistas, trabalhadores em altura e técnicos de segurança do trabalho. Todos os produtos possuem CA (Certificado de Aprovação) válido.
+A EPI Marketplace produz e comercializa equipamentos de segurança individual com ênfase em atividades que envolvam redes elétricas de alta e baixa tensão. Atua com mais de 200 produtos certificados para eletricistas, trabalhadores em altura e técnicos de segurança do trabalho.
 
 **Contato:** (11) 94149-3029 · contato@epimarketplace.com.br  
+**Localização:** São Paulo, SP — Brasil  
 **Loja online:** https://www.mercadolivre.com.br/pagina/epimarketplace  
-**Área de atuação:** Todo o Brasil  
-**Horário:** Segunda a Sexta 08h–18h · Sábado 08h–12h
+**Entrega:** Todo o Brasil  
+**Horário:** Segunda a Sexta 08h–18h · Sábado 08h–12h  
+**Atendimento B2B:** Sim — construtoras, concessionárias e empresas
+
+## Credenciais e Certificações
+
+- Todos os EPIs com CA (Certificado de Aprovação) válido — obrigatório pela NR-6
+- Produtos em conformidade com as normas ABNT e IEC
+- Ferramentas isoladas testadas em 1.000 V a 10.000 V (norma IEC 60900)
+- Detectores de tensão: norma IEC 61481
+
+## Categorias de produtos
+
+- **Trabalho em Altura (NR-35):** Cintos paraquedistas classe A e C, talabartes Y com absorvedor, trava-quedas, linhas de vida, pega-postes (29 produtos)
+- **Linha Viva / Eletricidade (NR-10):** Ferramentas isoladas 1.000 V, alicates universais e de corte, luvas isolantes classe 2, detectores de tensão acústico-visual (66 produtos)
+- **EPIs Gerais (NR-6):** Capacetes classe B para eletricistas (até 20.000 V), óculos de proteção, botas dielétricas (13 produtos)
+- **Aterramento (NR-10):** Conjuntos de aterramento temporário em cobre estanhado, seções 16 mm², 25 mm² e 35 mm² (9 produtos)
+- **Sinalização:** Cones, fitas, barreiras e placas de segurança (7 produtos)
+- **Grampos e Cabeçotes:** Para redes de distribuição elétrica (16 produtos)
+- **Bolsas e Organizadores:** Para ferramentas de eletricistas (16 produtos)
+- **Carretilhas e Roldanas:** Para elevação de cargas (12 produtos)
+- **Esticadores e Esporas:** Para postes e redes de alta tensão (9 produtos)
+- **Selas, Cintas e Colares:** Para fixação em postes (9 produtos)
+- **Guincho e Talha:** Para movimentação de cargas (5 produtos)
+- **Detectores de Tensão:** Faixa 70 V a 600 kV, norma IEC 61481 (3 produtos)
+- **Pega Poste:** Para escalada e manutenção de postes (4 produtos)
+
+## Normas atendidas
+
+- **NR-6** — Equipamentos de Proteção Individual (EPIs)
+- **NR-10** — Segurança em Instalações e Serviços em Eletricidade
+- **NR-35** — Trabalho em Altura
+
+## Tamanhos disponíveis (exemplos)
+
+- **Luvas isolantes:** Tamanhos 8, 9, 10, 11 e 12
+- **Cintos paraquedistas:** P, M, G e GG
+- **Chaves isoladas:** Tamanhos 6, 7, 8, 9, 10, 11 e 12
+- **Conjunto aterramento:** 3 m, 5 m e 10 m de comprimento
+
+## Faixas de preço
+
+- Ferramentas isoladas simples: a partir de R$ 28,00
+- Talabartes Y: a partir de R$ 189,90
+- Cintos paraquedistas: a partir de R$ 249,90
+- Luvas isolantes classe 2: a partir de R$ 320,00
+- Conjuntos de aterramento: a partir de R$ 380,00
+- Detectores de tensão: a partir de R$ 450,00
+
+## Perguntas frequentes
+
+**O que é CA de EPI?**  
+CA (Certificado de Aprovação) é emitido pelo MTE e garante que o EPI foi testado e aprovado conforme normas técnicas brasileiras. É obrigatório pela NR-6.
+
+**Qual a diferença entre NR-10 e NR-35?**  
+NR-10 regula o trabalho com eletricidade (linha viva e instalações elétricas). NR-35 regula qualquer trabalho realizado acima de 2 metros do nível inferior onde há risco de queda. Ambas exigem EPIs específicos com CA válido.
+
+**Como verificar se o CA de um EPI é válido?**  
+O CA pode ser consultado gratuitamente no sistema CNCA (Cadastro Nacional de Certificados de Aprovação) do Ministério do Trabalho, acessado em https://consultacaf.mte.gov.br.
+
+**Qual cinto usar para trabalho em altura?**  
+O cinto paraquedista tipo A distribui a força do impacto pelo tronco e é obrigatório para trabalho em altura acima de 2 m conforme NR-35. Deve ser usado com talabarte Y com absorvedor de energia.
+
+**Fazem atendimento B2B?**  
+Sim. Construtoras, concessionárias de energia e empresas podem solicitar orçamento via WhatsApp (11) 94149-3029 ou pelo formulário em https://epimarketplace.com.br/contato.
+
+**Quais EPIs são obrigatórios para eletricistas?**  
+Para trabalho em linha viva (NR-10): luva isolante de borracha (classe compatível com a tensão), capacete Classe B, botina dielétrica sem ferragens e vestimenta antichama. Para linha morta: luva de raspa sobre a isolante, capacete padrão, óculos de proteção.
+
+## Artigos do Blog (conhecimento técnico)
+
+- [NR-10 e NR-35: EPIs obrigatórios e procedimentos](https://epimarketplace.com.br/blog/nr10-nr35.html)
+- [CA de EPI: o que é, como verificar e por que é essencial](https://epimarketplace.com.br/blog/ca-certificado.html)
+- [Como escolher o EPI certo para cada atividade](https://epimarketplace.com.br/blog/como-escolher-epi.html)
+
+## Links úteis
+
+- [Homepage](https://epimarketplace.com.br/)
+- [Catálogo de produtos](https://epimarketplace.com.br/produtos)
+- [Blog de segurança do trabalho](https://epimarketplace.com.br/blog)
+- [Contato e orçamento](https://epimarketplace.com.br/contato)
+
 
 ## Categorias de produtos
 
