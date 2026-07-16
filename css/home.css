@@ -122,7 +122,7 @@
 
 .hero-animated__word {
   position: absolute;
-  color: var(--clr-text-invert);
+  color: var(--clr-orange);
   font-weight: var(--weight-black);
   opacity: 0;
   transform: translateY(100%);
