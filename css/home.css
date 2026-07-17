@@ -1080,15 +1080,15 @@
 }
 
 .cat-style-card--navy .cat-style-card__btn {
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--clr-orange);
+  border: 1px solid rgba(255, 102, 0, 0.3);
 }
 
 .cat-style-card--navy .cat-style-card__btn:hover {
-  background: var(--clr-blue);
+  background: var(--clr-orange);
   color: white;
-  border-color: var(--clr-blue);
+  border-color: var(--clr-orange);
 }
 
 .cat-style-card--white {
@@ -1200,5 +1200,9 @@
   .categories__grid {
     grid-template-columns: 1fr !important;
   }
+}
+
+#categories-title {
+  color: var(--clr-orange);
 }
 
