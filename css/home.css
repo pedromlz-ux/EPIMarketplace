@@ -686,14 +686,12 @@
   font-weight: var(--weight-black);
   color: var(--clr-text-invert);
   min-height: 1.5em; /* Prevent layout shift while typing */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  text-align: center;
 }
 
 .cta-typewriter__cursor {
   display: inline-block;
+  vertical-align: middle;
   width: 4px;
   height: 1em;
   background-color: var(--clr-blue);
