@@ -1,0 +1,13 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/sistema",
+      "destination": "https://sistemacolegiopassos.vercel.app/sistema/"
+    },
+    {
+      "source": "/sistema/:path*",
+      "destination": "https://sistemacolegiopassos.vercel.app/sistema/:path*"
+    }
+  ]
+}
