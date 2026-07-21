@@ -3,11 +3,11 @@
   "rewrites": [
     {
       "source": "/sistema",
-      "destination": "https://sistemacolegiopassos.vercel.app/sistema/"
+      "destination": "https://sistemacolegiopassos.vercel.app/"
     },
     {
       "source": "/sistema/:path*",
-      "destination": "https://sistemacolegiopassos.vercel.app/sistema/:path*"
+      "destination": "https://sistemacolegiopassos.vercel.app/:path*"
     }
   ]
 }
