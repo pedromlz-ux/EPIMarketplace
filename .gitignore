@@ -8,3 +8,4 @@ tmp
 .gemini
 .agents
 .vercel
+.env*

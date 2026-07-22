@@ -3,11 +3,15 @@
   "rewrites": [
     {
       "source": "/sistema",
-      "destination": "https://sistemacolegiopassos.vercel.app/"
+      "destination": "https://sistema-interno-kappa-sage.vercel.app/"
     },
     {
-      "source": "/sistema/:path*",
-      "destination": "https://sistemacolegiopassos.vercel.app/:path*"
+      "source": "/sistema/",
+      "destination": "https://sistema-interno-kappa-sage.vercel.app/"
+    },
+    {
+      "source": "/sistema/(.*)",
+      "destination": "https://sistema-interno-kappa-sage.vercel.app/$1"
     }
   ]
 }

@@ -109,6 +109,12 @@
     gtag('js', new Date());
     gtag('config', 'G-QMPL1EQMW0');
   </script>
+  <!-- Google Fonts — Non-blocking load -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
 </head>
 <body>
 
@@ -169,6 +175,9 @@
     </div>
   </div>
 </nav>
+  <!-- Overlay do menu mobile -->
+  <div id="nav-overlay" class="navbar__overlay" aria-hidden="true"></div>
+
 
 <!-- PAGE HEADER -->
 <header class="page-header" style="background: var(--clr-navy); padding-block: var(--space-24) var(--space-12); margin-top: 72px;" role="banner">
@@ -194,47 +203,56 @@
   <div class="container">
         <div class="blog-grid">
       
+        <!-- Card: CA de EPI: como verificar a validade e por que ele é essencial para a segurança -->
+        <article class="blog-card reveal">
+          <img src="img/blog/ca-de-epi-como-verificar-a-validade-e-por-que-ele-e-essencial-para-a-seguranca-img1.png" alt="Homem verificando o selo de CA de EPI gravado em uma luva de proteção industrial." class="blog-card__img" loading="lazy">
+          <div class="blog-card__body">
+            <span class="blog-card__tag">Certificação</span>
+            <h2 class="blog-card__title">CA de EPI: como verificar a validade e por que ele é essencial para a segurança</h2>
+            <p class="blog-card__desc">Descubra tudo sobre o CA de EPI, como consultar a validade no sistema do Ministério do Trabalho e por que garantir esse certificado é crucial para sua empresa.</p>
+            <a href="blog/ca-de-epi-como-verificar-a-validade-e-por-que-ele-e-essencial-para-a-seguranca" class="blog-card__link">
+              Ler artigo completo
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+       
+        <!-- Card: NR-10 NR-35: Guia Completo sobre as Normas e EPIs Necessários -->
+        <article class="blog-card reveal">
+          <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&q=80" alt="Trabalhador utilizando EPIs de segurança para realizar manutenção em altura e rede elétrica" class="blog-card__img" loading="lazy">
+          <div class="blog-card__body">
+            <span class="blog-card__tag">Normas</span>
+            <h2 class="blog-card__title">NR-10 NR-35: Guia Completo sobre as Normas e EPIs Necessários</h2>
+            <p class="blog-card__desc">Confira as atualizações essenciais das normas NR-10 NR-35, descubra as exigências para trabalho em altura e elétrico e saiba quais EPIs garantem sua proteção.</p>
+            <a href="blog/nr-10-nr-35-guia-completo-sobre-as-normas-e-epis-necessarios" class="blog-card__link">
+              Ler artigo completo
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+       
+        <!-- Card: Guia prático: Como se proteger no trabalho utilizando EPI de forma eficiente -->
+        <article class="blog-card reveal">
+          <img src="img/blog/guia-pratico-como-se-proteger-no-trabalho-utilizando-epi-de-forma-eficiente-img1.png" alt="Trabalhador profissional utilizando capacete, óculos de proteção e luvas em ambiente de construção." class="blog-card__img" loading="lazy">
+          <div class="blog-card__body">
+            <span class="blog-card__tag">EPIs</span>
+            <h2 class="blog-card__title">Guia prático: Como se proteger no trabalho utilizando EPI de forma eficiente</h2>
+            <p class="blog-card__desc">Descubra as melhores práticas e a importância vital de saber como se proteger no trabalho utilizando EPI para garantir sua integridade física e produtividade.</p>
+            <a href="blog/guia-pratico-como-se-proteger-no-trabalho-utilizando-epi-de-forma-eficiente" class="blog-card__link">
+              Ler artigo completo
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        </article>
+      
       <!-- Artigo 1 -->
-      <article class="blog-card reveal">
-        <img src="https://serveq.com.br/wp-content/uploads/2019/07/epi-300x300.jpg" alt="Como escolher o EPI certo" class="blog-card__img" loading="lazy">
-        <div class="blog-card__body">
-          <span class="blog-card__tag">Guia Técnico · NR-6</span>
-          <h2 class="blog-card__title">Como escolher o EPI certo para cada atividade</h2>
-          <p class="blog-card__desc">Guia completo para selecionar o equipamento de proteção individual conforme a norma regulamentadora e a atividade exercida.</p>
-          <a href="blog/como-escolher-epi.html" class="blog-card__link">
-            Ler artigo completo
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-      </article>
+      
 
       <!-- Artigo 2 -->
-      <article class="blog-card reveal reveal--delay-1">
-        <img src="https://serveq.com.br/wp-content/uploads/2019/07/linha-viva-300x300.jpg" alt="NR10 e NR35" class="blog-card__img" loading="lazy">
-        <div class="blog-card__body">
-          <span class="blog-card__tag">Normas · Regulamentos</span>
-          <h2 class="blog-card__title">NR-10 e NR-35: o que mudou e o que você precisa saber</h2>
-          <p class="blog-card__desc">As atualizações mais recentes das normas que regem o trabalho com eletricidade e em altura — e os EPIs exigidos em cada situação.</p>
-          <a href="blog/nr10-nr35.html" class="blog-card__link">
-            Ler artigo completo
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-      </article>
+      
 
       <!-- Artigo 3 -->
-      <article class="blog-card reveal reveal--delay-2">
-        <img src="https://serveq.com.br/wp-content/uploads/2019/09/conjunto-aterramento-300x300.jpg" alt="CA de EPI" class="blog-card__img" loading="lazy">
-        <div class="blog-card__body">
-          <span class="blog-card__tag">Certificação · Segurança</span>
-          <h2 class="blog-card__title">CA de EPI: como verificar e por que é essencial</h2>
-          <p class="blog-card__desc">Saiba como consultar o Certificado de Aprovação de um EPI no sistema CNCA e por que comprar sem CA coloca sua empresa em risco.</p>
-          <a href="blog/ca-certificado.html" class="blog-card__link">
-            Ler artigo completo
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-        </div>
-      </article>
+      
 
     </div>
   </main>
@@ -310,5 +328,61 @@
 </a>
 
 <script src="js/main.js" type="module" defer></script>
+
+<!-- Dynamic Blog Loader Script -->
+<script type="module">
+  const supabaseUrl = 'https://knmkacjuyjgxiwdjpggz.supabase.co';
+  const anonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtubWthY2p1eWpneGl3ZGpwZ2d6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQxMzU2MjcsImV4cCI6MjA5OTcxMTYyN30.G28xb7vjtkcrtWrPKWTex--yUsySxMjUZvP7Q6eEPQc';
+
+  async function loadBlogPosts() {
+    try {
+      const res = await fetch(`${supabaseUrl}/rest/v1/blog_posts?select=*&order=created_at.desc`, {
+        headers: {
+          'apikey': anonKey,
+          'Authorization': `Bearer ${anonKey}`
+        }
+      });
+      if (!res.ok) throw new Error('Falha ao buscar posts no banco');
+      const posts = await res.json();
+      
+      if (!posts || posts.length === 0) return;
+
+      const grid = document.querySelector('.blog-grid');
+      if (!grid) return;
+
+      // Limpa os cards estáticos antigos e renderiza todos os posts reais do banco
+      grid.innerHTML = '';
+
+      posts.forEach(post => {
+        const card = document.createElement('article');
+        card.className = 'blog-card reveal reveal--visible';
+        
+        // Formata a URL do artigo: se for um dos posts originais estáticos, usa o link direto, senão usa o post.html dinâmico
+        let articleUrl = `blog/post.html?slug=${post.slug}`;
+        if (post.slug === 'como-escolher-epi') articleUrl = 'blog/como-escolher-epi.html';
+        else if (post.slug === 'nr10-nr35') articleUrl = 'blog/nr10-nr35.html';
+        else if (post.slug === 'ca-certificado') articleUrl = 'blog/ca-certificado.html';
+
+        card.innerHTML = `
+          <img src="${post.image || 'https://serveq.com.br/wp-content/uploads/2019/07/epi-300x300.jpg'}" alt="${post.image_alt || post.title}" class="blog-card__img" loading="lazy">
+          <div class="blog-card__body">
+            <span class="blog-card__tag">${post.category || 'Segurança'}</span>
+            <h2 class="blog-card__title">${post.title}</h2>
+            <p class="blog-card__desc">${post.summary}</p>
+            <a href="${articleUrl}" class="blog-card__link">
+              Ler artigo completo
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    } catch (err) {
+      console.error('Erro ao carregar posts do Supabase:', err);
+    }
+  }
+
+  window.addEventListener('load', loadBlogPosts);
+</script>
 </body>
 </html>

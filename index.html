@@ -10,7 +10,7 @@
   ============================================= -->
   <title>EPI Marketplace | Equipamentos de Proteção Individual Certificados</title>
   <meta name="description"
-    content="EPI Marketplace oferece mais de 200 EPIs certificados (CA/MTE) para eletricistas, trabalhadores em altura e técnicos de segurança. Ferramentas NR-10, cintos NR-35, luvas isolantes, capacetes Classe B. Frete para todo o Brasil.">
+    content="EPI Marketplace: Distribuidora de EPIs certificados (CA/MTE) para NR-10 e NR-35. Cintos, luvas isolantes, capacetes Classe B e ferramentas de linha viva.">
   <meta name="keywords"
     content="EPI certificado, equipamento proteção individual, NR-10, NR-35, cinto paraquedista, luva isolante, capacete classe B, ferramentas linha viva, trabalho em altura, EPI marketplace">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -158,8 +158,6 @@
   <!-- =============================================
        PERFORMANCE — Critical resource hints
   ============================================= -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="style" href="css/tokens.css">
   <link rel="preload" as="style" href="css/global.css">
 
@@ -183,6 +181,12 @@
     gtag('js', new Date());
     gtag('config', 'G-QMPL1EQMW0');
   </script>
+  <!-- Google Fonts — Non-blocking load -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
 </head>
 
 <body>
@@ -236,6 +240,8 @@
       </div>
     </div>
   </nav>
+  <!-- Overlay do menu mobile -->
+  <div id="nav-overlay" class="navbar__overlay" aria-hidden="true"></div>
 
   <main id="main-content" role="main">
     <section class="hero" aria-labelledby="hero-headline">
@@ -833,23 +839,22 @@
         <div class="blog-grid" role="list">
 
           <article class="blog-card reveal" role="listitem">
-            <a href="blog/como-escolher-epi.html" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
+            <a href="blog/guia-pratico-como-se-proteger-no-trabalho-utilizando-epi-de-forma-eficiente" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
               <div class="blog-card__img-wrap">
-                <img src="https://serveq.com.br/wp-content/uploads/2019/07/epi-300x300.jpg" alt="" loading="lazy"
+                <img src="img/blog/guia-pratico-como-se-proteger-no-trabalho-utilizando-epi-de-forma-eficiente-img1.png" alt="Trabalhador profissional utilizando capacete, óculos de proteção e luvas" loading="lazy"
                   width="300" height="300">
               </div>
             </a>
             <div class="blog-card__body">
               <div class="blog-card__meta">
-                <span class="blog-card__cat">Guia</span>
+                <span class="blog-card__cat">Segurança</span>
                 <time datetime="2025-07-01">1 Jul 2025</time>
               </div>
               <h3 class="blog-card__title">
-                <a href="blog/como-escolher-epi.html">Como escolher o EPI certo para cada atividade</a>
+                <a href="blog/guia-pratico-como-se-proteger-no-trabalho-utilizando-epi-de-forma-eficiente">Como se proteger no trabalho utilizando EPI de forma eficiente</a>
               </h3>
-              <p class="blog-card__excerpt">Guia completo para selecionar o equipamento de proteção individual conforme
-                a norma regulamentadora e a atividade exercida.</p>
-              <a href="blog/como-escolher-epi.html" class="blog-card__btn">
+              <p class="blog-card__excerpt">Guia prático para garantir o uso correto, treinamento adequado e conservação de Equipamentos de Proteção Individual.</p>
+              <a href="blog/guia-pratico-como-se-proteger-no-trabalho-utilizando-epi-de-forma-eficiente" class="blog-card__btn">
                 Ler mais
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
@@ -857,9 +862,9 @@
           </article>
 
           <article class="blog-card reveal reveal--delay-1" role="listitem">
-            <a href="blog/nr10-nr35.html" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
+            <a href="blog/nr-10-nr-35-guia-completo-sobre-as-normas-e-epis-necessarios" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
               <div class="blog-card__img-wrap">
-                <img src="https://serveq.com.br/wp-content/uploads/2019/07/linha-viva-300x300.jpg" alt="" loading="lazy"
+                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&q=80" alt="Trabalhador com EPIs de proteção em altura e eletricidade" loading="lazy"
                   width="300" height="300">
               </div>
             </a>
@@ -869,11 +874,10 @@
                 <time datetime="2025-06-15">15 Jun 2025</time>
               </div>
               <h3 class="blog-card__title">
-                <a href="blog/nr10-nr35.html">NR-10 e NR-35: o que mudou e o que você precisa saber</a>
+                <a href="blog/nr-10-nr-35-guia-completo-sobre-as-normas-e-epis-necessarios">NR-10 e NR-35: Guia Completo sobre Normas e EPIs Necessários</a>
               </h3>
-              <p class="blog-card__excerpt">As atualizações mais recentes das normas que regem o trabalho com
-                eletricidade e em altura — e os EPIs exigidos em cada situação.</p>
-              <a href="blog/nr10-nr35.html" class="blog-card__btn">
+              <p class="blog-card__excerpt">As exigências e especificações das normas de eletricidade e trabalho em altura e quais EPIs são obrigatórios.</p>
+              <a href="blog/nr-10-nr-35-guia-completo-sobre-as-normas-e-epis-necessarios" class="blog-card__btn">
                 Ler mais
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
@@ -881,9 +885,9 @@
           </article>
 
           <article class="blog-card reveal reveal--delay-2" role="listitem">
-            <a href="blog/ca-certificado.html" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
+            <a href="blog/ca-de-epi-como-verificar-a-validade-e-por-que-ele-e-essencial-para-a-seguranca" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
               <div class="blog-card__img-wrap">
-                <img src="https://serveq.com.br/wp-content/uploads/2019/09/conjunto-aterramento-300x300.jpg" alt=""
+                <img src="img/blog/ca-de-epi-como-verificar-a-validade-e-por-que-ele-e-essencial-para-a-seguranca-img1.png" alt="Verificação do selo de CA de EPI em luva industrial"
                   loading="lazy" width="300" height="300">
               </div>
             </a>
@@ -893,11 +897,10 @@
                 <time datetime="2025-05-20">20 Mai 2025</time>
               </div>
               <h3 class="blog-card__title">
-                <a href="blog/ca-certificado.html">CA de EPI: como verificar e por que é essencial</a>
+                <a href="blog/ca-de-epi-como-verificar-a-validade-e-por-que-ele-e-essencial-para-a-seguranca">CA de EPI: como verificar a validade e importância para a segurança</a>
               </h3>
-              <p class="blog-card__excerpt">Saiba como consultar o Certificado de Aprovação de um EPI no sistema CNCA e
-                por que comprar sem CA coloca sua empresa em risco.</p>
-              <a href="blog/ca-certificado.html" class="blog-card__btn">
+              <p class="blog-card__excerpt">Saiba como consultar o Certificado de Aprovação de um EPI no sistema do MTE e os riscos de comprar equipamentos sem CA.</p>
+              <a href="blog/ca-de-epi-como-verificar-a-validade-e-por-que-ele-e-essencial-para-a-seguranca" class="blog-card__btn">
                 Ler mais
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>

@@ -15,9 +15,10 @@
    1. NAVBAR — scroll state + mobile menu
 ============================================================ */
 (function initNavbar() {
-  const navbar   = document.getElementById('navbar');
-  const burger   = document.getElementById('burger-btn');
+  const navbar     = document.getElementById('navbar');
+  const burger     = document.getElementById('burger-btn');
   const mobileMenu = document.getElementById('mobile-menu');
+  const overlay    = document.getElementById('nav-overlay');
   if (!navbar) return;
 
   // Scroll: glassmorphism state
@@ -31,33 +32,53 @@
 
   // Mobile menu toggle
   if (burger && mobileMenu) {
+    const openMenu = () => {
+      burger.setAttribute('aria-expanded', 'true');
+      mobileMenu.classList.add('open');
+      mobileMenu.setAttribute('aria-hidden', 'false');
+      burger.classList.add('is-open');
+      if (overlay) { overlay.style.display = 'block'; requestAnimationFrame(() => overlay.classList.add('open')); }
+      document.body.style.overflow = 'hidden'; // prevent scroll
+      // Focus primeiro link
+      const firstLink = mobileMenu.querySelector('a');
+      if (firstLink) setTimeout(() => firstLink.focus(), 300);
+    };
+
+    const closeMenu = () => {
+      burger.setAttribute('aria-expanded', 'false');
+      mobileMenu.classList.remove('open');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      burger.classList.remove('is-open');
+      if (overlay) {
+        overlay.classList.remove('open');
+        setTimeout(() => { overlay.style.display = 'none'; }, 300);
+      }
+      document.body.style.overflow = '';
+    };
+
     burger.addEventListener('click', () => {
       const isOpen = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!isOpen));
-      mobileMenu.classList.toggle('open', !isOpen);
-      mobileMenu.setAttribute('aria-hidden', String(isOpen));
-
-      // Animate burger → X
-      burger.classList.toggle('is-open', !isOpen);
+      isOpen ? closeMenu() : openMenu();
     });
+
+    // Close menu on overlay click
+    if (overlay) {
+      overlay.addEventListener('click', closeMenu);
+    }
 
     // Close menu on link click
     mobileMenu.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        burger.setAttribute('aria-expanded', 'false');
-        mobileMenu.classList.remove('open');
-        mobileMenu.setAttribute('aria-hidden', 'true');
-        burger.classList.remove('is-open');
-      });
+      link.addEventListener('click', closeMenu);
     });
 
     // Close on Escape
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
-        burger.click();
+        closeMenu();
         burger.focus();
       }
     });
+
   }
 })();
 

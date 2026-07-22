@@ -2,7 +2,7 @@
    EPI MARKETPLACE — HOMEPAGE STYLES
    ============================================================ */
 
-@import url('global.css');
+/* global.css carregado diretamente no HTML — não duplicar aqui */
 
 /* -----------------------------------------------------------
    HERO
@@ -751,7 +751,7 @@
   }
 
   .hero__headline {
-    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-size: clamp(1.75rem, 6vw, 3.5rem);
   }
 
   .featured__inner {
@@ -812,17 +812,23 @@
 }
 
 @media (max-width: 480px) {
+  /* Hero CTAs fullwidth no mobile — fácil de tocar */
   .hero__actions {
     flex-direction: column;
+    gap: var(--space-3);
   }
 
   .hero__actions .btn {
     width: 100%;
     justify-content: center;
+    min-height: 52px; /* touch-friendly */
   }
 
+  /* Stats em grid 2×2 no mobile */
   .hero__stats {
-    gap: var(--space-6);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
   }
 
   .featured__specs {
@@ -831,6 +837,11 @@
 
   .categories__grid {
     gap: var(--space-3);
+  }
+
+  /* Safe area no bottom do hero */
+  .hero {
+    padding-bottom: max(var(--space-8), env(safe-area-inset-bottom, 0px));
   }
 }
 

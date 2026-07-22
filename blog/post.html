@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carregando Artigo... — EPI Marketplace</title>
+  <meta name="description" content="Artigo do blog EPI Marketplace." />
+  
+  <!-- CSS Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <style>
+    body {
+      background-color: var(--clr-surface-2);
+    }
+    .blog-article {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: var(--space-12) var(--space-10);
+      background: white;
+      border: 1px solid rgba(0, 0, 0, 0.35);
+      border-radius: var(--radius-xl);
+      margin-top: 140px; /* offset for fixed navbar */
+      margin-bottom: var(--space-12);
+      box-shadow: 0 10px 30px oklch(0% 0 0 / 0.04);
+    }
+    @media (max-width: 768px) {
+      .blog-article {
+        margin-top: 110px;
+        padding: var(--space-6) var(--space-4);
+        border-radius: var(--radius-lg);
+      }
+    }
+    .blog-article h1 {
+      font-family: var(--font-display);
+      font-size: var(--text-4xl);
+      font-weight: var(--weight-black);
+      color: var(--clr-navy);
+      margin-bottom: var(--space-6);
+      line-height: 1.1;
+    }
+    .blog-article p {
+      margin-bottom: var(--space-4);
+      line-height: var(--leading-relaxed);
+      color: var(--clr-text-dim);
+    }
+    .blog-article h2 {
+      font-size: var(--text-2xl);
+      color: var(--clr-navy);
+      margin-top: var(--space-8);
+      margin-bottom: var(--space-4);
+    }
+    .blog-article strong, .blog-article b {
+      color: #000;
+      font-weight: 700;
+    }
+    .blog-back {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-2);
+      color: var(--clr-orange);
+      font-weight: var(--weight-bold);
+      margin-bottom: var(--space-8);
+      text-decoration: none;
+    }
+    .blog-back:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QMPL1EQMW0"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QMPL1EQMW0');
+  </script>
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav id="navbar" role="navigation" aria-label="Navegação principal">
+    <div class="container">
+      <div class="navbar__inner">
+        <button class="navbar__burger" id="burger-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
+          <span></span><span></span><span></span>
+        </button>
+
+        <!-- Logo -->
+        <a href="../" class="navbar__logo" aria-label="EPI Marketplace — Página inicial">
+          <img src="../img/logo.png" alt="EPI Marketplace" width="160" height="48" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+          <div class="navbar__logo-text" style="display:none">
+            <span class="name">EPI Marketplace</span>
+            <span class="tagline">EPIs Certificados</span>
+          </div>
+        </a>
+
+        <!-- Desktop Links -->
+        <div class="navbar__links" role="menubar">
+          <a href="../produtos.html" role="menuitem">Produtos</a>
+          <a href="../sobre.html" role="menuitem">Sobre</a>
+          <a href="../blog.html" role="menuitem">Blog</a>
+          <a href="../contato.html" role="menuitem">Contato</a>
+        </div>
+
+        <!-- CTA + Burger -->
+        <a href="https://www.mercadolivre.com.br/pagina/epimarketplace" target="_blank" rel="noopener noreferrer" class="navbar__cta" id="nav-ml-cta" aria-label="Abrir loja no Mercado Livre (abre em nova aba)">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+            <polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" />
+          </svg>
+          Ver no Mercado Livre
+        </a>
+      </div>
+
+      <div class="navbar__mobile" id="mobile-menu" role="menu" aria-hidden="true">
+        <a href="../produtos.html" role="menuitem">Produtos</a>
+        <a href="../sobre.html" role="menuitem">Sobre</a>
+        <a href="../blog.html" role="menuitem">Blog</a>
+        <a href="../contato.html" role="menuitem">Contato</a>
+        <a href="https://www.mercadolivre.com.br/pagina/epimarketplace" target="_blank" rel="noopener noreferrer" role="menuitem" class="mobile-ml-link">Ver loja no Mercado Livre ↗</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <article class="blog-article container">
+      <a href="../blog.html" class="blog-back">&larr; Voltar para o Blog</a>
+      
+      <h1 id="post-title">Carregando artigo...</h1>
+      
+      <div class="blog-meta" style="margin-bottom: var(--space-6); font-size: 0.9em; opacity: 0.7; display: flex; gap: var(--space-4); align-items: center;">
+        <span>Por <strong>Equipe Editorial</strong></span>
+        <span>•</span>
+        <span id="post-date">--/--/----</span>
+      </div>
+
+      <!-- Hero Image -->
+      <img id="post-hero-image" src="" alt="" style="width: 100%; max-height: 450px; object-fit: cover; border-radius: var(--radius-xl); margin-bottom: var(--space-6); border: 1px solid rgba(0,0,0,0.1); display: none;" />
+
+      <!-- Article Content -->
+      <div id="post-content" class="article-content">
+        <p>Aguarde enquanto carregamos as informações...</p>
+      </div>
+    </article>
+  </main>
+
+  <!-- Dynamic Post Loader Script -->
+  <script type="module">
+    const supabaseUrl = 'https://knmkacjuyjgxiwdjpggz.supabase.co';
+    const anonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtubWthY2p1eWpneGl3ZGpwZ2d6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQxMzU2MjcsImV4cCI6MjA5OTcxMTYyN30.G28xb7vjtkcrtWrPKWTex--yUsySxMjUZvP7Q6eEPQc';
+
+    async function loadPost() {
+      const params = new URLSearchParams(window.location.search);
+      const slug = params.get('slug');
+      if (!slug) {
+        window.location.href = '../blog.html';
+        return;
+      }
+
+      try {
+        const res = await fetch(`${supabaseUrl}/rest/v1/blog_posts?slug=eq.${slug}&select=*`, {
+          headers: {
+            'apikey': anonKey,
+            'Authorization': `Bearer ${anonKey}`
+          }
+        });
+        
+        if (!res.ok) throw new Error('Erro ao buscar o post no banco');
+        const posts = await res.json();
+        
+        if (!posts || posts.length === 0) {
+          document.getElementById('post-content').innerHTML = '<p>Artigo não encontrado.</p>';
+          return;
+        }
+
+        const post = posts[0];
+
+        // 1. Atualizar Título
+        document.title = `${post.title} — EPI Marketplace | Blog`;
+        document.getElementById('post-title').textContent = post.title;
+
+        // 2. Atualizar Data e Meta Descrição
+        if (post.date) {
+          const formattedDate = post.date.split('-').reverse().join('/');
+          document.getElementById('post-date').textContent = formattedDate;
+        }
+
+        // 3. Atualizar Imagem de Capa
+        const heroImg = document.getElementById('post-hero-image');
+        if (post.image) {
+          heroImg.src = post.image;
+          heroImg.alt = post.image_alt || post.title;
+          heroImg.style.display = 'block';
+        }
+
+        // 4. Formatar e renderizar conteúdo
+        const paragraphs = (post.content || '')
+          .split('\n\n')
+          .filter(p => p.trim())
+          .map(p => {
+            let clean = p.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            clean = clean.replace(/\*(.*?)\*/g, '<em>$1</em>');
+            if (clean.startsWith('## ')) {
+              return `<h2 class="text-xl font-bold mt-6 mb-3 text-on-surface">${clean.replace('## ', '')}</h2>`;
+            }
+            if (clean.startsWith('**') && clean.endsWith('**')) {
+              return `<h2 class="text-xl font-bold mt-6 mb-3 text-on-surface">${clean.replace(/\*\*/g, '')}</h2>`;
+            }
+            return `<p>${clean}</p>`;
+          })
+          .join('\n');
+
+        document.getElementById('post-content').innerHTML = paragraphs;
+      } catch (err) {
+        console.error('Erro ao carregar post:', err);
+        document.getElementById('post-content').innerHTML = '<p>Erro ao carregar o artigo. Por favor, tente novamente.</p>';
+      }
+    }
+
+    window.addEventListener('load', loadPost);
+  </script>
+
+  <script src="../js/main.js" type="module" defer></script>
+</body>
+</html>
