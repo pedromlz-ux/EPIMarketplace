@@ -5,7 +5,7 @@
 /* Fab Button */
 .cart-fab {
   position: fixed;
-  bottom: 24px;
+  top: 24px;
   right: 24px;
   width: 56px;
   height: 56px;
@@ -222,7 +222,7 @@
 /* Toast Notification */
 .toast-container {
   position: fixed;
-  bottom: 90px;
+  top: 90px;
   right: 24px;
   display: flex;
   flex-direction: column;
