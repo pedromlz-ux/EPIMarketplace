@@ -10,7 +10,7 @@
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background-color: var(--clr-primary);
+  background-color: #000;
   color: #fff;
   border: none;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
@@ -24,7 +24,7 @@
 
 .cart-fab:hover {
   transform: scale(1.05);
-  background-color: var(--clr-primary-dark);
+  background-color: #333;
 }
 
 .cart-fab:active {
@@ -209,6 +209,12 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+.cart-actions .btn {
+  padding: 10px 16px;
+  font-size: 0.875rem;
+  height: auto;
 }
 
 .w-100 {
