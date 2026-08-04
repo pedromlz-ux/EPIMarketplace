@@ -429,7 +429,8 @@ function openLightbox(element) {
 }
 
 function closeLightbox(event) {
-  if (!event || event.target.classList.contains('lightbox') || event.target.classList.contains('lightbox__backdrop') || event.target.closest('.lightbox__close')) {
+  const e = event || window.event;
+  if (!e || e.target.classList.contains('lightbox') || e.target.classList.contains('lightbox__backdrop') || e.target.closest('.lightbox__close')) {
     const lightbox = document.getElementById('lightbox');
     if (lightbox) {
       lightbox.setAttribute('hidden', 'true');
