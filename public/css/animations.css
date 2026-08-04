@@ -588,7 +588,11 @@
    FAQ — <details> / <summary> micro-interactions
 ============================================================ */
 .faq-section {
-  background: var(--clr-navy-mid);
+  background-color: var(--clr-navy-mid);
+  background-image: 
+    linear-gradient(to right, oklch(100% 0 0 / 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(100% 0 0 / 0.02) 1px, transparent 1px);
+  background-size: 24px 24px;
 }
 
 .faq-section .section-title {

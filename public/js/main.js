@@ -428,3 +428,34 @@ function closeLightbox(event) {
 // Export to global scope
 window.openLightbox = openLightbox;
 window.closeLightbox = closeLightbox;
+
+// Pseudo-3D Tilt effect on Lightbox Image
+(function initLightboxTilt() {
+  const lightbox = document.getElementById('lightbox');
+  const img = document.getElementById('lightbox-img');
+  if (!lightbox || !img) return;
+
+  lightbox.addEventListener('mousemove', (e) => {
+    if (lightbox.hasAttribute('hidden')) return;
+    
+    const rect = img.getBoundingClientRect();
+    const x = e.clientX - rect.left - (rect.width / 2);
+    const y = e.clientY - rect.top - (rect.height / 2);
+    
+    // Normalize values between -1 and 1
+    const normX = x / (rect.width / 2);
+    const normY = y / (rect.height / 2);
+    
+    const maxTilt = 15; // Max degree tilt
+    const tiltX = -normY * maxTilt;
+    const tiltY = normX * maxTilt;
+    
+    img.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale(1.02)`;
+    img.style.transition = 'transform 0.1s ease-out';
+  });
+
+  lightbox.addEventListener('mouseleave', () => {
+    img.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)';
+    img.style.transition = 'transform 0.5s ease-out';
+  });
+})();
