@@ -29,14 +29,28 @@ function getImageForPost(post) {
   return DEFAULT_IMG;
 }
 
-function renderPosts(posts, grid, countLabel) {
+let allPosts = [];
+let visibleCount = 3;
+
+function renderVisiblePosts() {
+  const grid = document.getElementById('blog-grid');
+  const countLabel = document.querySelector('.blog-count-label');
+  const loadMoreBtn = document.querySelector('.btn-ver-mais');
+  
+  if (!grid) return;
   grid.innerHTML = '';
-  posts.forEach(post => {
+
+  const postsToShow = allPosts.slice(0, visibleCount);
+
+  postsToShow.forEach((post, idx) => {
     const imgUrl = getImageForPost(post);
     const imgAlt = post.image_alt || post.title || 'Artigo sobre EPI';
 
     const article = document.createElement('article');
+    // Maintain reveal animation for newly added cards, but delay them if needed
     article.className = 'blog-card reveal visible';
+    article.style.animation = `cardEnter 0.45s ease-out ${idx * 0.1}s both`;
+    
     article.innerHTML = `
       <img src="${imgUrl}" alt="${imgAlt}" class="blog-card__img" loading="lazy">
       <div class="blog-card__body">
@@ -53,15 +67,26 @@ function renderPosts(posts, grid, countLabel) {
   });
 
   if (countLabel) {
-    countLabel.innerHTML = `Mostrando <strong>${posts.length}</strong> de <strong>${posts.length}</strong> artigos`;
+    countLabel.innerHTML = `Mostrando <strong>${postsToShow.length}</strong> de <strong>${allPosts.length}</strong> artigos`;
+  }
+
+  if (loadMoreBtn) {
+    if (visibleCount >= allPosts.length) {
+      loadMoreBtn.style.display = 'none';
+    } else {
+      loadMoreBtn.style.display = 'inline-flex';
+      // Remover o alert('Mais artigos serão publicados em breve!') que estava no HTML
+      loadMoreBtn.removeAttribute('onclick');
+      loadMoreBtn.onclick = (e) => {
+        e.preventDefault();
+        visibleCount = allPosts.length;
+        renderVisiblePosts();
+      };
+    }
   }
 }
 
 async function loadBlogPosts() {
-  const grid = document.getElementById('blog-grid');
-  const countLabel = document.querySelector('.blog-count-label');
-  if (!grid) return;
-
   try {
     const { data: posts, error } = await _supabase
       .from('blog_posts')
@@ -72,7 +97,8 @@ async function loadBlogPosts() {
     if (error) throw error;
 
     if (posts && posts.length > 0) {
-      renderPosts(posts, grid, countLabel);
+      allPosts = posts;
+      renderVisiblePosts();
     }
   } catch (err) {
     console.warn('Blog: erro ao carregar posts do Supabase.', err.message);
