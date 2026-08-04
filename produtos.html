@@ -6,10 +6,10 @@
   <!-- SEO -->
   <title>Catálogo de EPIs — EPI Marketplace | Equipamentos Certificados</title>
   <meta name="description" content="Catálogo completo de EPIs certificados (CA/MTE): cintos paraquedistas, luvas isolantes classe 2, capacetes, ferramentas para linha viva. NR-10 e NR-35.">
-  <link rel="canonical" href="https://epimarketplace.com.br/produtos">
+  <link rel="canonical" href="https://epimarketplace.com/produtos">
   <meta property="og:title" content="Catálogo de EPIs — EPI Marketplace">
   <meta property="og:description" content="Mais de 200 produtos certificados para eletricistas e segurança no trabalho.">
-  <meta property="og:url" content="https://epimarketplace.com.br/produtos">
+  <meta property="og:url" content="https://epimarketplace.com/produtos">
   
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/global.css">
@@ -24,27 +24,17 @@
     "@type": "CollectionPage",
     "name": "Catálogo de EPIs — EPI Marketplace",
     "description": "Catálogo completo de equipamentos de proteção individual certificados",
-    "url": "https://epimarketplace.com.br/produtos",
+    "url": "https://epimarketplace.com/produtos",
     "provider": { "@type": "Organization", "name": "EPI Marketplace" }
   }
   </script>
 
-  <!-- =============================================
-       GOOGLE ANALYTICS 4
-  ============================================= -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QMPL1EQMW0"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-QMPL1EQMW0');
-  </script>
   <!-- Google Fonts — Non-blocking load -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+<link rel="stylesheet" href="css/cart.css">
 </head>
 <body>
 
@@ -118,7 +108,7 @@
         <span aria-hidden="true">›</span>
         <span aria-current="page">Produtos</span>
       </nav>
-      <h1 class="page-header__title">Catálogo de <span>Produtos</span></h1>
+      <h1 class="page-header__title">Equipamentos de Proteção Individual | <span>Catálogo de EPIs</span></h1>
       <p class="page-header__desc">
         Mais de 200 produtos certificados para segurança no trabalho. 
         Todos com CA aprovado pelo Ministério do Trabalho.
@@ -189,7 +179,7 @@
 
         <!-- Toolbar -->
         <div class="catalog__toolbar">
-          <p class="catalog__count">Mostrando <strong id="count-display">6</strong> produtos</p>
+          <p class="catalog__count">Mostrando <strong id="count-display">28</strong> produtos</p>
 
           <!-- Search -->
           <div class="catalog__search">
@@ -214,7 +204,7 @@
                 <span class="badge badge--blue">NR-10</span>
               </div>
               <div class="product-card__overlay">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
                 <h3 class="product-card__overlay-title">Alicate Isolado 1.000V</h3>
                 <span class="badge badge--navy">Linha Viva · Alicate</span>
               </div>
@@ -231,8 +221,7 @@
               </div>
               
               <div class="product-card__actions">
-                <a href="https://wa.me/5511941493029?text=Olá! Gostaria de fazer um orçamento do produto: Alicate Isolado 1.000V" target="_blank"
-                  rel="noopener noreferrer" class="btn btn--primary btn--sm">Solicitar Orçamento</a>
+                <button class="btn btn--primary btn--sm btn-add-cart" data-product="Alicate Isolado 1.000V">Adicionar ao Carrinho</button>
               </div></div></article>
 
           <!-- Altura: Cinto Paraquedista -->
@@ -246,7 +235,7 @@
                 <span class="badge badge--success">CA Cert.</span>
               </div>
               <div class="product-card__overlay">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
                 <h3 class="product-card__overlay-title">Cinto Paraquedista Classe A</h3>
                 <span class="badge badge--navy">Altura · NR-35</span>
               </div>
@@ -263,8 +252,7 @@
               </div>
               
               <div class="product-card__actions">
-                <a href="https://wa.me/5511941493029?text=Olá! Gostaria de fazer um orçamento do produto: Cinto Paraquedista Classe A" target="_blank"
-                  rel="noopener noreferrer" class="btn btn--primary btn--sm">Solicitar Orçamento</a>
+                <button class="btn btn--primary btn--sm btn-add-cart" data-product="Cinto Paraquedista Classe A">Adicionar ao Carrinho</button>
               </div></div></article>
 
           <!-- Linha Viva: Luva Isolante -->
@@ -276,7 +264,7 @@
                    alt="Luva isolante classe 2 para linha viva" loading="lazy" width="300" height="300">
               <div class="product-card__badge"><span class="badge badge--blue">NR-10</span></div>
               <div class="product-card__overlay">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
                 <h3 class="product-card__overlay-title">Luva Isolante Classe 2</h3>
                 <span class="badge badge--navy">Linha Viva · Proteção</span>
               </div>
@@ -293,8 +281,7 @@
               </div>
               
               <div class="product-card__actions">
-                <a href="https://wa.me/5511941493029?text=Olá! Gostaria de fazer um orçamento do produto: Luva Isolante Classe 2" target="_blank"
-                  rel="noopener noreferrer" class="btn btn--primary btn--sm">Solicitar Orçamento</a>
+                <button class="btn btn--primary btn--sm btn-add-cart" data-product="Luva Isolante Classe 2">Adicionar ao Carrinho</button>
               </div></div></article>
 
           <!-- Ferramentas: Jogo de Chaves -->
@@ -306,7 +293,7 @@
                    alt="Jogo de chaves isoladas para eletricista" loading="lazy" width="300" height="300">
               <div class="product-card__badge"><span class="badge badge--success">CA Cert.</span></div>
               <div class="product-card__overlay">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
                 <h3 class="product-card__overlay-title">Jogo de Chaves Isoladas</h3>
                 <span class="badge badge--navy">Ferramentas Isoladas · NR-10</span>
               </div>
@@ -323,8 +310,7 @@
               </div>
               
               <div class="product-card__actions">
-                <a href="https://wa.me/5511941493029?text=Olá! Gostaria de fazer um orçamento do produto: Jogo de Chaves Isoladas" target="_blank"
-                  rel="noopener noreferrer" class="btn btn--primary btn--sm">Solicitar Orçamento</a>
+                <button class="btn btn--primary btn--sm btn-add-cart" data-product="Jogo de Chaves Isoladas">Adicionar ao Carrinho</button>
               </div></div></article>
 
           <!-- EPI: Capacete Classe B -->
@@ -336,7 +322,7 @@
                    alt="Capacete de segurança classe B para eletricistas" loading="lazy" width="300" height="300">
               <div class="product-card__badge"><span class="badge badge--blue">Classe B</span></div>
               <div class="product-card__overlay">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
                 <h3 class="product-card__overlay-title">Capacete Classe B — Eletricista</h3>
                 <span class="badge badge--navy">EPI · Proteção da Cabeça</span>
               </div>
@@ -353,8 +339,7 @@
               </div>
               
               <div class="product-card__actions">
-                <a href="https://wa.me/5511941493029?text=Olá! Gostaria de fazer um orçamento do produto: Capacete Classe B — Eletricista" target="_blank"
-                  rel="noopener noreferrer" class="btn btn--primary btn--sm">Solicitar Orçamento</a>
+                <button class="btn btn--primary btn--sm btn-add-cart" data-product="Capacete Classe B — Eletricista">Adicionar ao Carrinho</button>
               </div></div></article>
 
           <!-- Aterramento -->
@@ -366,7 +351,7 @@
                    alt="Conjunto de aterramento temporário para linhas elétricas" loading="lazy" width="300" height="300">
               <div class="product-card__badge"><span class="badge badge--navy">NR-10</span></div>
               <div class="product-card__overlay">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
                 <h3 class="product-card__overlay-title">Conjunto de Aterramento Temporário</h3>
                 <span class="badge badge--navy">Aterramento · NR-10</span>
               </div>
@@ -383,8 +368,7 @@
               </div>
               
               <div class="product-card__actions">
-                <a href="https://wa.me/5511941493029?text=Olá! Gostaria de fazer um orçamento do produto: Conjunto de Aterramento Temporário" target="_blank"
-                  rel="noopener noreferrer" class="btn btn--primary btn--sm">Solicitar Orçamento</a>
+                <button class="btn btn--primary btn--sm btn-add-cart" data-product="Conjunto de Aterramento Temporário">Adicionar ao Carrinho</button>
               </div></div></article>
 
           <!-- Sinalização -->
@@ -395,7 +379,7 @@
               <img src="https://serveq.com.br/wp-content/uploads/2019/07/sinalizacao-300x300.jpg"
                    alt="Cone de sinalização para segurança no trabalho" loading="lazy" width="300" height="300">
               <div class="product-card__overlay">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
                 <h3 class="product-card__overlay-title">Cone de Sinalização 75cm</h3>
                 <span class="badge badge--navy">Sinalização · Segurança</span>
               </div>
@@ -412,8 +396,7 @@
               </div>
               
               <div class="product-card__actions">
-                <a href="https://wa.me/5511941493029?text=Olá! Gostaria de fazer um orçamento do produto: Cone de Sinalização 75cm" target="_blank"
-                  rel="noopener noreferrer" class="btn btn--primary btn--sm">Solicitar Orçamento</a>
+                <button class="btn btn--primary btn--sm btn-add-cart" data-product="Cone de Sinalização 75cm">Adicionar ao Carrinho</button>
               </div></div></article>
 
           <!-- Talabarte -->
@@ -425,7 +408,7 @@
                    alt="Talabarte Y duplo com absorvedor" loading="lazy" width="300" height="300">
               <div class="product-card__badge"><span class="badge badge--orange">Mais Vendido</span></div>
               <div class="product-card__overlay">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
                 <h3 class="product-card__overlay-title">Talabarte Y com Absorvedor</h3>
                 <span class="badge badge--navy">Altura · Talabarte</span>
               </div>
@@ -442,8 +425,7 @@
               </div>
               
               <div class="product-card__actions">
-                <a href="https://wa.me/5511941493029?text=Olá! Gostaria de fazer um orçamento do produto: Talabarte Y com Absorvedor" target="_blank"
-                  rel="noopener noreferrer" class="btn btn--primary btn--sm">Solicitar Orçamento</a>
+                <button class="btn btn--primary btn--sm btn-add-cart" data-product="Talabarte Y com Absorvedor">Adicionar ao Carrinho</button>
               </div></div></article>
 
           <!-- Detector de Tensão -->
@@ -455,7 +437,7 @@
                    alt="Detector de tensão acústico e visual" loading="lazy" width="300" height="300">
               <div class="product-card__badge"><span class="badge badge--navy">NR-10</span></div>
               <div class="product-card__overlay">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
                 <h3 class="product-card__overlay-title">Detector de Tensão Acústico-Visual</h3>
                 <span class="badge badge--navy">Detector de Tensão</span>
               </div>
@@ -472,9 +454,578 @@
               </div>
               
               <div class="product-card__actions">
-                <a href="https://wa.me/5511941493029?text=Olá! Gostaria de fazer um orçamento do produto: Detector de Tensão Acústico-Visual" target="_blank"
-                  rel="noopener noreferrer" class="btn btn--primary btn--sm">Solicitar Orçamento</a>
+                <button class="btn btn--primary btn--sm btn-add-cart" data-product="Detector de Tensão Acústico-Visual">Adicionar ao Carrinho</button>
               </div></div></article>
+          <article class="product-card reveal" data-category="coberturas" role="listitem" aria-label="Cobertura p/ Condutor B.T até 25mm">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+                  <img src="img/serveq/p3-img10.png" alt="Cobertura p/ Condutor B.T até 25mm" loading="lazy" width="300" height="300">
+                  <div class="product-card__badge">
+                    <span class="badge badge--success">Serveq</span>
+                  </div>
+                  <div class="product-card__overlay">
+                    <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                    <h3 class="product-card__overlay-title">Cobertura p/ Condutor B.T até 25mm</h3>
+                    <span class="badge badge--navy">Linha Viva</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+                  <div class="product-card__category">Linha Viva</div>
+                  <h3 class="product-card__name">Cobertura p/ Condutor B.T até 25mm</h3>
+                  <div class="product-card__specs">
+                    Ref/Cód: 1604946BTO<br>
+                    Coberturas utilizadas para isolamento de condutores de até 25mm de diâmetro.
+                  </div>
+                  <div class="product-card__actions">
+                    <button class="btn btn--primary btn--sm btn-add-cart" data-product="Cobertura p/ Condutor B.T até 25mm">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="coberturas" role="listitem" aria-label="Cobertura protetora para chave fusível">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+                  <img src="img/serveq/p4-img13.png" alt="Cobertura protetora para chave fusível" loading="lazy" width="300" height="300">
+                  <div class="product-card__badge">
+                    <span class="badge badge--success">Serveq</span>
+                  </div>
+                  <div class="product-card__overlay">
+                    <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                    <h3 class="product-card__overlay-title">Cobertura protetora para chave fusível</h3>
+                    <span class="badge badge--navy">Linha Viva</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+                  <div class="product-card__category">Linha Viva</div>
+                  <h3 class="product-card__name">Cobertura protetora para chave fusível</h3>
+                  <div class="product-card__specs">
+                    Ref/Cód: 1604060009<br>
+                    Cobertura presa por um pino pela parte traseira do isolador, apoiada sobre o sporte metálico.
+                  </div>
+                  <div class="product-card__actions">
+                    <button class="btn btn--primary btn--sm btn-add-cart" data-product="Cobertura protetora para chave fusível">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="coberturas" role="listitem" aria-label="Cobertura p/ Isolador de pino (João de Barro)">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+                  <img src="img/serveq/p4-img14.png" alt="Cobertura p/ Isolador de pino (João de Barro)" loading="lazy" width="300" height="300">
+                  <div class="product-card__badge">
+                    <span class="badge badge--success">Serveq</span>
+                  </div>
+                  <div class="product-card__overlay">
+                    <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                    <h3 class="product-card__overlay-title">Cobertura p/ Isolador de pino (João de Barro)</h3>
+                    <span class="badge badge--navy">Linha Viva</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+                  <div class="product-card__category">Linha Viva</div>
+                  <h3 class="product-card__name">Cobertura p/ Isolador de pino (João de Barro)</h3>
+                  <div class="product-card__specs">
+                    Ref/Cód: 1604947000<br>
+                    Coberturas utilizadas para a proteção das partes energizadas junto aos isoladores de pino.
+                  </div>
+                  <div class="product-card__actions">
+                    <button class="btn btn--primary btn--sm btn-add-cart" data-product="Cobertura p/ Isolador de pino (João de Barro)">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="coberturas" role="listitem" aria-label="Cobertura para extremidade da cruzeta">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+                  <img src="img/serveq/p4-img15.png" alt="Cobertura para extremidade da cruzeta" loading="lazy" width="300" height="300">
+                  <div class="product-card__badge">
+                    <span class="badge badge--success">Serveq</span>
+                  </div>
+                  <div class="product-card__overlay">
+                    <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                    <h3 class="product-card__overlay-title">Cobertura para extremidade da cruzeta</h3>
+                    <span class="badge badge--navy">Linha Viva</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+                  <div class="product-card__category">Linha Viva</div>
+                  <h3 class="product-card__name">Cobertura para extremidade da cruzeta</h3>
+                  <div class="product-card__specs">
+                    Ref/Cód: 160147801<br>
+                    Utilizadas pra proteger a extremidade da cruzeta, a fim de evitar o contato acidental.
+                  </div>
+                  <div class="product-card__actions">
+                    <button class="btn btn--primary btn--sm btn-add-cart" data-product="Cobertura para extremidade da cruzeta">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="bastoes" role="listitem" aria-label="Bastão de tração c/ torniquete">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+                  <img src="img/serveq/p5-img20.png" alt="Bastão de tração c/ torniquete" loading="lazy" width="300" height="300">
+                  <div class="product-card__badge">
+                    <span class="badge badge--success">Serveq</span>
+                  </div>
+                  <div class="product-card__overlay">
+                    <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                    <h3 class="product-card__overlay-title">Bastão de tração c/ torniquete</h3>
+                    <span class="badge badge--navy">Linha Viva</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+                  <div class="product-card__category">Linha Viva</div>
+                  <h3 class="product-card__name">Bastão de tração c/ torniquete</h3>
+                  <div class="product-card__specs">
+                    Ref/Cód: 1405460000<br>
+                    Bastão de tração com torniquete para trabalhos em linha viva.
+                  </div>
+                  <div class="product-card__actions">
+                    <button class="btn btn--primary btn--sm btn-add-cart" data-product="Bastão de tração c/ torniquete">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="bastoes" role="listitem" aria-label="Bastão de tração espiral">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+                  <img src="img/serveq/p5-img21.png" alt="Bastão de tração espiral" loading="lazy" width="300" height="300">
+                  <div class="product-card__badge">
+                    <span class="badge badge--success">Serveq</span>
+                  </div>
+                  <div class="product-card__overlay">
+                    <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                    <h3 class="product-card__overlay-title">Bastão de tração espiral</h3>
+                    <span class="badge badge--navy">Linha Viva</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+                  <div class="product-card__category">Linha Viva</div>
+                  <h3 class="product-card__name">Bastão de tração espiral</h3>
+                  <div class="product-card__specs">
+                    Ref/Cód: 1406020000<br>
+                    Bastão de tração modelo espiral.
+                  </div>
+                  <div class="product-card__actions">
+                    <button class="btn btn--primary btn--sm btn-add-cart" data-product="Bastão de tração espiral">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="bastoes" role="listitem" aria-label="Vara de manobra c/ 5 elementos">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+                  <img src="img/serveq/p5-img22.png" alt="Vara de manobra c/ 5 elementos" loading="lazy" width="300" height="300">
+                  <div class="product-card__badge">
+                    <span class="badge badge--success">Serveq</span>
+                  </div>
+                  <div class="product-card__overlay">
+                    <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                    <h3 class="product-card__overlay-title">Vara de manobra c/ 5 elementos</h3>
+                    <span class="badge badge--navy">Linha Viva</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+                  <div class="product-card__category">Linha Viva</div>
+                  <h3 class="product-card__name">Vara de manobra c/ 5 elementos</h3>
+                  <div class="product-card__specs">
+                    Ref/Cód: 140912B000<br>
+                    Vara de manobra com cabeçote.
+                  </div>
+                  <div class="product-card__actions">
+                    <button class="btn btn--primary btn--sm btn-add-cart" data-product="Vara de manobra c/ 5 elementos">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="isolantes" role="listitem" aria-label="Lençol Isolante 2 x 250 x 900 mm">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+                  <img src="img/serveq/p7-img29.png" alt="Lençol Isolante 2 x 250 x 900 mm" loading="lazy" width="300" height="300">
+                  <div class="product-card__badge">
+                    <span class="badge badge--success">Serveq</span>
+                  </div>
+                  <div class="product-card__overlay">
+                    <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                    <h3 class="product-card__overlay-title">Lençol Isolante 2 x 250 x 900 mm</h3>
+                    <span class="badge badge--navy">Isolação</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+                  <div class="product-card__category">Isolação</div>
+                  <h3 class="product-card__name">Lençol Isolante 2 x 250 x 900 mm</h3>
+                  <div class="product-card__specs">
+                    Ref/Cód: 1202026001<br>
+                    Lençol isolante de borracha para baixa e alta tensão.
+                  </div>
+                  <div class="product-card__actions">
+                    <button class="btn btn--primary btn--sm btn-add-cart" data-product="Lençol Isolante 2 x 250 x 900 mm">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="isolantes" role="listitem" aria-label="Manta isolante CL II ou CL IV">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+                  <img src="img/serveq/p7-img30.png" alt="Manta isolante CL II ou CL IV" loading="lazy" width="300" height="300">
+                  <div class="product-card__badge">
+                    <span class="badge badge--success">Serveq</span>
+                  </div>
+                  <div class="product-card__overlay">
+                    <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                    <h3 class="product-card__overlay-title">Manta isolante CL II ou CL IV</h3>
+                    <span class="badge badge--navy">Isolação</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+                  <div class="product-card__category">Isolação</div>
+                  <h3 class="product-card__name">Manta isolante CL II ou CL IV</h3>
+                  <div class="product-card__specs">
+                    Ref/Cód: 1300490000<br>
+                    Manta isolante CL II ou CL IV, com fenda ou sem fenda.
+                  </div>
+                  <div class="product-card__actions">
+                    <button class="btn btn--primary btn--sm btn-add-cart" data-product="Manta isolante CL II ou CL IV">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="aterramento" role="listitem" aria-label="Conj. aterramento p/ curto-circuitamento">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+                  <img src="img/serveq/p8-img36.png" alt="Conj. aterramento p/ curto-circuitamento" loading="lazy" width="300" height="300">
+                  <div class="product-card__badge">
+                    <span class="badge badge--success">Serveq</span>
+                  </div>
+                  <div class="product-card__overlay">
+                    <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                    <h3 class="product-card__overlay-title">Conj. aterramento p/ curto-circuitamento</h3>
+                    <span class="badge badge--navy">Segurança</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+                  <div class="product-card__category">Segurança</div>
+                  <h3 class="product-card__name">Conj. aterramento p/ curto-circuitamento</h3>
+                  <div class="product-card__specs">
+                    Ref/Cód: 1104470000<br>
+                    Conjunto de aterramento temporário p/ rede secundária BT, c/ 4 ou 5 grampos.
+                  </div>
+                  <div class="product-card__actions">
+                    <button class="btn btn--primary btn--sm btn-add-cart" data-product="Conj. aterramento p/ curto-circuitamento">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="aterramento" role="listitem" aria-label="Conj. aterramento rápido 22kV">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+                  <img src="img/serveq/p8-img37.png" alt="Conj. aterramento rápido 22kV" loading="lazy" width="300" height="300">
+                  <div class="product-card__badge">
+                    <span class="badge badge--success">Serveq</span>
+                  </div>
+                  <div class="product-card__overlay">
+                    <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                    <h3 class="product-card__overlay-title">Conj. aterramento rápido 22kV</h3>
+                    <span class="badge badge--navy">Segurança</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+                  <div class="product-card__category">Segurança</div>
+                  <h3 class="product-card__name">Conj. aterramento rápido 22kV</h3>
+                  <div class="product-card__specs">
+                    Ref/Cód: 1107810000<br>
+                    Conjunto de aterramento rápido e temporário, p/ linhas de distribuição aérea até 22kV.
+                  </div>
+                  <div class="product-card__actions">
+                    <button class="btn btn--primary btn--sm btn-add-cart" data-product="Conj. aterramento rápido 22kV">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="aterramento" role="listitem" aria-label="Detector de tensão por aproximação">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+                  <img src="img/serveq/p9-img47.png" alt="Detector de tensão por aproximação" loading="lazy" width="300" height="300">
+                  <div class="product-card__badge">
+                    <span class="badge badge--success">Serveq</span>
+                  </div>
+                  <div class="product-card__overlay">
+                    <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                    <h3 class="product-card__overlay-title">Detector de tensão por aproximação</h3>
+                    <span class="badge badge--navy">Segurança</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+                  <div class="product-card__category">Segurança</div>
+                  <h3 class="product-card__name">Detector de tensão por aproximação</h3>
+                  <div class="product-card__specs">
+                    Ref/Cód: 1308000000<br>
+                    Detector de tensão por aproximação com três faixas de medição.
+                  </div>
+                  <div class="product-card__actions">
+                    <button class="btn btn--primary btn--sm btn-add-cart" data-product="Detector de tensão por aproximação">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="ferramentas" role="listitem" aria-label="Alicate de corte isolado">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+                  <img src="img/serveq/p18-img112.png" alt="Alicate de corte isolado" loading="lazy" width="300" height="300">
+                  <div class="product-card__badge">
+                    <span class="badge badge--success">Serveq</span>
+                  </div>
+                  <div class="product-card__overlay">
+                    <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                    <h3 class="product-card__overlay-title">Alicate de corte isolado</h3>
+                    <span class="badge badge--navy">Ferramentas</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+                  <div class="product-card__category">Ferramentas</div>
+                  <h3 class="product-card__name">Alicate de corte isolado</h3>
+                  <div class="product-card__specs">
+                    Ref/Cód: 1300501000<br>
+                    Alicate de corte com isolamento de 1000V.
+                  </div>
+                  <div class="product-card__actions">
+                    <button class="btn btn--primary btn--sm btn-add-cart" data-product="Alicate de corte isolado">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="ferramentas" role="listitem" aria-label="Alicate universal isolado">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+                  <img src="img/serveq/p18-img113.png" alt="Alicate universal isolado" loading="lazy" width="300" height="300">
+                  <div class="product-card__badge">
+                    <span class="badge badge--success">Serveq</span>
+                  </div>
+                  <div class="product-card__overlay">
+                    <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                    <h3 class="product-card__overlay-title">Alicate universal isolado</h3>
+                    <span class="badge badge--navy">Ferramentas</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+                  <div class="product-card__category">Ferramentas</div>
+                  <h3 class="product-card__name">Alicate universal isolado</h3>
+                  <div class="product-card__specs">
+                    Ref/Cód: 1300072000<br>
+                    Alicate universal com isolamento para eletricistas.
+                  </div>
+                  <div class="product-card__actions">
+                    <button class="btn btn--primary btn--sm btn-add-cart" data-product="Alicate universal isolado">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="ferramentas" role="listitem" aria-label="Chave inglesa isolada">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+                  <img src="img/serveq/p18-img114.png" alt="Chave inglesa isolada" loading="lazy" width="300" height="300">
+                  <div class="product-card__badge">
+                    <span class="badge badge--success">Serveq</span>
+                  </div>
+                  <div class="product-card__overlay">
+                    <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                    <h3 class="product-card__overlay-title">Chave inglesa isolada</h3>
+                    <span class="badge badge--navy">Ferramentas</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+                  <div class="product-card__category">Ferramentas</div>
+                  <h3 class="product-card__name">Chave inglesa isolada</h3>
+                  <div class="product-card__specs">
+                    Ref/Cód: 1300455000<br>
+                    Chave inglesa isolada para trabalhos seguros.
+                  </div>
+                  <div class="product-card__actions">
+                    <button class="btn btn--primary btn--sm btn-add-cart" data-product="Chave inglesa isolada">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="epis" role="listitem" aria-label="Cinto Tipo Paraquedista">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+                  <img src="img/serveq/p14-img88.png" alt="Cinto Tipo Paraquedista" loading="lazy" width="300" height="300">
+                  <div class="product-card__badge">
+                    <span class="badge badge--success">Serveq</span>
+                  </div>
+                  <div class="product-card__overlay">
+                    <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                    <h3 class="product-card__overlay-title">Cinto Tipo Paraquedista</h3>
+                    <span class="badge badge--navy">NR-35</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+                  <div class="product-card__category">NR-35</div>
+                  <h3 class="product-card__name">Cinto Tipo Paraquedista</h3>
+                  <div class="product-card__specs">
+                    Ref/Cód: 12012803<br>
+                    Confeccionado em fita de poliéster retardante a chama; acolchoado na lombar e nas pernas.
+                  </div>
+                  <div class="product-card__actions">
+                    <button class="btn btn--primary btn--sm btn-add-cart" data-product="Cinto Tipo Paraquedista">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="epis" role="listitem" aria-label="Talabarte I c/ absorvedor de energia">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+                  <img src="img/serveq/p15-img92.png" alt="Talabarte I c/ absorvedor de energia" loading="lazy" width="300" height="300">
+                  <div class="product-card__badge">
+                    <span class="badge badge--success">Serveq</span>
+                  </div>
+                  <div class="product-card__overlay">
+                    <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                    <h3 class="product-card__overlay-title">Talabarte I c/ absorvedor de energia</h3>
+                    <span class="badge badge--navy">NR-35</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+                  <div class="product-card__category">NR-35</div>
+                  <h3 class="product-card__name">Talabarte I c/ absorvedor de energia</h3>
+                  <div class="product-card__specs">
+                    Ref/Cód: 120169M200<br>
+                    Talabarte I com absorvedor de energia e 2 mosquetões.
+                  </div>
+                  <div class="product-card__actions">
+                    <button class="btn btn--primary btn--sm btn-add-cart" data-product="Talabarte I c/ absorvedor de energia">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="epis" role="listitem" aria-label="Bolsa de lona ou couro p/ EPIs">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+                  <img src="img/serveq/p19-img116.png" alt="Bolsa de lona ou couro p/ EPIs" loading="lazy" width="300" height="300">
+                  <div class="product-card__badge">
+                    <span class="badge badge--success">Serveq</span>
+                  </div>
+                  <div class="product-card__overlay">
+                    <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                    <h3 class="product-card__overlay-title">Bolsa de lona ou couro p/ EPIs</h3>
+                    <span class="badge badge--navy">Acessórios</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+                  <div class="product-card__category">Acessórios</div>
+                  <h3 class="product-card__name">Bolsa de lona ou couro p/ EPIs</h3>
+                  <div class="product-card__specs">
+                    Ref/Cód: 1201395000<br>
+                    Bolsa p/ acondicionamento e transporte de EPIs e ferramentas c/ fechamento via cadeado.
+                  </div>
+                  <div class="product-card__actions">
+                    <button class="btn btn--primary btn--sm btn-add-cart" data-product="Bolsa de lona ou couro p/ EPIs">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="product-card reveal" data-category="epis" role="listitem" aria-label="Luva isolante de borracha">
+            <div class="product-card__inner">
+              <div class="product-card__front">
+                <div class="product-card__image" onclick="this.closest('.product-card').classList.toggle('flipped')" tabindex="0">
+                  <img src="img/serveq/p20-img125.png" alt="Luva isolante de borracha" loading="lazy" width="300" height="300">
+                  <div class="product-card__badge">
+                    <span class="badge badge--success">Serveq</span>
+                  </div>
+                  <div class="product-card__overlay">
+                    <svg onclick="event.stopPropagation(); openLightbox(this.closest('.product-card'))" class="zoom-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" x2="16.65" y1="21" y2="16.65"/><line x1="11" x2="11" y1="8" y2="14"/><line x1="8" x2="14" y1="11" y2="11"/></svg>
+                    <h3 class="product-card__overlay-title">Luva isolante de borracha</h3>
+                    <span class="badge badge--navy">NR-10</span>
+                  </div>
+                </div>
+              </div>
+              <div class="product-card__back">
+                <div class="product-card__body">
+                  <div class="product-card__category">NR-10</div>
+                  <h3 class="product-card__name">Luva isolante de borracha</h3>
+                  <div class="product-card__specs">
+                    Ref/Cód: 1300534000<br>
+                    Luva isolante de borracha: CL 0, CL 00, CL 1, CL 2, CL 3, CL4.
+                  </div>
+                  <div class="product-card__actions">
+                    <button class="btn btn--primary btn--sm btn-add-cart" data-product="Luva isolante de borracha">Adicionar ao Carrinho</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
 
         </div><!-- /products-grid -->
 
@@ -537,9 +1088,9 @@
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2.78h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.4a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             (11) 94149-3029
           </a>
-          <a href="mailto:contato@epimarketplace.com.br">
+          <a href="mailto:contato@epimarketplace.com">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            contato@epimarketplace.com.br
+            contato@epimarketplace.com
           </a>
         </address>
       </div>
@@ -572,8 +1123,15 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <p class="footer__bottom-text">
-        © 2025 EPI Marketplace · CNPJ: a confirmar
+      <p class="footer__bottom-text" style="display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; vertical-align: middle;">
+        <span>© 2025 EPI Marketplace · CNPJ: 58.912.592/0001-06</span>
+        <span style="opacity: 0.4;">|</span>
+        <span style="display: inline-flex; align-items: center; gap: 5px;">
+          Criado por 
+          <a href="https://wa.me/5511943978291" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; transition: opacity 0.2s;" class="hover:opacity-80">
+            <img src="img/pmz-logo.png" alt="PMZ" style="height: 28px; vertical-align: middle; display: inline-block;" />
+          </a>
+        </span>
       </p>
       <nav class="footer__bottom-links" aria-label="Links legais">
         <a href="privacidade.html">Privacidade</a>
@@ -593,5 +1151,51 @@
 
 <script src="js/main.js" type="module" defer></script>
 <script src="js/produtos.js" type="module" defer></script>
+<!-- Google Analytics 4 (Defer Load) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QMPL1EQMW0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QMPL1EQMW0');
+</script>
+
+<!-- CARRINHO DE ORÇAMENTOS -->
+<div class="cart-overlay" id="cart-overlay"></div>
+<aside class="cart-sidebar" id="cart-sidebar">
+  <div class="cart-header">
+    <h2>Seu Orçamento</h2>
+    <button class="cart-close" id="cart-close" aria-label="Fechar carrinho">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+  </div>
+  <div class="cart-items" id="cart-items">
+    <!-- Itens do carrinho aparecerão aqui -->
+  </div>
+  <div class="cart-footer">
+    <div class="cart-form">
+      <input type="text" id="cart-name" placeholder="Seu Nome (Obrigatório)" required>
+      <input type="text" id="cart-company" placeholder="Sua Empresa (Opcional)">
+    </div>
+    <div class="cart-actions">
+      <button class="btn btn--primary w-100" id="btn-checkout-wa">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+        Enviar pelo WhatsApp
+      </button>
+      <button class="btn btn--outline w-100 mt-2" id="btn-checkout-email">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        Enviar por E-mail
+      </button>
+    </div>
+  </div>
+</aside>
+
+<!-- BOTÃO FLUTUANTE DO CARRINHO -->
+<button class="cart-fab" id="cart-fab" aria-label="Abrir carrinho">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+  <span class="cart-badge" id="cart-badge">0</span>
+</button>
+
+<script src="js/cart.js"></script>
 </body>
 </html>
