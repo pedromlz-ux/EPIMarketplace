@@ -4,6 +4,6 @@ Allow: /
 Disallow: /privacidade.html
 Disallow: /termos.html
 
-Sitemap: https://epimarketplace.com.br/sitemap.xml
+Sitemap: https://epimarketplace.com/sitemap.xml
 
-# EPI Marketplace — epimarketplace.com.br
+# EPI Marketplace — epimarketplace.com

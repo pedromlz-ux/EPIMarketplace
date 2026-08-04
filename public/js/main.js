@@ -405,8 +405,6 @@
 function openLightbox(element) {
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
-  const lightboxTitle = document.getElementById('lightbox-title');
-  const lightboxCategory = document.getElementById('lightbox-category');
   if (!lightbox || !lightboxImg) return;
 
   const img = element.querySelector('img');
@@ -414,22 +412,11 @@ function openLightbox(element) {
     lightboxImg.src = img.src;
     lightboxImg.alt = img.alt;
   }
-  
-  if (lightboxTitle) {
-    const titleEl = element.querySelector('.product-card__name');
-    lightboxTitle.textContent = titleEl ? titleEl.textContent : '';
-  }
-  
-  if (lightboxCategory) {
-    const categoryEl = element.querySelector('.product-card__category');
-    lightboxCategory.textContent = categoryEl ? categoryEl.textContent : '';
-  }
-  
   lightbox.removeAttribute('hidden');
 }
 
 function closeLightbox(event) {
-  if (!event || event.target.classList.contains('lightbox') || event.target.classList.contains('lightbox__backdrop') || event.target.closest('.lightbox__close')) {
+  if (event.target.classList.contains('lightbox') || event.target.classList.contains('lightbox__close')) {
     const lightbox = document.getElementById('lightbox');
     if (lightbox) {
       lightbox.setAttribute('hidden', 'true');

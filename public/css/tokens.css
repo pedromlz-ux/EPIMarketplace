@@ -1,0 +1,164 @@
+/* ============================================================
+   EPI MARKETPLACE — DESIGN SYSTEM TOKENS
+   Single source of truth. No hardcoded values elsewhere.
+   ============================================================ */
+
+:root {
+  /* -----------------------------------------------------------
+     COLOR PALETTE
+     Strategy: Committed — navy carries 35-45% of surface,
+     sky blue as accent, orange for energy/urgency
+  ----------------------------------------------------------- */
+
+  /* Core Brand */
+  --clr-navy:        oklch(28% 0.17 252);   /* deep navy — logo shield */
+  --clr-navy-mid:    oklch(35% 0.18 252);   /* mid navy — hero bg */
+  --clr-navy-soft:   oklch(42% 0.15 252);   /* softer navy — cards on dark */
+
+  /* Accent Blue */
+  --clr-blue:        oklch(57% 0.20 220);   /* sky blue — "MARKETPLACE" in logo */
+  --clr-blue-light:  oklch(70% 0.16 220);   /* lighter blue — hover states */
+  --clr-blue-dim:    oklch(57% 0.20 220 / 0.15); /* blue tint for backgrounds */
+
+  /* Energy Orange — from logo hexagon gradient */
+  --clr-orange:      oklch(62% 0.22 35);    /* vivid orange — CTAs, badges */
+  --clr-orange-deep: oklch(52% 0.20 35);    /* deeper orange — hover */
+  --clr-orange-dim:  oklch(62% 0.22 35 / 0.12);
+
+  /* Surfaces */
+  --clr-surface:     #ffffff;               /* True white for minimalist look */
+  --clr-surface-2:   oklch(98% 0.005 252);  /* subtle off-white */
+  --clr-surface-3:   oklch(95% 0.008 252);  /* borders, dividers */
+
+  /* Text */
+  --clr-text:        oklch(20% 0.02 252);   /* near-black, strong */
+  --clr-text-mid:    oklch(45% 0.04 252);   /* secondary text */
+  --clr-text-dim:    oklch(65% 0.03 252);   /* placeholders, captions */
+  --clr-text-invert: oklch(98% 0.005 252);  /* text on dark backgrounds */
+  --clr-text-invert-dim: oklch(85% 0.02 252); /* dim text on navy */
+
+  /* Status */
+  --clr-success:     oklch(58% 0.18 145);   /* certified green */
+  --clr-warning:     oklch(72% 0.18 80);    /* alert yellow */
+
+  /* -----------------------------------------------------------
+     TYPOGRAPHY
+  ----------------------------------------------------------- */
+  --font-display:  'Barlow Condensed', 'Impact', sans-serif; /* powerful headlines */
+  --font-body:     'Inter', system-ui, sans-serif;           /* precise body */
+  --font-mono:     'JetBrains Mono', 'Fira Code', monospace; /* specs/CA numbers */
+
+  /* Scale — modular 1.25 */
+  --text-xs:   0.75rem;   /* 12px — labels, captions */
+  --text-sm:   0.875rem;  /* 14px — secondary text */
+  --text-base: 1rem;      /* 16px — body */
+  --text-lg:   1.125rem;  /* 18px */
+  --text-xl:   1.25rem;   /* 20px */
+  --text-2xl:  1.5rem;    /* 24px */
+  --text-3xl:  2rem;      /* 32px */
+  --text-4xl:  2.5rem;    /* 40px */
+  --text-5xl:  3.5rem;    /* 56px */
+  --text-6xl:  5rem;      /* 80px — hero display */
+  --text-7xl:  7rem;      /* 112px — signature oversized */
+
+  --weight-normal:   400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+  --weight-black:    900;
+
+  --leading-tight:   1.1;
+  --leading-snug:    1.25;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.65;
+
+  --tracking-tight:  -0.03em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.05em;
+  --tracking-wider:  0.12em;
+
+  /* -----------------------------------------------------------
+     SPACING — 8pt base grid
+  ----------------------------------------------------------- */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-32: 128px;
+  --space-40: 160px;
+
+  /* -----------------------------------------------------------
+     LAYOUT
+  ----------------------------------------------------------- */
+  --container-max: 1240px;
+  --container-pad: clamp(20px, 5vw, 80px);
+  --grid-gap:      clamp(16px, 2.5vw, 40px);
+
+  /* -----------------------------------------------------------
+     BORDER RADIUS
+  ----------------------------------------------------------- */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-pill: 999px;
+
+  /* -----------------------------------------------------------
+     SHADOWS
+  ----------------------------------------------------------- */
+  --shadow-sm:  0 1px 3px oklch(18% 0.02 252 / 0.08);
+  --shadow-md:  0 4px 16px oklch(18% 0.02 252 / 0.10);
+  --shadow-lg:  0 12px 40px oklch(18% 0.02 252 / 0.14);
+  --shadow-xl:  0 24px 64px oklch(18% 0.02 252 / 0.20);
+
+  /* -----------------------------------------------------------
+     MOTION — ease-out-quart preferred
+  ----------------------------------------------------------- */
+  --ease-out:  cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-in:   cubic-bezier(0.5, 0, 0.75, 0);
+  --ease-circ: cubic-bezier(0, 0.55, 0.45, 1);
+
+  --dur-fast:   150ms;
+  --dur-normal: 280ms;
+  --dur-slow:   450ms;
+  --dur-xslow:  700ms;
+
+  /* -----------------------------------------------------------
+     Z-INDEX SCALE
+  ----------------------------------------------------------- */
+  --z-below:   -1;
+  --z-base:     0;
+  --z-raised:   10;
+  --z-float:    100;
+  --z-overlay:  200;
+  --z-modal:    300;
+  --z-nav:      400;
+  --z-toast:    500;
+}
+
+/* Dark surface context (used inside navy sections) */
+.dark-surface {
+  --clr-surface:   oklch(28% 0.17 252);
+  --clr-surface-2: oklch(35% 0.18 252);
+  --clr-text:      oklch(97% 0.008 252);
+  --clr-text-mid:  oklch(80% 0.05 252);
+  --clr-text-dim:  oklch(65% 0.06 252);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-fast:   0ms;
+    --dur-normal: 0ms;
+    --dur-slow:   0ms;
+    --dur-xslow:  0ms;
+  }
+}
