@@ -5,27 +5,28 @@
 /* Fab Button */
 .cart-fab {
   position: fixed;
-  top: 24px;
-  right: 24px;
-  width: 56px;
-  height: 56px;
+  top: calc(72px + var(--space-4)); /* 72px nav height + some spacing */
+  bottom: auto;
+  right: var(--space-4);
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background: var(--clr-orange);
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: var(--shadow-lg);
   cursor: pointer;
-  z-index: 90;
-  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s ease;
+  z-index: 40; /* Below nav overlay but above content */
+  transition: transform var(--dur-normal) var(--ease-out),
+              background var(--dur-normal) var(--ease-out),
+              box-shadow var(--dur-normal) var(--ease-out);
+  border: none;
+  outline: none;
 }
 
-.cart-fab:hover {
-  transform: scale(1.05);
-  background-color: #333;
-}
+
 
 .cart-fab:active {
   transform: scale(0.95);

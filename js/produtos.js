@@ -125,3 +125,31 @@
 
   applyFilters();
 })();
+
+  // Color Swatches interaction
+  document.querySelectorAll('.color-swatches').forEach(container => {
+    container.addEventListener('click', (e) => {
+      const swatch = e.target.closest('.color-swatch');
+      if (!swatch) return;
+      
+      e.preventDefault();
+      e.stopPropagation(); // Prevent the card from flipping
+
+      // Remove active class from siblings
+      const swatches = container.querySelectorAll('.color-swatch');
+      swatches.forEach(s => s.classList.remove('active'));
+      swatch.classList.add('active');
+
+      // Update image
+      const newImgSrc = swatch.dataset.imgSrc;
+      if (newImgSrc) {
+        const card = swatch.closest('.product-card');
+        if (card) {
+          const img = card.querySelector('.product-card__image img');
+          if (img) {
+            img.src = newImgSrc;
+          }
+        }
+      }
+    });
+  });

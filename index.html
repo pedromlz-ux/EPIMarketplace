@@ -8,33 +8,30 @@
   <!-- =============================================
        PRIMARY SEO — E-E-A-T + GEO (AI Overviews)
   ============================================= -->
-  <title>EPI Marketplace | Equipamentos de Proteção Individual Certificados</title>
-  <meta name="description"
-    content="EPI Marketplace: Distribuidora de EPIs certificados (CA/MTE) para NR-10 e NR-35. Cintos, luvas isolantes, capacetes Classe B e ferramentas de linha viva.">
-  <meta name="keywords"
-    content="EPI certificado, equipamento proteção individual, NR-10, NR-35, cinto paraquedista, luva isolante, capacete classe B, ferramentas linha viva, trabalho em altura, EPI marketplace">
+  <title>EPI Marketplace | Distribuidora de EPIs com CA (EPI Market)</title>
+  <meta name="description" content="EPI Marketplace (EPI Market): Distribuidora de Equipamentos de Proteção Individual com CA válido. Especialistas em NR-10 e NR-35: cintos, ferramentas de linha viva e luvas isolantes.">
+  <meta name="keywords" content="EPI Market, EPI Marketplace, distribuidora de EPI, distribuidora de EPIs, EPI com CA, mercado de EPI, EPI para eletricista, equipamentos de segurança do trabalho, ferramentas linha viva, NR-10, NR-35, comprar EPI atacado">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="EPI Marketplace">
   <link rel="canonical" href="https://epimarketplace.com/">
 
   <!-- Open Graph (social sharing) -->
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="EPI Marketplace">
+  <meta property="og:site_name" content="EPI Marketplace (EPI Market)">
   <meta property="og:url" content="https://epimarketplace.com/">
-  <meta property="og:title" content="EPI Marketplace | Equipamentos de Proteção Individual Certificados">
-  <meta property="og:description"
-    content="Mais de 200 EPIs certificados para eletricistas e trabalhadores em altura. Entrega para todo o Brasil.">
+  <meta property="og:title" content="EPI Marketplace | Distribuidora de EPIs com CA (EPI Market)">
+  <meta property="og:description" content="EPI Marketplace (EPI Market): Distribuidora de Equipamentos de Proteção Individual com CA válido. Cintos paraquedistas, ferramentas de linha viva e luvas isolantes.">
   <meta property="og:image" content="https://epimarketplace.com/img/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="EPI Marketplace — Equipamentos de Proteção Individual Certificados">
+  <meta property="og:image:alt" content="EPI Marketplace — Distribuidora de Equipamentos de Proteção Individual Certificados">
   <meta property="og:locale" content="pt_BR">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://epimarketplace.com/">
-  <meta name="twitter:title" content="EPI Marketplace | Equipamentos de Proteção Individual Certificados">
-  <meta name="twitter:description" content="EPIs certificados NR-10 e NR-35. Entrega nacional.">
+  <meta name="twitter:title" content="EPI Marketplace | Distribuidora de EPIs Certificados (EPI Market)">
+  <meta name="twitter:description" content="EPIs certificados NR-10 e NR-35 com CA válido. Distribuidora especializada com entrega nacional.">
   <meta name="twitter:image" content="https://epimarketplace.com/img/og-image.jpg">
 
   <!-- =============================================
@@ -48,7 +45,14 @@
         "@type": "Store",
         "@id": "https://epimarketplace.com/#store",
         "name": "EPI Marketplace",
-        "description": "Loja especializada em Equipamentos de Proteção Individual certificados para eletricistas e profissionais de segurança do trabalho.",
+        "alternateName": [
+          "EPI Market",
+          "EPI Market Brasil",
+          "Mercado EPI",
+          "EPI Marketplace Distribuidora",
+          "Distribuidora EPI Marketplace"
+        ],
+        "description": "Distribuidora especializada em Equipamentos de Proteção Individual certificados com CA para eletricistas, trabalho em altura e profissionais de segurança do trabalho.",
         "url": "https://epimarketplace.com",
         "logo": {
           "@type": "ImageObject",
@@ -92,10 +96,12 @@
         "knowsAbout": [
           "NR-10", "NR-35", "NR-6",
           "Equipamentos de Proteção Individual",
+          "Distribuidora de EPIs",
           "Ferramentas para Linha Viva",
           "Cinto Paraquedista",
           "Trabalho em Altura",
-          "Segurança do Trabalho"
+          "Segurança do Trabalho",
+          "EPI para Eletricista"
         ]
       },
       {
@@ -103,7 +109,8 @@
         "@id": "https://epimarketplace.com/#website",
         "url": "https://epimarketplace.com",
         "name": "EPI Marketplace",
-        "description": "Loja de EPIs certificados para profissionais de segurança do trabalho",
+        "alternateName": ["EPI Market", "EPI Market Brasil"],
+        "description": "Distribuidora e marketplace de EPIs certificados para profissionais de segurança do trabalho",
         "inLanguage": "pt-BR",
         "potentialAction": {
           "@type": "SearchAction",
@@ -166,25 +173,31 @@
   <!-- =============================================
        PERFORMANCE — Critical resource hints
   ============================================= -->
-  <link rel="preload" as="style" href="css/tokens.css">
-  <link rel="preload" as="style" href="css/global.css">
-  <link rel="preload" fetchpriority="high" as="image" href="img/hero-bg.webp" type="image/webp">
+  <!-- Preconnect para domínios críticos (deve vir antes do dns-prefetch) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <!-- DNS Prefetch para recursos secundários -->
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://knmkacjuyjgxiwdjpggz.supabase.co">
 
+  <!-- CSS crítico — carregado uma única vez de forma não-bloqueante -->
+  <link rel="preload" fetchpriority="high" as="image" href="img/hero-bg.webp" type="image/webp">
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/animations.css">
+  <!-- Animações: não crítico — carrega depois do paint inicial -->
+  <link rel="stylesheet" href="css/animations.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="css/animations.css"></noscript>
+
+  <!-- Google Fonts — Non-blocking load -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
 
   <link rel="icon" type="image/png" href="favicon.png?v=3">
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="theme-color" content="#1a2b5c">
-
-  <!-- Google Fonts — Non-blocking load -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
 </head>
 
 <body>
@@ -211,10 +224,10 @@
         </a>
 
         <div class="navbar__links" role="menubar">
-          <a href="produtos.html" role="menuitem">Produtos</a>
-          <a href="sobre.html" role="menuitem">Sobre</a>
-          <a href="blog.html" role="menuitem">Blog</a>
-          <a href="contato.html" role="menuitem">Contato</a>
+          <a href="/produtos" role="menuitem">Produtos</a>
+          <a href="/sobre" role="menuitem">Sobre</a>
+          <a href="/blog" role="menuitem">Blog</a>
+          <a href="/contato" role="menuitem">Contato</a>
         </div>
 
         <a href="https://www.mercadolivre.com.br/pagina/epimarketplace" target="_blank" rel="noopener noreferrer"
@@ -230,10 +243,10 @@
       </div>
 
       <div class="navbar__mobile" id="mobile-menu" role="menu" aria-hidden="true">
-        <a href="produtos.html" role="menuitem">Produtos</a>
-        <a href="sobre.html" role="menuitem">Sobre</a>
-        <a href="blog.html" role="menuitem">Blog</a>
-        <a href="contato.html" role="menuitem">Contato</a>
+        <a href="/produtos" role="menuitem">Produtos</a>
+        <a href="/sobre" role="menuitem">Sobre</a>
+        <a href="/blog" role="menuitem">Blog</a>
+        <a href="/contato" role="menuitem">Contato</a>
         <a href="https://www.mercadolivre.com.br/pagina/epimarketplace" target="_blank" rel="noopener noreferrer"
           role="menuitem" class="mobile-ml-link">Ver loja no Mercado Livre ↗</a>
       </div>
@@ -253,13 +266,13 @@
       <div class="container">
         <div class="hero-animated__inner">
           <div class="hero-animated__top-badge">
-            <a href="produtos.html" class="hero-animated__badge-btn">
+            <a href="/produtos" class="hero-animated__badge-btn">
               Veja nossos produtos certificados <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
           </div>
 
           <h1 id="hero-headline" class="hero-animated__headline">
-            <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0;">Equipamentos de Proteção Individual e Coletiva - EPI Marketplace</span>
+            <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0;">EPI Marketplace (EPI Market) — Distribuidora de Equipamentos de Proteção Individual e Coletiva</span>
             <span aria-hidden="true">
               <span class="hero-animated__static">Equipamentos de Proteção</span>
               <span class="hero-animated__dynamic-wrapper" aria-live="polite">
@@ -270,7 +283,7 @@
           </h1>
 
           <p class="hero-animated__desc">
-            Protegemos quem mantém a energia em movimento, desenvolvendo equipamentos de alta performance para trabalhos em altura e redes elétricas de alta e baixa tensão.
+            Sua distribuidora especializada em segurança: protegemos quem mantém a energia em movimento com equipamentos certificados com CA para trabalhos em altura (NR-35) e redes elétricas (NR-10).
           </p>
 
           <div class="hero-animated__actions">
@@ -279,7 +292,7 @@
                Falar no WhatsApp
                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             </a>
-            <a href="produtos.html" class="btn btn--primary btn--lg">
+            <a href="/produtos" class="btn btn--primary btn--lg">
                Catálogo Completo
                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
@@ -301,7 +314,7 @@
         <div class="categories__grid" role="list">
 
           <!-- Card 1: Trabalho em Altura (Navy Accent Card) -->
-          <a href="produtos.html?categoria=altura" class="cat-style-card cat-style-card--navy reveal" role="listitem"
+          <a href="/produtos?categoria=altura" class="cat-style-card cat-style-card--navy reveal" role="listitem"
             aria-label="Ver produtos para trabalho em altura">
             <div class="cat-style-card__header">
               <h3 class="cat-style-card__title">Trabalho em Altura</h3>
@@ -309,13 +322,16 @@
             </div>
             <p class="cat-style-card__desc">Cintos paraquedistas, talabartes Y, trava-quedas e linhas de vida certificados para a norma NR-35.</p>
             <div class="cat-style-card__img-frame">
-              <img src="img/cat-altura.jpg" alt="Trabalho em Altura" loading="lazy" width="260" height="150">
+              <picture>
+                <source srcset="img/cat-altura.webp" type="image/webp">
+                <img src="img/cat-altura.jpg" alt="Trabalho em Altura" loading="lazy" width="260" height="150" decoding="async">
+              </picture>
             </div>
             <div class="cat-style-card__btn">VEJA MAIS</div>
           </a>
 
           <!-- Card 2: Linha Viva (Navy Accent Card) -->
-          <a href="produtos.html?categoria=linha-viva" class="cat-style-card cat-style-card--navy reveal reveal--delay-1" role="listitem"
+          <a href="/produtos?categoria=linha-viva" class="cat-style-card cat-style-card--navy reveal reveal--delay-1" role="listitem"
             aria-label="Ver produtos para linha viva">
             <div class="cat-style-card__header">
               <h3 class="cat-style-card__title">Linha Viva</h3>
@@ -323,13 +339,16 @@
             </div>
             <p class="cat-style-card__desc">Ferramentas isoladas 1.000V de alta performance, alicates e luvas para eletricistas. NR-10.</p>
             <div class="cat-style-card__img-frame">
-              <img src="img/cat-linha-viva.jpg" alt="Linha Viva" loading="lazy" width="260" height="150">
+              <picture>
+                <source srcset="img/cat-linha-viva.webp" type="image/webp">
+                <img src="img/cat-linha-viva.jpg" alt="Linha Viva" loading="lazy" width="260" height="150" decoding="async">
+              </picture>
             </div>
             <div class="cat-style-card__btn">VEJA MAIS</div>
           </a>
 
           <!-- Card 3: EPIs Gerais (Navy Accent Card) -->
-          <a href="produtos.html?categoria=epi" class="cat-style-card cat-style-card--navy reveal reveal--delay-2" role="listitem"
+          <a href="/produtos?categoria=epi" class="cat-style-card cat-style-card--navy reveal reveal--delay-2" role="listitem"
             aria-label="Ver EPIs gerais">
             <div class="cat-style-card__header">
               <h3 class="cat-style-card__title">EPIs Gerais</h3>
@@ -337,13 +356,16 @@
             </div>
             <p class="cat-style-card__desc">Capacetes Classe B eletricista, óculos de proteção, calçados dielétricos e vestimentas NR-6.</p>
             <div class="cat-style-card__img-frame">
-              <img src="img/cat-epi.jpg" alt="EPIs Gerais" loading="lazy" width="260" height="150">
+              <picture>
+                <source srcset="img/cat-epi.webp" type="image/webp">
+                <img src="img/cat-epi.jpg" alt="EPIs Gerais" loading="lazy" width="260" height="150" decoding="async">
+              </picture>
             </div>
             <div class="cat-style-card__btn">VEJA MAIS</div>
           </a>
 
           <!-- Card 4: Aterramento (Navy Accent Card) -->
-          <a href="produtos.html?categoria=aterramento" class="cat-style-card cat-style-card--navy reveal reveal--delay-3" role="listitem"
+          <a href="/produtos?categoria=aterramento" class="cat-style-card cat-style-card--navy reveal reveal--delay-3" role="listitem"
             aria-label="Ver produtos de aterramento">
             <div class="cat-style-card__header">
               <h3 class="cat-style-card__title">Aterramento</h3>
@@ -351,7 +373,10 @@
             </div>
             <p class="cat-style-card__desc">Conjuntos de aterramento temporário em cobre estanhado, grampos e cabos de seções flexíveis.</p>
             <div class="cat-style-card__img-frame">
-              <img src="img/cat-aterramento.jpg" alt="Aterramento" loading="lazy" width="260" height="150">
+              <picture>
+                <source srcset="img/cat-aterramento.webp" type="image/webp">
+                <img src="img/cat-aterramento.jpg" alt="Aterramento" loading="lazy" width="260" height="150" decoding="async">
+              </picture>
             </div>
             <div class="cat-style-card__btn">VEJA MAIS</div>
           </a>
@@ -359,103 +384,12 @@
         </div>
 
         <div style="text-align: center; margin-top: var(--space-12);">
-          <a href="produtos.html" class="btn btn--outline-dark btn--lg" id="all-cats-cta">
+          <a href="/produtos" class="btn btn--outline-dark btn--lg" id="all-cats-cta">
             Ver todas Categorias
           </a>
         </div>
       </div>
     </section>
-
-    <section class="section feature-section" aria-labelledby="feature-title">
-      <div class="container">
-        <div class="feature__layout">
-          <div class="featured__image-col reveal reveal--left">
-            <div class="feature-flip-card">
-              <div class="feature-flip-card__inner">
-                <div class="feature-flip-card__front featured__image-frame">
-                  <img src="img/cat-altura.jpg"
-                    alt="Cinto paraquedista classe A certificado para trabalho em altura" loading="lazy" width="300" height="300">
-                </div>
-                <div class="feature-flip-card__back feature__spec-card" aria-label="Especificações do cinto paraquedista">
-                  <h3 style="color: var(--clr-text-invert); margin-bottom: 16px;">Especificações</h3>
-                  <div class="feature__spec-row">
-                    <span class="feature__spec-label">Tamanhos</span>
-                    <span class="feature__spec-val">P · M · G · GG</span>
-                  </div>
-                  <div class="feature__spec-row">
-                    <span class="feature__spec-label">Norma</span>
-                    <span class="feature__spec-val">ABNT NBR 15834</span>
-                  </div>
-                  <div class="feature__spec-row">
-                    <span class="feature__spec-label">Carga mín.</span>
-                    <span class="feature__spec-val">15 kN</span>
-                  </div>
-                  <div class="feature__spec-row">
-                    <span class="feature__spec-label">Material</span>
-                    <span class="feature__spec-val">Poliéster / Aço Inox</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="feature__content reveal reveal--right">
-            <div class="eyebrow eyebrow--orange">Destaque</div>
-            <h2 id="feature-title" class="section-title">Cinto Paraquedista<br>Classe A</h2>
-            <p class="section-desc">
-              O cinto paraquedista classe A é o EPI obrigatório para trabalho em altura acima de 2 metros conforme
-              NR-35.
-              Disponível nos tamanhos P, M, G e GG — com suporte de carga de ruptura mínimo de 15 kN.
-            </p>
-
-            <ul class="feature__checklist" aria-label="Características do produto">
-              <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                  aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                CA aprovado pelo Ministério do Trabalho
-              </li>
-              <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                  aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                Fivela de ajuste rápido em aço forjado
-              </li>
-              <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                  aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                Costura dupla de alta resistência
-              </li>
-              <li>
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
-                  aria-hidden="true">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>
-                Compatível com talabarte Y e trava-quedas
-              </li>
-            </ul>
-
-            <div class="feature__price-row">
-              <div class="feature__price">
-                <span class="feature__price-from">a partir de</span>
-                R$ 249,90
-              </div>
-              <div class="feature__actions">
-                <a href="produtos.html?categoria=altura" class="btn btn--outline-dark" id="feature-details">Ver
-                  opções</a>
-                <a href="https://www.mercadolivre.com.br/pagina/epimarketplace" target="_blank"
-                  rel="noopener noreferrer" class="btn btn--primary" id="feature-buy">Comprar no ML</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="section why-section" aria-labelledby="why-title">
       <div class="container">
         <header class="section-header--center">
@@ -536,7 +470,7 @@
               <div class="testimonial-card">
                 <p class="testimonial-card__text">"O cinto de segurança e os talabartes superaram as expectativas em termos de conforto e segurança nas redes de alta tensão."</p>
                 <div class="testimonial-card__user">
-                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&fit=crop&q=80" alt="Ana Souza" width="40" height="40" loading="lazy">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&fit=crop&q=80" alt="Ana Souza" width="40" height="40" loading="lazy" decoding="async">
                   <div class="testimonial-card__meta">
                     <span class="testimonial-card__name">Ana Souza</span>
                     <span class="testimonial-card__role">Gestora de Operações</span>
@@ -546,7 +480,7 @@
               <div class="testimonial-card">
                 <p class="testimonial-card__text">"Excelente qualidade no acabamento dos alicates isolados. O processo de compra no Mercado Livre foi super prático."</p>
                 <div class="testimonial-card__user">
-                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&fit=crop&q=80" alt="Carlos Eduardo" width="40" height="40" loading="lazy">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&fit=crop&q=80" alt="Carlos Eduardo" width="40" height="40" loading="lazy" decoding="async">
                   <div class="testimonial-card__meta">
                     <span class="testimonial-card__name">Carlos Eduardo</span>
                     <span class="testimonial-card__role">Técnico em Eletricidade</span>
@@ -556,7 +490,7 @@
               <div class="testimonial-card">
                 <p class="testimonial-card__text">"Os protetores faciais e óculos de proteção têm excelente visibilidade e resistência ao arco elétrico. Recomendo muito!"</p>
                 <div class="testimonial-card__user">
-                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&fit=crop&q=80" alt="Mariana Reis" width="40" height="40" loading="lazy">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&fit=crop&q=80" alt="Mariana Reis" width="40" height="40" loading="lazy" decoding="async">
                   <div class="testimonial-card__meta">
                     <span class="testimonial-card__name">Mariana Reis</span>
                     <span class="testimonial-card__role">Supervisora de SST</span>
@@ -567,7 +501,7 @@
               <div class="testimonial-card">
                 <p class="testimonial-card__text">"O cinto de segurança e os talabartes superaram as expectativas em termos de conforto e segurança nas redes de alta tensão."</p>
                 <div class="testimonial-card__user">
-                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&fit=crop&q=80" alt="Ana Souza" width="40" height="40" loading="lazy">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&fit=crop&q=80" alt="Ana Souza" width="40" height="40" loading="lazy" decoding="async">
                   <div class="testimonial-card__meta">
                     <span class="testimonial-card__name">Ana Souza</span>
                     <span class="testimonial-card__role">Gestora de Operações</span>
@@ -577,7 +511,7 @@
               <div class="testimonial-card">
                 <p class="testimonial-card__text">"Excelente qualidade no acabamento dos alicates isolados. O processo de compra no Mercado Livre foi super prático."</p>
                 <div class="testimonial-card__user">
-                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&fit=crop&q=80" alt="Carlos Eduardo" width="40" height="40" loading="lazy">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&fit=crop&q=80" alt="Carlos Eduardo" width="40" height="40" loading="lazy" decoding="async">
                   <div class="testimonial-card__meta">
                     <span class="testimonial-card__name">Carlos Eduardo</span>
                     <span class="testimonial-card__role">Técnico em Eletricidade</span>
@@ -587,7 +521,7 @@
               <div class="testimonial-card">
                 <p class="testimonial-card__text">"Os protetores faciais e óculos de proteção têm excelente visibilidade e resistência ao arco elétrico. Recomendo muito!"</p>
                 <div class="testimonial-card__user">
-                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&fit=crop&q=80" alt="Mariana Reis" width="40" height="40" loading="lazy">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&fit=crop&q=80" alt="Mariana Reis" width="40" height="40" loading="lazy" decoding="async">
                   <div class="testimonial-card__meta">
                     <span class="testimonial-card__name">Mariana Reis</span>
                     <span class="testimonial-card__role">Supervisora de SST</span>
@@ -604,7 +538,7 @@
               <div class="testimonial-card">
                 <p class="testimonial-card__text">"Atendimento fantástico no orçamento B2B. As fichas técnicas e CAs dos produtos facilitaram nossa aprovação interna."</p>
                 <div class="testimonial-card__user">
-                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&fit=crop&q=80" alt="Rodrigo Neves" width="40" height="40" loading="lazy">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&fit=crop&q=80" alt="Rodrigo Neves" width="40" height="40" loading="lazy" decoding="async">
                   <div class="testimonial-card__meta">
                     <span class="testimonial-card__name">Rodrigo Neves</span>
                     <span class="testimonial-card__role">Diretor Executivo</span>
@@ -614,7 +548,7 @@
               <div class="testimonial-card">
                 <p class="testimonial-card__text">"Os mantos isolantes e ferramentas NR-10 nos deram total tranquilidade para a manutenção preventiva nas subestações."</p>
                 <div class="testimonial-card__user">
-                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&fit=crop&q=80" alt="Fernanda Lima" width="40" height="40" loading="lazy">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&fit=crop&q=80" alt="Fernanda Lima" width="40" height="40" loading="lazy" decoding="async">
                   <div class="testimonial-card__meta">
                     <span class="testimonial-card__name">Fernanda Lima</span>
                     <span class="testimonial-card__role">Coordenadora de Manutenção</span>
@@ -624,7 +558,7 @@
               <div class="testimonial-card">
                 <p class="testimonial-card__text">"Parceria de longa data. Agilidade na entrega e compromisso constante com as normas regulamentadoras do MTE."</p>
                 <div class="testimonial-card__user">
-                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&fit=crop&q=80" alt="Patricia Santos" width="40" height="40" loading="lazy">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&fit=crop&q=80" alt="Patricia Santos" width="40" height="40" loading="lazy" decoding="async">
                   <div class="testimonial-card__meta">
                     <span class="testimonial-card__name">Patricia Santos</span>
                     <span class="testimonial-card__role">Gerente de Suprimentos</span>
@@ -635,7 +569,7 @@
               <div class="testimonial-card">
                 <p class="testimonial-card__text">"Atendimento fantástico no orçamento B2B. As fichas técnicas e CAs dos produtos facilitaram nossa aprovação interna."</p>
                 <div class="testimonial-card__user">
-                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&fit=crop&q=80" alt="Rodrigo Neves" width="40" height="40" loading="lazy">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&fit=crop&q=80" alt="Rodrigo Neves" width="40" height="40" loading="lazy" decoding="async">
                   <div class="testimonial-card__meta">
                     <span class="testimonial-card__name">Rodrigo Neves</span>
                     <span class="testimonial-card__role">Diretor Executivo</span>
@@ -645,7 +579,7 @@
               <div class="testimonial-card">
                 <p class="testimonial-card__text">"Os mantos isolantes e ferramentas NR-10 nos deram total tranquilidade para a manutenção preventiva nas subestações."</p>
                 <div class="testimonial-card__user">
-                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&fit=crop&q=80" alt="Fernanda Lima" width="40" height="40" loading="lazy">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=80&fit=crop&q=80" alt="Fernanda Lima" width="40" height="40" loading="lazy" decoding="async">
                   <div class="testimonial-card__meta">
                     <span class="testimonial-card__name">Fernanda Lima</span>
                     <span class="testimonial-card__role">Coordenadora de Manutenção</span>
@@ -655,7 +589,7 @@
               <div class="testimonial-card">
                 <p class="testimonial-card__text">"Parceria de longa data. Agilidade na entrega e compromisso constante com as normas regulamentadoras do MTE."</p>
                 <div class="testimonial-card__user">
-                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&fit=crop&q=80" alt="Patricia Santos" width="40" height="40" loading="lazy">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&fit=crop&q=80" alt="Patricia Santos" width="40" height="40" loading="lazy" decoding="async">
                   <div class="testimonial-card__meta">
                     <span class="testimonial-card__name">Patricia Santos</span>
                     <span class="testimonial-card__role">Gerente de Suprimentos</span>
@@ -672,7 +606,7 @@
               <div class="testimonial-card">
                 <p class="testimonial-card__text">"Os EPIs de sinalização e proteção elétrica são duráveis e extremamente confiáveis. Nosso time de campo elogia bastante."</p>
                 <div class="testimonial-card__user">
-                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&fit=crop&q=80" alt="Eduardo Mendes" width="40" height="40" loading="lazy">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&fit=crop&q=80" alt="Eduardo Mendes" width="40" height="40" loading="lazy" decoding="async">
                   <div class="testimonial-card__meta">
                     <span class="testimonial-card__name">Eduardo Mendes</span>
                     <span class="testimonial-card__role">Engenheiro Eletricista</span>
@@ -682,7 +616,7 @@
               <div class="testimonial-card">
                 <p class="testimonial-card__text">"Excelente pós-venda. Tivemos uma dúvida com a certificação de um lote de cintos e o suporte respondeu em minutos."</p>
                 <div class="testimonial-card__user">
-                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&fit=crop&q=80" alt="Letícia Santos" width="40" height="40" loading="lazy">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&fit=crop&q=80" alt="Letícia Santos" width="40" height="40" loading="lazy" decoding="async">
                   <div class="testimonial-card__meta">
                     <span class="testimonial-card__name">Letícia Santos</span>
                     <span class="testimonial-card__role">Engenheira de Segurança</span>
@@ -692,7 +626,7 @@
               <div class="testimonial-card">
                 <p class="testimonial-card__text">"Compramos mensalmente os kits de aterramento e varas de manobra. Preço competitivo e entrega rápida no canteiro de obras."</p>
                 <div class="testimonial-card__user">
-                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=80&fit=crop&q=80" alt="Roberto Silveira" width="40" height="40" loading="lazy">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=80&fit=crop&q=80" alt="Roberto Silveira" width="40" height="40" loading="lazy" decoding="async">
                   <div class="testimonial-card__meta">
                     <span class="testimonial-card__name">Roberto Silveira</span>
                     <span class="testimonial-card__role">Diretor de Infraestrutura</span>
@@ -703,7 +637,7 @@
               <div class="testimonial-card">
                 <p class="testimonial-card__text">"Os EPIs de sinalização e proteção elétrica são duráveis e extremamente confiáveis. Nosso time de campo elogia bastante."</p>
                 <div class="testimonial-card__user">
-                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&fit=crop&q=80" alt="Eduardo Mendes" width="40" height="40" loading="lazy">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&fit=crop&q=80" alt="Eduardo Mendes" width="40" height="40" loading="lazy" decoding="async">
                   <div class="testimonial-card__meta">
                     <span class="testimonial-card__name">Eduardo Mendes</span>
                     <span class="testimonial-card__role">Engenheiro Eletricista</span>
@@ -713,7 +647,7 @@
               <div class="testimonial-card">
                 <p class="testimonial-card__text">"Excelente pós-venda. Tivemos uma dúvida com a certificação de um lote de cintos e o suporte respondeu em minutos."</p>
                 <div class="testimonial-card__user">
-                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&fit=crop&q=80" alt="Letícia Santos" width="40" height="40" loading="lazy">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&fit=crop&q=80" alt="Letícia Santos" width="40" height="40" loading="lazy" decoding="async">
                   <div class="testimonial-card__meta">
                     <span class="testimonial-card__name">Letícia Santos</span>
                     <span class="testimonial-card__role">Engenheira de Segurança</span>
@@ -723,7 +657,7 @@
               <div class="testimonial-card">
                 <p class="testimonial-card__text">"Compramos mensalmente os kits de aterramento e varas de manobra. Preço competitivo e entrega rápida no canteiro de obras."</p>
                 <div class="testimonial-card__user">
-                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=80&fit=crop&q=80" alt="Roberto Silveira" width="40" height="40" loading="lazy">
+                  <img class="testimonial-card__avatar" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=80&fit=crop&q=80" alt="Roberto Silveira" width="40" height="40" loading="lazy" decoding="async">
                   <div class="testimonial-card__meta">
                     <span class="testimonial-card__name">Roberto Silveira</span>
                     <span class="testimonial-card__role">Diretor de Infraestrutura</span>
@@ -841,10 +775,10 @@
         <div class="blog-grid" role="list">
 
           <article class="blog-card reveal" role="listitem">
-            <a href="blog/guia-pratico-como-se-proteger-no-trabalho-utilizando-epi-de-forma-eficiente" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
+            <a href="/blog/guia-pratico-como-se-proteger-no-trabalho-utilizando-epi-de-forma-eficiente" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
               <div class="blog-card__img-wrap">
                 <img src="img/blog/guia-pratico-como-se-proteger-no-trabalho-utilizando-epi-de-forma-eficiente-img1.jpg" alt="Trabalhador profissional utilizando capacete, óculos de proteção e luvas" loading="lazy"
-                  width="300" height="300">
+                  width="300" height="300" decoding="async">
               </div>
             </a>
             <div class="blog-card__body">
@@ -853,10 +787,10 @@
                 <time datetime="2025-07-01">1 Jul 2025</time>
               </div>
               <h3 class="blog-card__title">
-                <a href="blog/guia-pratico-como-se-proteger-no-trabalho-utilizando-epi-de-forma-eficiente">Como se proteger no trabalho utilizando EPI de forma eficiente</a>
+                <a href="/blog/guia-pratico-como-se-proteger-no-trabalho-utilizando-epi-de-forma-eficiente">Como se proteger no trabalho utilizando EPI de forma eficiente</a>
               </h3>
               <p class="blog-card__excerpt">Guia prático para garantir o uso correto, treinamento adequado e conservação de Equipamentos de Proteção Individual.</p>
-              <a href="blog/guia-pratico-como-se-proteger-no-trabalho-utilizando-epi-de-forma-eficiente" class="blog-card__btn">
+              <a href="/blog/guia-pratico-como-se-proteger-no-trabalho-utilizando-epi-de-forma-eficiente" class="blog-card__btn">
                 Ler mais
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
@@ -864,10 +798,10 @@
           </article>
 
           <article class="blog-card reveal reveal--delay-1" role="listitem">
-            <a href="blog/nr-10-nr-35-guia-completo-sobre-as-normas-e-epis-necessarios" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
+            <a href="/blog/nr-10-nr-35-guia-completo-sobre-as-normas-e-epis-necessarios" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
               <div class="blog-card__img-wrap">
                 <img src="img/blog/nr10-nr35-img1.jpg" alt="Trabalhador com EPIs de proteção em altura e eletricidade" loading="lazy"
-                  width="300" height="300">
+                  width="300" height="300" decoding="async">
               </div>
             </a>
             <div class="blog-card__body">
@@ -876,10 +810,10 @@
                 <time datetime="2025-06-15">15 Jun 2025</time>
               </div>
               <h3 class="blog-card__title">
-                <a href="blog/nr-10-nr-35-guia-completo-sobre-as-normas-e-epis-necessarios">NR-10 e NR-35: Guia Completo sobre Normas e EPIs Necessários</a>
+                <a href="/blog/nr-10-nr-35-guia-completo-sobre-as-normas-e-epis-necessarios">NR-10 e NR-35: Guia Completo sobre Normas e EPIs Necessários</a>
               </h3>
               <p class="blog-card__excerpt">As exigências e especificações das normas de eletricidade e trabalho em altura e quais EPIs são obrigatórios.</p>
-              <a href="blog/nr-10-nr-35-guia-completo-sobre-as-normas-e-epis-necessarios" class="blog-card__btn">
+              <a href="/blog/nr-10-nr-35-guia-completo-sobre-as-normas-e-epis-necessarios" class="blog-card__btn">
                 Ler mais
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
@@ -887,10 +821,10 @@
           </article>
 
           <article class="blog-card reveal reveal--delay-2" role="listitem">
-            <a href="blog/ca-de-epi-como-verificar-a-validade-e-por-que-ele-e-essencial-para-a-seguranca" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
+            <a href="/blog/ca-de-epi-como-verificar-a-validade-e-por-que-ele-e-essencial-para-a-seguranca" class="blog-card__img-link" tabindex="-1" aria-hidden="true">
               <div class="blog-card__img-wrap">
                 <img src="img/blog/ca-de-epi-como-verificar-a-validade-e-por-que-ele-e-essencial-para-a-seguranca-img1.jpg" alt="Verificação do selo de CA de EPI em luva industrial"
-                  loading="lazy" width="300" height="300">
+                  loading="lazy" width="300" height="300" decoding="async">
               </div>
             </a>
             <div class="blog-card__body">
@@ -899,10 +833,10 @@
                 <time datetime="2025-05-20">20 Mai 2025</time>
               </div>
               <h3 class="blog-card__title">
-                <a href="blog/ca-de-epi-como-verificar-a-validade-e-por-que-ele-e-essencial-para-a-seguranca">CA de EPI: como verificar a validade e importância para a segurança</a>
+                <a href="/blog/ca-de-epi-como-verificar-a-validade-e-por-que-ele-e-essencial-para-a-seguranca">CA de EPI: como verificar a validade e importância para a segurança</a>
               </h3>
               <p class="blog-card__excerpt">Saiba como consultar o Certificado de Aprovação de um EPI no sistema do MTE e os riscos de comprar equipamentos sem CA.</p>
-              <a href="blog/ca-de-epi-como-verificar-a-validade-e-por-que-ele-e-essencial-para-a-seguranca" class="blog-card__btn">
+              <a href="/blog/ca-de-epi-como-verificar-a-validade-e-por-que-ele-e-essencial-para-a-seguranca" class="blog-card__btn">
                 Ler mais
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
               </a>
@@ -912,7 +846,7 @@
         </div>
 
         <div class="blog-load-more" style="margin-top: var(--space-10);">
-          <a href="blog.html" class="btn-ver-mais">
+          <a href="/blog" class="btn-ver-mais">
             Acessar o Blog Completo
             <svg class="btn-ver-mais__icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
@@ -980,20 +914,20 @@
         <div>
           <div class="footer__col-title">Categorias</div>
           <nav class="footer__col-links" aria-label="Categorias de produtos">
-            <a href="produtos.html?categoria=altura">Trabalho em Altura</a>
-            <a href="produtos.html?categoria=linha-viva">Linha Viva</a>
-            <a href="produtos.html?categoria=epi">EPIs Gerais</a>
-            <a href="produtos.html?categoria=aterramento">Aterramento</a>
-            <a href="produtos.html?categoria=sinalizacao">Sinalização</a>
+            <a href="/produtos?categoria=altura">Trabalho em Altura</a>
+            <a href="/produtos?categoria=linha-viva">Linha Viva</a>
+            <a href="/produtos?categoria=epi">EPIs Gerais</a>
+            <a href="/produtos?categoria=aterramento">Aterramento</a>
+            <a href="/produtos?categoria=sinalizacao">Sinalização</a>
           </nav>
         </div>
         <div>
           <div class="footer__col-title">Empresa</div>
           <nav class="footer__col-links" aria-label="Informações da empresa">
-            <a href="sobre.html">Sobre nós</a>
-            <a href="blog.html">Blog</a>
-            <a href="contato.html">Contato</a>
-            <a href="produtos.html">Ver Produtos</a>
+            <a href="/sobre">Sobre nós</a>
+            <a href="/blog">Blog</a>
+            <a href="/contato">Contato</a>
+            <a href="/produtos">Ver Produtos</a>
           </nav>
         </div>
         <div>
@@ -1002,7 +936,7 @@
             <a href="https://www.mercadolivre.com.br/pagina/epimarketplace" target="_blank"
               rel="noopener noreferrer">Mercado Livre</a>
             <a href="https://wa.me/5511941493029" target="_blank" rel="noopener noreferrer">WhatsApp B2B</a>
-            <a href="contato.html">Orçamento por E-mail</a>
+            <a href="/contato">Orçamento por E-mail</a>
           </nav>
         </div>
       </div>
@@ -1018,8 +952,8 @@
           </span>
         </p>
         <nav class="footer__bottom-links" aria-label="Links legais">
-          <a href="privacidade.html">Privacidade</a>
-          <a href="termos.html">Termos de Uso</a>
+          <a href="/privacidade">Privacidade</a>
+          <a href="/termos">Termos de Uso</a>
         </nav>
       </div>
     </div>
@@ -1044,16 +978,17 @@
     <div class="lightbox__backdrop"></div>
     <div class="lightbox__content">
       <button class="lightbox__close" aria-label="Fechar">&times;</button>
-      <img id="lightbox-img" src="" alt="">
+      <img id="lightbox-img" src="" alt="" loading="lazy" decoding="async">
     </div>
   </div>
-  <!-- Google Analytics 4 (Defer Load) -->
+  <!-- Google Analytics 4 — async script PRIMEIRO, depois init inline -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QMPL1EQMW0"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-QMPL1EQMW0');
+    gtag('config', 'G-QMPL1EQMW0', { send_page_view: true });
   </script>
-</body>
+
+  </body>
 </html>

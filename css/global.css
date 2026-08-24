@@ -3,8 +3,7 @@
    Resets, base, layout utilities, shared components
    ============================================================ */
 
-/* Google Fonts carregadas via <link> não-bloqueante no HTML */
-@import url('tokens.css');
+/* tokens.css carregado via <link rel="stylesheet"> no HTML — não importar aqui para evitar cadeia bloqueante */
 
 /* -----------------------------------------------------------
    RESET & BASE
@@ -1000,7 +999,8 @@ footer {
 ----------------------------------------------------------- */
 @media (max-width: 1024px) {
   .navbar__links { display: none; }
-  .navbar__burger { display: flex; }
+  .navbar__burger { display: flex; order: 2; margin-left: auto; }
+  .navbar__logo { order: -1; margin-right: auto; }
 
   .footer__grid {
     grid-template-columns: 1fr 1fr;

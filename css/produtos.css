@@ -259,3 +259,40 @@
     justify-content: center;
   }
 }
+
+/* Color Swatches */
+.color-swatches {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  position: absolute;
+  bottom: var(--space-3);
+  left: 0;
+  right: 0;
+  z-index: 20; /* keep clickable over the flip area and overlay */
+}
+
+.color-swatch {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform var(--dur-fast), border-color var(--dur-fast);
+  box-shadow: 0 0 0 1px var(--clr-surface-3);
+}
+
+.color-swatch:hover,
+.color-swatch.active {
+  transform: scale(1.1);
+  border-color: var(--clr-navy);
+}
+
+.product-card__image img {
+  transition: opacity var(--dur-fast);
+}
+.product-card__image.loading img {
+  opacity: 0.5;
+}
+

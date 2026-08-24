@@ -2,14 +2,22 @@
   "name": "epi-marketplace",
   "version": "1.0.0",
   "description": "EPI Marketplace",
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/build-blog.js",
     "preview": "vite preview",
     "start": "serve ."
   },
   "devDependencies": {
     "serve": "^14.2.6",
-    "vite": "^5.0.0"
+    "sharp": "^0.35.3",
+    "svgo": "^4.0.2",
+    "vite": "^5.0.0",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-image-optimizer": "^2.0.3"
+  },
+  "dependencies": {
+    "glob": "^13.0.6"
   }
 }
