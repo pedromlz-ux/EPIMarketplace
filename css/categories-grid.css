@@ -1,0 +1,385 @@
+/* ============================================================
+   EPI MARKETPLACE — CATEGORY GRID & PRODUCT VIEW STYLES
+   ============================================================ */
+
+/* ── 1. TELA DE CATEGORIAS (#view-categories) ─────────────── */
+.cat-grid-section {
+  padding: var(--space-10) 0 var(--space-20);
+  background: var(--clr-surface-1, #f8f9fc);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.cat-grid-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto var(--space-10);
+}
+
+.cat-grid-header__tag {
+  display: inline-block;
+  font-family: var(--font-mono, monospace);
+  font-size: var(--text-xs, 0.75rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--clr-primary, #e2611c);
+  background: rgba(226, 97, 28, 0.1);
+  padding: 6px 14px;
+  border-radius: var(--radius-full, 9999px);
+  margin-bottom: var(--space-3, 12px);
+}
+
+.cat-grid-header__title {
+  font-family: var(--font-display, 'Barlow Condensed', sans-serif);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--clr-navy, #0f172a);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0 0 var(--space-3);
+}
+
+.cat-grid-header__desc {
+  font-size: var(--text-base, 1rem);
+  color: var(--clr-text-mid, #64748b);
+  line-height: 1.5;
+}
+
+/* Grade de Blocos Quadrados */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-6, 24px);
+}
+
+/* Card Bloco Quadrado */
+.cat-block {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border: 1px solid var(--clr-surface-3, #e2e8f0);
+  border-radius: var(--radius-xl, 16px);
+  padding: var(--space-5, 20px);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.cat-block:hover {
+  transform: translateY(-6px);
+  border-color: var(--clr-primary, #e2611c);
+  box-shadow: 0 20px 30px -10px rgba(226, 97, 28, 0.18), 0 0 0 1px rgba(226, 97, 28, 0.2);
+}
+
+/* 1. Nome e Contagem ACIMA da imagem */
+.cat-block__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: var(--space-3, 12px);
+}
+
+.cat-block__title {
+  font-family: var(--font-display, 'Barlow Condensed', sans-serif);
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--clr-navy, #0f172a);
+  margin: 0;
+  line-height: 1.2;
+  transition: color 0.2s ease;
+}
+
+.cat-block:hover .cat-block__title {
+  color: var(--clr-primary, #e2611c);
+}
+
+.cat-block__count {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--clr-text-mid, #64748b);
+  background: var(--clr-surface-2, #f1f5f9);
+  padding: 3px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+/* 2. Container da Imagem Quadrada */
+.cat-block__media {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-lg, 12px);
+  overflow: hidden;
+  background: #0f172a;
+}
+
+.cat-block__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.cat-block:hover .cat-block__img {
+  transform: scale(1.06);
+}
+
+/* 3. Rodapé com Botão "Ver Produtos" */
+.cat-block__footer {
+  margin-top: var(--space-4, 16px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cat-block__cta {
+  font-size: var(--text-sm, 0.875rem);
+  font-weight: 700;
+  color: var(--clr-primary, #e2611c);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s ease;
+}
+
+.cat-block:hover .cat-block__cta {
+  gap: 10px;
+}
+
+.cat-block__arrow {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.2s ease;
+}
+
+.cat-block:hover .cat-block__arrow {
+  transform: translateX(3px);
+}
+
+
+/* ── 2. TELA DE PRODUTOS (#view-products) ──────────────────── */
+.products-section {
+  padding: var(--space-8) 0 var(--space-20);
+  background: var(--clr-surface-1, #f8f9fc);
+}
+
+/* Barra Superior da Categoria */
+.cat-view-nav {
+  background: white;
+  border: 1px solid var(--clr-surface-3, #e2e8f0);
+  border-radius: var(--radius-xl, 16px);
+  padding: var(--space-6, 24px);
+  margin-bottom: var(--space-8, 32px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.04);
+}
+
+.cat-view-nav__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: var(--space-4, 16px);
+  padding-bottom: var(--space-4, 16px);
+  border-bottom: 1px solid var(--clr-surface-3, #e2e8f0);
+}
+
+.btn-back-categories {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--clr-surface-2, #f1f5f9);
+  color: var(--clr-navy, #0f172a);
+  font-size: var(--text-sm, 0.875rem);
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: var(--radius-lg, 10px);
+  text-decoration: none;
+  border: 1px solid var(--clr-surface-3, #e2e8f0);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-back-categories:hover {
+  background: var(--clr-navy, #0f172a);
+  color: white;
+  border-color: var(--clr-navy, #0f172a);
+  transform: translateX(-3px);
+}
+
+.cat-view-nav__info {
+  margin-bottom: var(--space-5, 20px);
+}
+
+.cat-view-nav__heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cat-view-nav__title {
+  font-family: var(--font-display, 'Barlow Condensed', sans-serif);
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--clr-navy, #0f172a);
+  margin: 0;
+  line-height: 1.1;
+}
+
+.cat-view-nav__badge {
+  font-family: var(--font-mono, monospace);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--clr-primary, #e2611c);
+  background: rgba(226, 97, 28, 0.12);
+  padding: 4px 12px;
+  border-radius: var(--radius-full, 9999px);
+}
+
+.cat-view-nav__desc {
+  font-size: var(--text-base, 1rem);
+  color: var(--clr-text-mid, #64748b);
+  margin: 6px 0 0;
+}
+
+/* Toolbar de Filtros e Busca da Categoria */
+.cat-view-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.cat-view-filters {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.cat-filter-label {
+  font-size: var(--text-xs, 0.75rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--clr-text-mid, #64748b);
+}
+
+.cat-filter-pills {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--clr-surface-2, #f1f5f9);
+  border: 1px solid var(--clr-surface-3, #e2e8f0);
+  border-radius: var(--radius-pill, 9999px);
+  padding: 6px 14px;
+  font-size: var(--text-xs, 0.75rem);
+  font-weight: 600;
+  color: var(--clr-text-mid, #64748b);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.filter-pill input {
+  display: none;
+}
+
+.filter-pill:has(input:checked),
+.filter-pill.active {
+  background: var(--clr-navy, #0f172a);
+  color: white;
+  border-color: var(--clr-navy, #0f172a);
+}
+
+.cat-view-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  border: 1px solid var(--clr-surface-3, #e2e8f0);
+  border-radius: var(--radius-pill, 9999px);
+  padding: 8px 18px;
+  color: var(--clr-text-dim, #94a3b8);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  min-width: 280px;
+}
+
+.cat-view-search:focus-within {
+  border-color: var(--clr-primary, #e2611c);
+  box-shadow: 0 0 0 3px rgba(226, 97, 28, 0.15);
+  color: var(--clr-navy, #0f172a);
+}
+
+.cat-view-search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: var(--text-sm, 0.875rem);
+  color: var(--clr-navy, #0f172a);
+  width: 100%;
+}
+
+/* Grade de Produtos Expandida (Full Width) */
+#view-products .products__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-6, 24px);
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  .cat-view-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .cat-view-search {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .cat-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+  
+  .cat-block {
+    padding: 14px;
+  }
+  
+  .cat-block__title {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cat-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  #view-products .products__grid {
+    grid-template-columns: 1fr;
+  }
+}
