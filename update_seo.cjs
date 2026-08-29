@@ -5,44 +5,44 @@ const dir = '/Users/pm/Site SPIDER/epi-marketplace';
 
 const seoData = {
   'index.html': {
-    title: 'EPI Marketplace | Distribuidora de EPIs com CA (NR-10 e NR-35)',
-    description: 'Compre Equipamentos de Proteção Individual (EPI) online com CA válido. Somos especialistas em NR-10 e NR-35: cintos, ferramentas de linha viva e luvas isolantes.',
-    keywords: 'comprar EPI, EPI com CA, distribuidora de EPI, EPI para eletricista, equipamentos de segurança do trabalho, ferramentas linha viva, NR-10, NR-35'
+    title: 'Loja de EPI | EPIs com CA Válido — EPI Marketplace',
+    description: 'Loja de EPI online com CA válido. Distribuidora de EPIs para eletricistas (NR-10) e trabalho em altura (NR-35): cintos paraquedistas, luvas isolantes e ferramentas linha viva.',
+    keywords: 'loja de EPI, loja EPI, EPIs, EPI Marketplace, distribuidora de EPI, EPI com CA, EPI para eletricista, NR-10, NR-35'
   },
   'produtos.html': {
-    title: 'Catálogo de EPIs Certificados | EPI Marketplace',
-    description: 'Explore nosso catálogo de EPIs certificados. Produtos para trabalho em altura (NR-35) e eletricistas (NR-10). Proteção garantida e CA válido.',
-    keywords: 'catálogo de EPI, comprar cinto paraquedista, luvas isolantes, trava-quedas, equipamentos proteção individual'
+    title: 'Catálogo de EPIs | EPI Marketplace',
+    description: 'Explore o catálogo de EPIs certificados da EPI Marketplace. Cintos paraquedistas, luvas isolantes, ferramentas NR-10 e trava-quedas NR-35 com CA válido e entrega nacional.',
+    keywords: 'comprar EPI, catálogo de EPI, cinto paraquedista, luvas isolantes, trava-quedas, equipamentos proteção individual'
   },
   'sobre.html': {
-    title: 'Sobre a EPI Marketplace | Especialistas em Segurança do Trabalho',
-    description: 'Conheça a EPI Marketplace: uma empresa brasileira focada em fornecer os melhores Equipamentos de Proteção Individual (EPIs) para redes elétricas e trabalhos em altura.',
-    keywords: 'empresa de EPI, sobre EPI marketplace, segurança do trabalho, loja de EPI, fornecedor EPI'
+    title: 'Sobre a EPI Marketplace | Distribuidora de EPIs com CA',
+    description: 'Conheça a EPI Marketplace: distribuidora especializada em EPIs certificados para NR-10 e NR-35, com entrega em todo o Brasil e sede em Jundiaí/SP.',
+    keywords: 'empresa de EPI, sobre EPI marketplace, segurança do trabalho, distribuidora EPI Jundiaí, fornecedor EPI'
   },
   'contato.html': {
-    title: 'Contato | Orçamento B2B e Suporte Técnico - EPI Marketplace',
-    description: 'Fale com a EPI Marketplace. Solicite um orçamento de EPIs B2B para a sua empresa ou tire dúvidas técnicas sobre as normas NR-10 e NR-35.',
+    title: 'Contato e Orçamentos B2B | EPI Marketplace',
+    description: 'Solicite orçamento B2B de EPIs com CA para sua empresa. Condições especiais no atacado e suporte técnico especializado em normas NR-10 e NR-35.',
     keywords: 'contato EPI, orçamento EPI B2B, distribuidora EPI contato, comprar EPI atacado'
   },
   'blog.html': {
-    title: 'Blog de Segurança do Trabalho | Dicas e Normas (NR) | EPI Marketplace',
-    description: 'Acompanhe nosso blog sobre segurança do trabalho. Fique por dentro de atualizações das normas NR-10 e NR-35, e saiba como escolher e conservar seus EPIs.',
-    keywords: 'blog de segurança do trabalho, dicas NR-10, novidades NR-35, validade CA de EPI, conservação EPI'
+    title: 'Blog de Segurança do Trabalho | EPI Marketplace',
+    description: 'Guias técnicos, dicas de conservação e atualizações sobre normas NR-10 e NR-35. Aprenda a escolher e usar EPIs certificados com CA para proteção total.',
+    keywords: 'blog de segurança do trabalho, dicas NR-10, novidades NR-35, validade CA de EPI'
   },
   'artigo.html': {
     title: 'Artigo | EPI Marketplace',
-    description: 'Artigos técnicos focados em segurança do trabalho, ferramentas isoladas e proteção para eletricistas e trabalhos em altura (NR-10 / NR-35).',
-    keywords: 'artigo de segurança, NR-10, NR-35, equipamento de segurança'
+    description: 'Artigos técnicos sobre segurança do trabalho: normas NR-10 e NR-35, escolha de EPIs com CA válido e proteção para eletricistas e trabalho em altura.',
+    keywords: 'artigo de segurança do trabalho, EPI, NR-10, NR-35'
   },
   'termos.html': {
     title: 'Termos de Uso | EPI Marketplace',
-    description: 'Termos e Condições de Uso da plataforma EPI Marketplace. Conheça seus direitos, deveres e as políticas de compra da nossa loja de EPIs.',
+    description: 'Termos e Condições de Uso da EPI Marketplace. Conheça seus direitos e as políticas de compra da nossa distribuidora de EPIs certificados.',
     keywords: 'termos de uso EPI Marketplace, condições de compra'
   },
   'privacidade.html': {
     title: 'Política de Privacidade | EPI Marketplace',
-    description: 'Política de Privacidade e Proteção de Dados da EPI Marketplace (em conformidade com a LGPD). Entenda como tratamos e protegemos seus dados.',
-    keywords: 'política de privacidade EPI, segurança de dados'
+    description: 'Política de Privacidade e Proteção de Dados da EPI Marketplace em conformidade com a LGPD. Saiba como tratamos e protegemos seus dados pessoais.',
+    keywords: 'política de privacidade EPI Marketplace, segurança de dados'
   }
 };
 
