@@ -22,6 +22,8 @@ const SLUG_IMAGE_MAP = {
     '/img/blog/como-escolher-epi-img1.png',
   'o-que-e-epi-significado-tipos-e-exemplos':
     'https://images.unsplash.com/photo-1504307651254-35680f356f58?auto=format&fit=crop&w=1200&q=80',
+  'epi-e-epc-qual-a-diferenca-exemplos-e-quando-usar':
+    'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80',
 };
 
 const AUTHOR_BIO_HTML = `
@@ -120,6 +122,70 @@ function faqSchema(items) {
 }
 
 const FALLBACK_POSTS = [
+  {
+    id: 'real-post-006',
+    title: 'EPI e EPC: Diferenca, Exemplos e Normas | Guia NR-6',
+    category: 'Fundamentos',
+    readtime: '8 min',
+    summary: 'Entenda a diferenca entre EPI e EPC, a hierarquia de protecao da NR-6, exemplos praticos por setor e quando usar cada um na seguranca do trabalho.',
+    content: `<h2>O que e EPI e o que e EPC?</h2>
+<p><strong>EPI (Equipamento de Protecao Individual)</strong> e qualquer dispositivo de uso individual utilizado pelo trabalhador destinado a neutralizar riscos que ameacem a sua seguranca e saude no trabalho, segundo a <strong>Norma Regulamentadora 6 (NR-6)</strong>. Exemplos: capacetes, luvas, oculos de seguranca, cintos paraquedistas e calcados de seguranca.</p>
+<p><strong>EPC (Equipamento de Protecao Coletiva)</strong> e o dispositivo, sistema ou meio de engenharia que protege <strong>todos os trabalhadores de uma area ao mesmo tempo</strong>, independentemente de acao individual. Exemplos: corrimas, guarda-corpos, sistemas LOTO (Lockout/Tagout), ventilacao forcada e redes de protecao.</p>
+<h2>Qual e a diferenca entre EPI e EPC?</h2>
+<p>A diferenca fundamental esta no <strong>alcance da protecao</strong>. O EPI protege apenas o individuo que o usa e exige CA do MTE. O EPC protege todos na area automaticamente, sem depender da acao do trabalhador. Por isso a NR-1 e a NR-6 determinam que o EPC deve ser <strong>sempre priorizado</strong>; o EPI e a <strong>ultima linha de defesa</strong>.</p>
+<h2>A Hierarquia de Controle de Riscos (NR-1 e NR-6)</h2>
+<p>Tanto a NR-1 (revisada em 2024) quanto a NR-6 estabelecem uma <strong>hierarquia obrigatoria</strong>:</p>
+<ol style='margin: var(--space-4) 0 0 20px; line-height: 2;'>
+  <li><strong>Eliminacao do risco</strong> — remover a fonte de perigo</li>
+  <li><strong>Substituicao</strong> — trocar por processo ou material menos perigoso</li>
+  <li><strong>Controles de Engenharia (EPC)</strong> — isolamento, ventilacao, barreiras fisicas</li>
+  <li><strong>Controles Administrativos</strong> — procedimentos, treinamentos</li>
+  <li><strong>EPI</strong> — ultima linha de defesa</li>
+</ol>
+<p>O empregador so pode exigir o EPI quando as medidas anteriores sao tecnicamente inviaveis ou insuficientes. Usar EPI como <em>primeira</em> resposta ao risco e considerado pratica inadequada pela legislacao e pode resultar em responsabilidade civil em caso de acidente.</p>
+<h2>Exemplos praticos de EPI vs EPC por setor</h2>
+<h3>Eletricidade (NR-10)</h3>
+<ul style='margin: var(--space-3) 0 0 18px; line-height: 1.8;'>
+  <li><strong>EPC:</strong> Sinalizacao de areas energizadas, bloqueio LOTO, detectores fixos de tensao</li>
+  <li><strong>EPI:</strong> Luvas isolantes dieletricas (Classe 0 a 4), capacete Classe B, calcado dieletrico, vestimenta antichama</li>
+</ul>
+<h3>Trabalho em Altura (NR-35)</h3>
+<ul style='margin: var(--space-3) 0 0 18px; line-height: 1.8;'>
+  <li><strong>EPC:</strong> Guarda-corpos, andaimes, redes de protecao anticaida, linhas de vida horizontais fixas</li>
+  <li><strong>EPI:</strong> Cinto paraquedista Classe A ou C, talabarte com absorvedor de energia, trava-quedas</li>
+</ul>
+<h3>Construcao Civil (NR-18)</h3>
+<ul style='margin: var(--space-3) 0 0 18px; line-height: 1.8;'>
+  <li><strong>EPC:</strong> Corrimas, guarda-corpos em aberturas, protecao de maquinas</li>
+  <li><strong>EPI:</strong> Capacete Classe A, oculos de seguranca, botina com bico de aco, luvas de raspa</li>
+</ul>
+<h3>Setor Quimico e Laboratorial</h3>
+<ul style='margin: var(--space-3) 0 0 18px; line-height: 1.8;'>
+  <li><strong>EPC:</strong> Exaustores, capelas de fluxo laminar, chuveiros de emergencia</li>
+  <li><strong>EPI:</strong> Luvas de nitrila, avental de PVC, oculos vedantes, mascara com filtro especifico</li>
+</ul>
+<h2>O que NAO e EPI nem EPC pela NR-6</h2>
+<p>Nao sao considerados EPIs: uniforme de trabalho comum, protetor solar (classificado como higiene pessoal), joelheiras esportivas sem CA do MTE e calcados fechados sem bico de aco e sem CA. Para ser EPI, o item deve ter <strong>Certificado de Aprovacao (CA) valido</strong> emitido pelo MTE.</p>
+<p>Adquira os <a href='/produtos' title='Catalogo completo de EPIs com CA valido'>EPIs com CA valido</a> para sua empresa na EPI Marketplace — atendemos desde profissionais autonomos ate grandes construtoras e concessionarias de energia em todo o Brasil.</p>`,
+    faq: [
+      { q: 'Qual a diferenca entre EPI e EPC?', a: 'EPI (Equipamento de Protecao Individual) protege apenas o trabalhador que o utiliza e exige CA do MTE. EPC (Equipamento de Protecao Coletiva) protege todos na area automaticamente — como corrimas, redes, sistemas LOTO e ventilacao. A NR-6 determina que o EPC deve ser sempre priorizado; o EPI e a ultima linha de defesa.' },
+      { q: 'Por que o EPC e prioritario em relacao ao EPI?', a: 'Porque o EPC independe da acao do trabalhador e protege automaticamente todos na area. O EPI depende do uso correto e da manutencao pelo trabalhador. Uma falha humana no EPI pode ser fatal; o EPC elimina ou reduz o risco na fonte.' },
+      { q: 'O protetor solar e considerado EPI ou EPC?', a: 'Nenhum dos dois. Segundo a NR-6, o protetor solar e classificado como produto de higiene pessoal e nao possui CA do MTE. Para ser EPI, o equipamento deve ter CA valido e funcao especifica de protecao contra risco ocupacional identificado.' },
+      { q: 'Quando e obrigatorio usar EPI mesmo tendo EPC?', a: 'O EPI e obrigatorio mesmo com EPC quando o controle coletivo nao e suficiente para neutralizar completamente o risco residual. Por exemplo: em subestacoes com sistema LOTO (EPC), o eletricista ainda usa luvas isolantes e capacete Classe B (EPI) por seguranca adicional.' },
+    ],
+    siloBox: { label: 'Comprar EPIs Certificados', title: 'Catalogo Completo de EPIs com CA Valido', desc: 'Da luva dieletrica ao cinto paraquedista: todos os EPIs obrigatorios para NR-10 e NR-35 com CA ativo.', href: '/produtos', btnText: 'Ver Catalogo de EPIs' },
+    social_proof: {
+      quote: `A hierarquia de controle de riscos e clara: o <strong>EPC vem primeiro</strong>. O EPI deve ser a ultima camada, nao a primeira. Empresas que pulam as medidas coletivas e vao direto ao EPI cometem infracao grave e assumem responsabilidade civil e criminal em caso de acidente.`,
+      name: 'Eng. Marcus Almeida, CREA-SP',
+      credential: 'Engenheiro de Seguranca do Trabalho — Consultor NR-1 e NR-6 por 20 anos',
+      badge: 'Especialista Hierarquia de Riscos'
+    },
+    date: '2026-09-01',
+    slug: 'epi-e-epc-qual-a-diferenca-exemplos-e-quando-usar',
+    meta_description: 'EPI e EPC: entenda a diferenca, a hierarquia de protecao da NR-6, exemplos praticos por setor (NR-10, NR-35, NR-18) e quando usar cada um na seguranca do trabalho.',
+    image_alt: 'Trabalhador com EPI completo (capacete, luvas e cinto) em frente a equipamentos de protecao coletiva em obra.',
+    published: true,
+  },
   {
     id: 'real-post-005',
     title: 'O que e EPI? Significado, Tipos e Exemplos Completos',
