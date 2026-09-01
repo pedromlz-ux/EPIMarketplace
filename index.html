@@ -42,7 +42,7 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Store",
+        "@type": ["Store", "LocalBusiness"],
         "@id": "https://epimarketplace.com/#store",
         "name": "EPI Marketplace",
         "alternateName": [
@@ -63,51 +63,80 @@
         "image": "https://epimarketplace.com/img/og-image.jpg",
         "telephone": "+55-11-94149-3029",
         "email": "contato@epimarketplace.com",
-        "contactPoint": [{
-          "@type": "ContactPoint",
-          "telephone": "+55-11-94149-3029",
-          "contactType": "customer service",
-          "contactOption": "TollFree",
-          "availableLanguage": {"@type": "Language", "name": "Portuguese"},
-          "hoursAvailable": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-            "opens": "08:00",
-            "closes": "18:00"
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+55-11-94149-3029",
+            "contactType": "customer service",
+            "availableLanguage": {"@type": "Language", "name": "Portuguese"},
+            "hoursAvailable": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+              "opens": "08:00",
+              "closes": "18:00"
+            }
+          },
+          {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "url": "https://wa.me/5511941493029",
+            "availableLanguage": {"@type": "Language", "name": "Portuguese"}
           }
-        }],
+        ],
         "address": {
           "@type": "PostalAddress",
           "addressCountry": "BR",
           "addressRegion": "SP",
-          "addressLocality": "Jundiaí"
+          "addressLocality": "Jundiaí",
+          "description": "Região Metropolitana de Jundiaí — atendimento local e envios para todo o Brasil"
         },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -23.1857,
+          "longitude": -46.8978
+        },
+        "hasMap": "https://maps.google.com/?q=Jundiaí,SP,Brasil",
         "areaServed": [
-          {"@type": "City", "name": "Jundiaí"},
+          {"@type": "City", "name": "Jundiaí", "containedInPlace": {"@type": "State", "name": "São Paulo"}},
           {"@type": "City", "name": "Várzea Paulista"},
           {"@type": "City", "name": "Campo Limpo Paulista"},
           {"@type": "City", "name": "Itupeva"},
           {"@type": "City", "name": "Cabreúva"},
           {"@type": "City", "name": "Louveira"},
-          {"@type": "AdministrativeArea", "name": "Grande São Paulo"}
+          {"@type": "City", "name": "Cajamar"},
+          {"@type": "City", "name": "Salto"},
+          {"@type": "AdministrativeArea", "name": "Grande São Paulo"},
+          {"@type": "Country", "name": "Brasil", "description": "Entregas B2B nacionais via transportadoras parceiras"}
         ],
         "priceRange": "R$28 – R$2.500",
         "currenciesAccepted": "BRL",
-        "paymentAccepted": "Cash, Credit Card, Debit Card, PIX",
+        "paymentAccepted": "Cash, Credit Card, Debit Card, PIX, Bank Transfer",
         "openingHours": ["Mo-Fr 08:00-18:00", "Sa 08:00-12:00"],
         "sameAs": [
-          "https://www.mercadolivre.com.br/pagina/epimarketplace"
+          "https://www.mercadolivre.com.br/pagina/epimarketplace",
+          "https://wa.me/5511941493029",
+          "https://www.linkedin.com/company/epi-marketplace",
+          "https://www.instagram.com/epimarketplace",
+          "https://www.facebook.com/epimarketplace"
         ],
         "knowsAbout": [
-          "NR-10", "NR-35", "NR-6",
+          "NR-10", "NR-35", "NR-6", "NR-18",
           "Equipamentos de Proteção Individual",
+          "Certificado de Aprovação CA EPI",
           "Distribuidora de EPIs",
-          "Ferramentas para Linha Viva",
+          "Luvas Isolantes Dielétricas",
           "Cinto Paraquedista",
           "Trabalho em Altura",
           "Segurança do Trabalho",
-          "EPI para Eletricista"
-        ]
+          "EPI para Eletricista",
+          "Botina de Segurança",
+          "Capacete Classe B"
+        ],
+        "identifier": {
+          "@type": "PropertyValue",
+          "name": "CNPJ",
+          "value": "58.912.592/0001-06"
+        }
       },
       {
         "@type": "WebSite",
@@ -991,7 +1020,7 @@
           <address class="footer__contact" style="font-style: normal;">
             <span style="display:flex;align-items:center;gap:6px;margin-bottom:4px;opacity:0.8;font-size:0.85em;">
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              São Paulo, SP — Brasil
+              Jundiaí, SP — Região Metropolitana de SP
             </span>
             <a href="tel:+5511941493029" aria-label="Ligar para (11) 94149-3029">
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"

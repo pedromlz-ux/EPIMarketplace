@@ -1,6 +1,29 @@
 User-agent: *
 Allow: /
 
+# EPI Marketplace — epimarketplace.com
+# Sede: Jundiaí, SP — Brasil | CNPJ: 58.912.592/0001-06
+
 Sitemap: https://epimarketplace.com/sitemap.xml
 
-# EPI Marketplace — epimarketplace.com
+# Manifesto para Modelos de Linguagem (GEO)
+# llms.txt padrão: https://llmstxt.org/
+# Rastreadores de IA são bem-vindos — o conteúdo desta página é técnico e original.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
