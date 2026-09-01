@@ -19,9 +19,13 @@ const SLUG_IMAGE_MAP = {
     '/img/blog/nr10-nr35-img1.jpg',
   'como-escolher-epi-guia-completo-para-seguranca-e-conformidade':
     '/img/blog/como-escolher-epi-img1.png',
+  'o-que-e-epi-significado-tipos-e-exemplos':
+    '/img/blog/o-que-e-epi-significado-tipos-e-exemplos.jpg',
+  'epi-e-epc-qual-a-diferenca-exemplos-e-quando-usar':
+    '/img/blog/epi-e-epc-qual-a-diferenca-exemplos-e-quando-usar.jpg',
 };
 
-const DEFAULT_IMG = 'https://images.unsplash.com/photo-1504307651254-35680f356f58?auto=format&fit=crop&w=800&q=80';
+const DEFAULT_IMG = '/img/blog/o-que-e-epi-significado-tipos-e-exemplos.jpg';
 
 // _supabase initialized inside function
 

@@ -21,9 +21,9 @@ const SLUG_IMAGE_MAP = {
   'como-escolher-epi-guia-completo-para-seguranca-e-conformidade':
     '/img/blog/como-escolher-epi-img1.png',
   'o-que-e-epi-significado-tipos-e-exemplos':
-    'https://images.unsplash.com/photo-1504307651254-35680f356f58?auto=format&fit=crop&w=1200&q=80',
+    '/img/blog/o-que-e-epi-significado-tipos-e-exemplos.jpg',
   'epi-e-epc-qual-a-diferenca-exemplos-e-quando-usar':
-    'https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1200&q=80',
+    '/img/blog/epi-e-epc-qual-a-diferenca-exemplos-e-quando-usar.jpg',
 };
 
 const AUTHOR_BIO_HTML = `
@@ -500,7 +500,7 @@ async function buildBlog() {
     if (!slug) continue;
     console.log(`- Gerando: /blog/${slug}`);
 
-    const imgUrl = SLUG_IMAGE_MAP[slug] || post.image_url || 'https://images.unsplash.com/photo-1504307651254-35680f356f58?auto=format&fit=crop&w=800&q=80';
+    const imgUrl = SLUG_IMAGE_MAP[slug] || post.image_url || '/img/blog/o-que-e-epi-significado-tipos-e-exemplos.jpg';
     let postDate = '';
     if (post.date) {
       try { postDate = new Date(post.date).toLocaleDateString('pt-BR'); } catch { postDate = post.date; }
