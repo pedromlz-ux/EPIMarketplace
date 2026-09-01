@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const message = generateMessageText();
 
     if (method === 'whatsapp') {
-      const whatsappNumber = '5511941493029';
+      const whatsappNumber = '5511989088928';
       const waUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
       window.open(waUrl, '_blank');
     } else if (method === 'email') {

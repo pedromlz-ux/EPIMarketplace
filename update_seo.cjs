@@ -57,7 +57,7 @@ const jsonLd = `
     "name": "EPI Marketplace",
     "description": "Distribuidora de Equipamentos de Proteção Individual (EPIs) com CA, especializada em NR-10 e NR-35.",
     "url": "https://epimarketplace.com/",
-    "telephone": "+5511941493029",
+    "telephone": "+5511989088928",
     "email": "contato@epimarketplace.com.br",
     "address": {
       "@type": "PostalAddress",

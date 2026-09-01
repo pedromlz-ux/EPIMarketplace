@@ -5,7 +5,7 @@ with open('produtos.html', 'r', encoding='utf-8') as f:
 
 # Substituir o link do WhatsApp por um botão de adicionar ao carrinho
 pattern = re.compile(
-    r'<a href="https://wa\.me/5511941493029\?text=Olá! Gostaria de fazer um orçamento do produto:\s*(.*?)"\s*target="_blank"\s*rel="noopener noreferrer"\s*class="btn btn--primary btn--sm">Solicitar Orçamento</a>',
+    r'<a href="https://wa\.me/5511989088928\?text=Olá! Gostaria de fazer um orçamento do produto:\s*(.*?)"\s*target="_blank"\s*rel="noopener noreferrer"\s*class="btn btn--primary btn--sm">Solicitar Orçamento</a>',
     re.IGNORECASE | re.DOTALL
 )
 
