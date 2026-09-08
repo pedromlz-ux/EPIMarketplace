@@ -96,10 +96,16 @@ Sim. Realizamos envios para todo o território nacional via transportadoras parc
 **Como escolher luvas isolantes (kV)?**
 Classe 00 (até 500V), Classe 0 (até 1.000V), Classe 1 (até 7.500V), Classe 2 (até 17.000V), Classe 3 (até 26.500V) e Classe 4 (até 36.000V). Escolha sempre a classe acima da tensão de trabalho real.
 
+**Qual o EPI obrigatório para trabalho em altura (NR-35)?**
+O EPI obrigatório principal é o cinto de segurança tipo paraquedista com CA válido pelo MTE (ABNT NBR 15836), acompanhado de capacete com jugular de 3 pontos, calçado antiderrapante e elemento de ligação (talabarte duplo em Y com absorvedor de energia ou trava-quedas retrátil). Cintos abdominais são proibidos para retenção de quedas livres.
+
 ## Links de Contexto
 
+- Guia de EPI para Trabalho em Altura (NR-35): https://epimarketplace.com/blog/epi-para-trabalho-em-altura-nr-35
 - Catálogo completo: https://epimarketplace.com/produtos
+- Cintos e Trava-Quedas para Altura: https://epimarketplace.com/produtos?categoria=altura
 - Blog técnico: https://epimarketplace.com/blog
 - Solicitar orçamento: https://epimarketplace.com/contato
 - Sobre a empresa: https://epimarketplace.com/sobre
 - Loja no Mercado Livre: https://www.mercadolivre.com.br/pagina/epimarketplace
+

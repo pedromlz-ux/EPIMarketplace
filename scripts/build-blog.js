@@ -10,6 +10,8 @@ const SUPABASE_URL = 'https://knmkacjuyjgxiwdjpggz.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtubWthY2p1eWpneGl3ZGpwZ2d6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQxMzU2MjcsImV4cCI6MjA5OTcxMTYyN30.G28xb7vjtkcrtWrPKWTex--yUsySxMjUZvP7Q6eEPQc';
 
 const SLUG_IMAGE_MAP = {
+  'epi-para-trabalho-em-altura-nr-35':
+    '/img/blog/epi-para-trabalho-em-altura-nr-35.jpg',
   'epi-para-eletricista-equipamentos-obrigatorios-nr-10':
     'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80',
   'guia-pratico-como-se-proteger-no-trabalho-utilizando-epi-de-forma-eficiente':
@@ -122,6 +124,158 @@ function faqSchema(items) {
 }
 
 const FALLBACK_POSTS = [
+  {
+    id: 'real-post-007',
+    title: 'EPI para Trabalho em Altura: Guia Completo NR-35',
+    category: 'Trabalho em Altura & NR-35',
+    readtime: '9 min',
+    summary: 'Guia completo de EPI para trabalho em altura: conheça as exigências da NR-35, cinto paraquedista, talabarte com absorvedor, trava-quedas, cálculo de ZLQ e inspeção.',
+    content: `<h2>O que define o trabalho em altura segundo a NR-35?</h2>
+<p>A seleção e o uso adequado do <strong>EPI para trabalho em altura</strong> representam a fronteira definitiva entre uma operação industrial segura e um acidente grave. No Brasil, quedas de diferença de nível figuram historicamente entre as principais causas de fatalidades na construção civil, manutenção predial, telecomunicações e no setor elétrico.</p>
+<p>De acordo com o item 35.1.2 da <strong>Norma Regulamentadora 35 (NR-35)</strong> do Ministério do Trabalho e Emprego, considera-se trabalho em altura toda atividade executada <strong>acima de 2,00 m (dois metros) do nível inferior</strong>, onde haja risco de queda. A partir dessa cota, a adoção de medidas de proteção coletiva (EPC) e de proteção individual (EPI) torna-se legalmente compulsória.</p>
+<p>A NR-35 estabelece que o empregador deve priorizar a prevenção e a eliminação do risco. Quando o trabalho em altura for inevitável, é mandatória a implementação do <strong>Sistema de Proteção Individual Contra Quedas (SPIQ)</strong>, composto por elementos rigorosamente inspecionados e certificados.</p>
+
+<h2>A estrutura do SPIQ: os 3 pilares da retenção de queda</h2>
+<p>Muitos gestores e profissionais cometem o erro de acreditar que apenas vestir um cinto garante segurança. Na engenharia de segurança do trabalho, a proteção contra quedas depende do funcionamento harmônico de uma tríade indissociável:</p>
+<ol style='margin: var(--space-4) 0 var(--space-4) 20px; line-height: 2;'>
+  <li><strong>Sistema de Ancoragem (Estrutura):</strong> Pontos de fixação, linhas de vida horizontais ou verticais que devem suportar uma carga estática mínima de 15 kN (aproximadamente 1.500 kgf por usuário), conforme a norma ABNT NBR 16325.</li>
+  <li><strong>Elemento de Ligação (Conexão):</strong> Dispositivos que unem o cinto ao ponto de ancoragem, como talabartes com absorvedor de energia (ABS) ou dispositivos trava-quedas.</li>
+  <li><strong>Equipamento de Proteção Individual (EPI):</strong> Cinto de segurança tipo paraquedista com Certificado de Aprovação (CA) ativo no MTE.</li>
+</ol>
+<p>Se qualquer um desses três elos falhar, todo o sistema entra em colapso. Por isso, adquira sempre <a href='/produtos?categoria=altura' title='Equipamentos certificados para trabalho em altura NR-35'>equipamentos para trabalho em altura com CA válido</a> na EPI Marketplace, garantindo conformidade documental e técnica.</p>
+
+<h2>Quais são os principais EPIs para trabalho em altura?</h2>
+<p>Cada atividade em desnível possui exigências ergonômicas e mecânicas específicas. A seguir, detalhamos os componentes fundamentais que compõem o kit de segurança do trabalhador:</p>
+
+<h3>1. Cinto de Segurança Tipo Paraquedista (ABNT NBR 15836)</h3>
+<p>O <strong>cinto paraquedista</strong> é o único modelo permitido pela legislação para retenção de queda livre. Os antigos cintos abdominais (tipo eletricista) são terminantemente proibidos para reter quedas desde 2004, sendo restritos apenas ao posicionamento ergonômico de trabalho.</p>
+<p>O cinto paraquedista distribui as forças de desaceleração nas partes mais resistentes da anatomia humana (coxas, bacia e tórax), mantendo o corpo na posição vertical após a parada. O modelo deve contar com:</p>
+<ul style='margin: var(--space-3) 0 var(--space-4) 18px; line-height: 1.8;'>
+  <li><strong>Ponto de ancoragem dorsal (Argola D de aço):</strong> Destinado primariamente à conexão de talabartes de retenção de queda e trava-quedas.</li>
+  <li><strong>Ponto de ancoragem esternal (peitoral):</strong> Indicado para conexão em escadas tipo marinheiro com trava-quedas deslizante ou operações de resgate.</li>
+  <li><strong>Pontos laterais na cintura:</strong> Utilizados exclusivamente para descanso e posicionamento ergonômico (nunca para reter quedas livres).</li>
+  <li><strong>Ponto ventral (umbilical):</strong> Obrigatório em técnicas de acesso por corda, suspensão e espaços confinados.</li>
+</ul>
+<p>Conheça os modelos de <a href='/produtos?categoria=altura' title='Cintos paraquedistas com CA homologado'>cintos paraquedistas homologados pelo MTE</a> disponíveis em nosso catálogo.</p>
+
+<h3>2. Talabartes com Absorvedor de Energia (ABNT NBR 15834 e NBR 15835)</h3>
+<p>O talabarte é o elemento que conecta o cinto ao ponto de ancoragem. Em qualquer situação onde exista a possibilidade de queda livre, o uso de talabarte com <strong>Absorvedor de Energia (ABS)</strong> é obrigatório por lei.</p>
+<p>O absorvedor é uma fita especial costurada que se rompe de forma controlada durante uma desaceleração brusca, dissipando a energia cinética. Essa abertura limita a força de impacto transmitida ao corpo do trabalhador a no máximo <strong>6 kN (cerca de 600 kgf)</strong>, impedindo lesões viscerais, fraturas na coluna e morte por trauma de impacto.</p>
+<p>Para movimentações horizontais e transposição de obstáculos em torres e andaimes, utiliza-se o <strong>talabarte duplo em Y</strong>, que garante que o profissional esteja conectado ininterruptamente (regra dos 100% de conexão).</p>
+
+<h3>3. Dispositivos Trava-Quedas (ABNT NBR 14626 e NBR 14628)</h3>
+<p>Os trava-quedas são mecanismos automáticos que bloqueiam instantaneamente a queda:</p>
+<ul style='margin: var(--space-3) 0 var(--space-4) 18px; line-height: 1.8;'>
+  <li><strong>Trava-quedas retrátil:</strong> Equipamento com fita de poliéster ou cabo de aço galvanizado que se enrola e desenrola automaticamente conforme o movimento do operador. Trava de forma imediata em milésimos de segundo, reduzindo drasticamente a distância de queda livre.</li>
+  <li><strong>Trava-quedas deslizante para corda ou cabo:</strong> Desliza livremente em linhas de vida verticais fixadas em escadas ou estruturas e trava mecanicamente por atrito em caso de aceleração descendente.</li>
+</ul>
+
+<h3>4. Conectores e Mosquetões (ABNT NBR 15837)</h3>
+<p>Os conectores unem os componentes do sistema. A NR-35 exige mosquetões com mecanismo de <strong>dupla ou tripla trava automática</strong>, impedindo a abertura acidental por torção ou atrito contra vigas e cantos vivos. Podem ser de aço forjado (maior resistência mecânica para montagens pesadas) ou de duralumínio (mais leves para escalada e acesso por corda).</p>
+
+<h3>5. Capacete de Segurança com Jugular de 3 Pontos</h3>
+<p>O capacete utilizado em altura deve possuir fita jugular resistente afixada em três pontos da carcaça. Uma simples queda de 1 metro pode fazer o capacete tradicional sem jugular voar longe da cabeça do trabalhador antes que ocorra a colisão contra estruturas laterais ou o solo.</p>
+
+<h3>6. Calçados de Segurança com Solado de Alta Aderência</h3>
+<p>Botinas industriais com solado bidensidade antiderrapante (poliuretano injetado) e bico composite ou de aço proporcionam equilíbrio estável em tabuleiros de andaimes úmidos e perfis metálicos estreitos.</p>
+
+<h2>Zona Livre de Queda (ZLQ) e Fator de Queda: o cálculo que salva vidas</h2>
+<p>Um dos erros técnicos mais graves cometidos em canteiros de obras é a desconsideração da <strong>Zona Livre de Queda (ZLQ)</strong>. A ZLQ é a distância vertical mínima necessária entre o ponto de ancoragem e o primeiro obstáculo ou solo para que o sistema retenha a queda sem que o trabalhador colida contra o chão.</p>
+
+<p>O cálculo da ZLQ considera a seguinte fórmula matemática:</p>
+<blockquote style='background: var(--clr-surface-dim, #f4f6fa); border-left: 4px solid var(--clr-orange); padding: var(--space-4); margin: var(--space-6) 0; font-family: var(--font-mono, monospace); font-size: 0.95em;'>
+  <strong>ZLQ = Comprimento do Talabarte (CT) + Abertura do Absorvedor (ABS) + Altura do Trabalhador (HT) + Margem de Segurança (MS)</strong>
+</blockquote>
+
+<table style='width: 100%; border-collapse: collapse; margin: var(--space-6) 0; font-size: 0.9em; border: 1px solid var(--clr-border, #e2e8f0);'>
+  <thead>
+    <tr style='background: var(--clr-navy); color: white; text-align: left;'>
+      <th style='padding: 12px;'>Variável do Cálculo</th>
+      <th style='padding: 12px;'>Valor Padrão Estimado</th>
+      <th style='padding: 12px;'>Descrição Técnica</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style='border-bottom: 1px solid var(--clr-border, #e2e8f0);'>
+      <td style='padding: 10px; font-weight: bold;'>Comprimento do Talabarte</td>
+      <td style='padding: 10px;'>1,50 m</td>
+      <td style='padding: 10px;'>Tamanho da fita esticada do talabarte com conectores.</td>
+    </tr>
+    <tr style='border-bottom: 1px solid var(--clr-border, #e2e8f0); background: rgba(0,0,0,0.02);'>
+      <td style='padding: 10px; font-weight: bold;'>Abertura do Absorvedor</td>
+      <td style='padding: 10px;'>1,20 m</td>
+      <td style='padding: 10px;'>Desdobramento máximo da fita de absorção de choque.</td>
+    </tr>
+    <tr style='border-bottom: 1px solid var(--clr-border, #e2e8f0);'>
+      <td style='padding: 10px; font-weight: bold;'>Altura do Trabalhador</td>
+      <td style='padding: 10px;'>1,80 m</td>
+      <td style='padding: 10px;'>Distância entre a argola dorsal e a ponta dos pés.</td>
+    </tr>
+    <tr style='border-bottom: 1px solid var(--clr-border, #e2e8f0); background: rgba(0,0,0,0.02);'>
+      <td style='padding: 10px; font-weight: bold;'>Margem de Segurança</td>
+      <td style='padding: 10px;'>1,00 m</td>
+      <td style='padding: 10px;'>Distância livre obrigatória entre os pés e o obstáculo.</td>
+    </tr>
+    <tr style='background: rgba(235, 94, 40, 0.08); font-weight: bold; color: var(--clr-navy);'>
+      <td style='padding: 12px;'>ZLQ Mínima Necessária</td>
+      <td style='padding: 12px; color: var(--clr-orange);'>5,50 metros</td>
+      <td style='padding: 12px;'>Espaço livre mínimo exigido abaixo do ponto de fixação.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Perceba que, ao utilizar um talabarte convencional de 1,5 m com absorvedor, são necessários pelo menos <strong>5,5 metros de espaço livre</strong> abaixo da ancoragem. Se o trabalhador estiver operando a 3 ou 4 metros de altura e a ancoragem estiver na altura dos pés (Fator de Queda 2), ele colidirá fatalmente contra o solo antes que o absorvedor complete a desaceleração. Nesses casos, a solução técnica mandatória é a substituição do talabarte por um <strong>trava-quedas retrátil</strong> com ancoragem posicionada acima da cabeça (Fator de Queda 0).</p>
+
+<h2>Síndrome da Suspensão Inerte: a urgência do plano de resgate</h2>
+<p>O perigo do trabalho em altura não termina quando a queda é interrompida pelo cinto. A <strong>Síndrome da Suspensão Inerte (também conhecida como trauma de suspensão)</strong> ocorre quando o trabalhador permanece pendurado no cinto sem apoiar os pés, ficando imóvel ou inconsciente.</p>
+<p>A pressão das fitas femorais sobre as veias femorais na região da virilha interrompe o retorno venoso, represando o sangue nos membros inferiores. Essa restrição causa hipóxia cerebral rápida, perda de consciência e parada cardiorrespiratória que pode levar ao óbito em <strong>menos de 15 a 20 minutos</strong>.</p>
+<p>Por essa razão, a NR-35 exige expressamente que toda empresa possua uma equipe e um <strong>plano de resgate e primeiros socorros treinado e operacional</strong>. Além disso, recomenda-se que os cintos contenham a fita estribo de alívio de suspensão, permitindo que o trabalhador apoie os pés e bombeie os músculos da perna enquanto aguarda o socorro.</p>
+
+<h2>Inspeção diária, vida útil e validade do CA</h2>
+<p>Antes de calçar o cinto ou conectar o talabarte, o operador deve realizar uma rigorosa inspeção visual tátil:</p>
+<ul style='margin: var(--space-3) 0 var(--space-4) 18px; line-height: 1.8;'>
+  <li>Verifique se há cortes, fiapos soltos, queimaduras químicas ou desfiamento nas fitas de poliéster.</li>
+  <li>Cheque se as fivelas de aço ou duralumínio apresentam trincas, deformações, rebarbas ou oxidação profunda.</li>
+  <li>Certifique-se de que os indicadores de queda do cinto não foram acionados.</li>
+  <li>Confira a <a href='/blog/ca-de-epi-como-verificar-a-validade-e-por-que-ele-e-essencial-para-a-seguranca' title='Como consultar o CA de EPI no sistema do Ministério do Trabalho'>validade do Certificado de Aprovação (CA)</a> no portal oficial CNCA do MTE.</li>
+</ul>
+<p><strong>Regra Inegociável da NR-35:</strong> Qualquer cinto, talabarte ou trava-quedas que tenha participado da retenção de uma queda real deve ser <strong>retirado de uso e destruído imediatamente</strong>, mesmo que aparentemente pareça intacto, pois a estrutura molecular das fibras perde sua capacidade elástica de absorção.</p>
+
+<h2>Obrigações legais e treinamento obrigatório da NR-35</h2>
+<p>O trabalho em altura exige conformidade com rígidos protocolos corporativos:</p>
+<ul style='margin: var(--space-3) 0 var(--space-4) 18px; line-height: 1.8;'>
+  <li><strong>Atestado de Saúde Ocupacional (ASO):</strong> Deve constar expressamente a aptidão para trabalho em altura, precedido de exames complementares (eletrocardiograma, eletroencefalograma, glicemia e avaliação psicossocial).</li>
+  <li><strong>Treinamento Capacitatório:</strong> Carga horária mínima de 8 horas (teoria e prática), ministrado por instrutor qualificado em segurança do trabalho, com reciclagem bienal de 8 horas ou sempre que houver mudança de procedimento.</li>
+  <li><strong>Análise de Risco (AR) e Permissão de Trabalho (PT):</strong> Documentos prévios que mapeiam as condições meteorológicas (vento, chuva), interferências elétricas e procedimentos operacionais.</li>
+</ul>
+
+<p>Precisa equipar sua equipe com o que há de mais moderno e confiável em segurança de altura? Entre em <a href='/contato' title='Fale com nossos especialistas em EPI para empresas'>contato com nosso atendimento B2B</a> e solicite uma cotação personalizada com condições especiais no atacado.</p>`,
+    faq: [
+      { q: 'Qual o EPI obrigatório para trabalho em altura?', a: 'O EPI obrigatório principal é o cinto de segurança tipo paraquedista com CA válido pelo MTE, acompanhado de capacete com jugular de 3 pontos, calçado com solado antiderrapante e elemento de ligação (talabarte com absorvedor de energia ou trava-quedas). Desde 2004, cintos abdominais são proibidos para retenção de quedas livres.' },
+      { q: 'A partir de qual altura é obrigatório o uso de EPI pela NR-35?', a: 'O uso de EPI é obrigatório a partir de 2,00 metros de altura do nível inferior onde haja risco de queda, conforme o item 35.1.2 da NR-35. Em cotas inferiores a 2 metros, medidas preventivas podem ser exigidas caso a Análise de Risco (AR) aponte perigos graves, como superfícies cortantes ou peças em movimento.' },
+      { q: 'O que é a Zona Livre de Queda (ZLQ) e por que ela é calculada?', a: 'A Zona Livre de Queda (ZLQ) é a distância vertical mínima necessária entre a ancoragem e o primeiro obstáculo abaixo para reter a queda sem impacto contra o solo. É calculada somando o comprimento do talabarte (1,5 m), a abertura do absorvedor de energia (1,2 m), a altura do trabalhador (1,8 m) e uma margem de segurança de 1,0 m, totalizando cerca de 5,5 metros.' },
+      { q: 'Qual a validade de um cinto de segurança paraquedista?', a: 'A validade do cinto paraquedista é determinada pelo fabricante (geralmente de 3 a 5 anos a partir da fabricação), desde que mantido sem danos e armazenado corretamente. Além da vida útil do equipamento, a empresa deve checar se o Certificado de Aprovação (CA) do MTE estava válido na data de aquisição do lote.' },
+      { q: 'O que fazer com o cinto de segurança após reter uma queda real?', a: 'O cinto de segurança deve ser retirado de serviço e inutilizado imediatamente após reter uma queda real, conforme determinação expressa da NR-35. Mesmo sem danos externos visíveis, a força de impacto estica e rompe microfibras estruturais de poliamida ou poliéster, comprometendo a retenção em um eventual segundo evento.' }
+    ],
+    siloBox: {
+      label: 'Catálogo Especializado NR-35',
+      title: 'EPIs para Trabalho em Altura com CA Válido',
+      desc: 'Cintos paraquedistas, talabartes com absorvedor, trava-quedas retráteis e mosquetões certificados com pronta-entrega para todo o Brasil.',
+      href: '/produtos?categoria=altura',
+      btnText: 'Ver Cintos e Trava-Quedas'
+    },
+    social_proof: {
+      quote: 'Na segurança em altura não existe margem para improvisação. O uso correto do cinto paraquedista conectado a um ponto de ancoragem dimensionado a 15 kN e o cálculo preciso da Zona Livre de Queda (ZLQ) são o que garantem que o operador retorne ileso para sua família.',
+      name: 'Eng. Roberto Vasconcellos, CREA-SP',
+      credential: 'Especialista em Acesso por Corda, Resgate Industrial e Instrutor Master de NR-35',
+      badge: 'Auditor Técnico de Trabalho em Altura'
+    },
+    date: '2026-09-08',
+    slug: 'epi-para-trabalho-em-altura-nr-35',
+    meta_description: 'Guia de EPI para trabalho em altura: cinto paraquedista, trava-quedas, talabarte, ZLQ e exigências da NR-35 com CA válido para segurança total.',
+    image_alt: 'Técnico de segurança industrial equipado com cinto paraquedista, capacete com jugular e talabarte duplo em estrutura elevada conforme a NR-35.',
+    published: true,
+  },
   {
     id: 'real-post-006',
     title: 'EPI e EPC: Diferenca, Exemplos e Normas | Guia NR-6',
