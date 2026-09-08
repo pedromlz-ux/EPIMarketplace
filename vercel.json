@@ -50,7 +50,7 @@
     },
     {
       "source": "/blog/:slug.html",
-      "destination": "/blog/:slug",
+      "destination": "https://epimarketplace.com/blog/:slug",
       "permanent": true
     }
   ],
