@@ -31,20 +31,15 @@ const SLUG_IMAGE_MAP = {
 };
 
 const AUTHOR_BIO_HTML = `
-<div class="author-bio" itemscope itemtype="https://schema.org/Person">
-  <img class="author-bio__avatar"
-       src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=120&fit=crop&q=80"
-       alt="Carolina Ferreira - Engenheira de Seguranca do Trabalho"
-       width="60" height="60" loading="lazy" decoding="async">
+<div class="author-bio" itemscope itemtype="https://schema.org/Organization">
   <div class="author-bio__info">
-    <div class="author-bio__credential">Revisao Tecnica</div>
-    <div class="author-bio__name" itemprop="name">Carolina Ferreira, M.Sc.</div>
+    <div class="author-bio__credential">Conteúdo editorial</div>
+    <div class="author-bio__name" itemprop="name">Equipe Editorial EPI Marketplace</div>
     <p class="author-bio__desc" itemprop="description">
-      Engenheira de Seguranca do Trabalho (CREA-SP) com 12 anos de experiencia em gestao de EPIs para
-      concessionarias de energia eletrica e construtoras de grande porte. Especialista em NR-10, NR-35 e NR-6.
+      Conteúdo produzido pela equipe editorial da EPI Marketplace para apoiar decisões de compra e segurança
+      do trabalho. Antes da aquisição ou do uso, valide a aplicação, a ficha técnica e o CA do equipamento.
     </p>
     <div class="author-bio__links">
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">Linkedin</a>
       <a href="/sobre">Sobre a EPI Marketplace</a>
     </div>
   </div>
@@ -77,21 +72,6 @@ function faqAccordion(items) {
   <h2 class="article-faq__title" id="article-faq-title">Perguntas Frequentes</h2>
   ${itemsHtml}
 </section>`;
-}
-
-function socialProof({ quote, name, credential, badge }) {
-  return `
-<div class="article-social-proof" role="note" aria-label="Validacao tecnica">
-  <div class="article-social-proof__icon" aria-hidden="true">&#128077;</div>
-  <div class="article-social-proof__body">
-    <p class="article-social-proof__quote">${quote}</p>
-    <div class="article-social-proof__meta">
-      <span class="article-social-proof__name">${name}</span>
-      <span class="article-social-proof__credential">${credential}</span>
-      <span class="article-social-proof__badge">&#10003; ${badge}</span>
-    </div>
-  </div>
-</div>`;
 }
 
 function youtubeEmbed({ url, caption }) {
@@ -326,12 +306,6 @@ const FALLBACK_POSTS = [
     href: '/produtos?categoria=epi',
     btnText: 'Ver Todos os EPIs na Loja'
   },
-  social_proof: {
-    quote: '"O fornecimento dos <strong>EPIs obrigatórios</strong> com CA ativo e a guarda da ficha de entrega assinada neutralizam até 90% dos passivos trabalhistas e salvam vidas diariamente."',
-    name: 'Eng. Ricardo Lopes, CREA-SP',
-    credential: 'Técnico e Engenheiro de Segurança do Trabalho — 18 anos de auditoria de conformidade NR',
-    badge: 'Auditor Técnico NR-6 / NR-18'
-  },
   faq: [
     {
       q: 'Quais são os 7 principais equipamentos de segurança no trabalho?',
@@ -381,7 +355,7 @@ const FALLBACK_POSTS = [
   <li><strong>Elemento de Ligação (Conexão):</strong> Dispositivos que unem o cinto ao ponto de ancoragem, como talabartes com absorvedor de energia (ABS) ou dispositivos trava-quedas.</li>
   <li><strong>Equipamento de Proteção Individual (EPI):</strong> Cinto de segurança tipo paraquedista com Certificado de Aprovação (CA) ativo no MTE.</li>
 </ol>
-<p>Se qualquer um desses três elos falhar, todo o sistema entra em colapso. Por isso, adquira sempre <a href='/produtos?categoria=altura' title='Equipamentos certificados para trabalho em altura NR-35'>equipamentos para trabalho em altura com CA válido</a> na EPI Marketplace, garantindo conformidade documental e técnica.</p>
+<p>Se qualquer um desses três elos falhar, todo o sistema entra em colapso. Por isso, adquira sempre <a href='/trabalho-em-altura' title='Equipamentos certificados para trabalho em altura NR-35'>equipamentos para trabalho em altura com CA válido</a> na EPI Marketplace, garantindo conformidade documental e técnica.</p>
 
 <h2>Quais são os principais EPIs para trabalho em altura?</h2>
 <p>Cada atividade em desnível possui exigências ergonômicas e mecânicas específicas. A seguir, detalhamos os componentes fundamentais que compõem o kit de segurança do trabalhador:</p>
@@ -395,7 +369,7 @@ const FALLBACK_POSTS = [
   <li><strong>Pontos laterais na cintura:</strong> Utilizados exclusivamente para descanso e posicionamento ergonômico (nunca para reter quedas livres).</li>
   <li><strong>Ponto ventral (umbilical):</strong> Obrigatório em técnicas de acesso por corda, suspensão e espaços confinados.</li>
 </ul>
-<p>Conheça os modelos de <a href='/produtos?categoria=altura' title='Cintos paraquedistas com CA homologado'>cintos paraquedistas homologados pelo MTE</a> disponíveis em nosso catálogo.</p>
+<p>Conheça os modelos de <a href='/trabalho-em-altura' title='Cintos paraquedistas com CA homologado'>cintos paraquedistas homologados pelo MTE</a> disponíveis em nosso catálogo.</p>
 
 <h3>2. Talabartes com Absorvedor de Energia (ABNT NBR 15834 e NBR 15835)</h3>
 <p>O talabarte é o elemento que conecta o cinto ao ponto de ancoragem. Em qualquer situação onde exista a possibilidade de queda livre, o uso de talabarte com <strong>Absorvedor de Energia (ABS)</strong> é obrigatório por lei.</p>
@@ -500,14 +474,8 @@ const FALLBACK_POSTS = [
       label: 'Catálogo Especializado NR-35',
       title: 'EPIs para Trabalho em Altura com CA Válido',
       desc: 'Cintos paraquedistas, talabartes com absorvedor, trava-quedas retráteis e mosquetões certificados com pronta-entrega para todo o Brasil.',
-      href: '/produtos?categoria=altura',
+      href: '/trabalho-em-altura',
       btnText: 'Ver Cintos e Trava-Quedas'
-    },
-    social_proof: {
-      quote: 'Na segurança em altura não existe margem para improvisação. O uso correto do cinto paraquedista conectado a um ponto de ancoragem dimensionado a 15 kN e o cálculo preciso da Zona Livre de Queda (ZLQ) são o que garantem que o operador retorne ileso para sua família.',
-      name: 'Eng. Roberto Vasconcellos, CREA-SP',
-      credential: 'Especialista em Acesso por Corda, Resgate Industrial e Instrutor Master de NR-35',
-      badge: 'Auditor Técnico de Trabalho em Altura'
     },
     date: '2026-09-08',
     slug: 'epi-para-trabalho-em-altura-nr-35',
@@ -567,15 +535,9 @@ const FALLBACK_POSTS = [
       { q: 'Quando e obrigatorio usar EPI mesmo tendo EPC?', a: 'O EPI e obrigatorio mesmo com EPC quando o controle coletivo nao e suficiente para neutralizar completamente o risco residual. Por exemplo: em subestacoes com sistema LOTO (EPC), o eletricista ainda usa luvas isolantes e capacete Classe B (EPI) por seguranca adicional.' },
     ],
     siloBox: { label: 'Comprar EPIs Certificados', title: 'Catalogo Completo de EPIs com CA Valido', desc: 'Da luva dieletrica ao cinto paraquedista: todos os EPIs obrigatorios para NR-10 e NR-35 com CA ativo.', href: '/produtos', btnText: 'Ver Catalogo de EPIs' },
-    social_proof: {
-      quote: `A hierarquia de controle de riscos e clara: o <strong>EPC vem primeiro</strong>. O EPI deve ser a ultima camada, nao a primeira. Empresas que pulam as medidas coletivas e vao direto ao EPI cometem infracao grave e assumem responsabilidade civil e criminal em caso de acidente.`,
-      name: 'Eng. Marcus Almeida, CREA-SP',
-      credential: 'Engenheiro de Seguranca do Trabalho — Consultor NR-1 e NR-6 por 20 anos',
-      badge: 'Especialista Hierarquia de Riscos'
-    },
     date: '2026-09-01',
     slug: 'epi-e-epc-qual-a-diferenca-exemplos-e-quando-usar',
-    meta_description: 'EPI e EPC: entenda a diferenca, a hierarquia de protecao da NR-6, exemplos praticos por setor (NR-10, NR-35, NR-18) e quando usar cada um na seguranca do trabalho.',
+    meta_description: 'EPI e EPC: entenda a diferenca, a hierarquia de protecao da NR-6, exemplos por setor (NR-10, NR-35, NR-18) e quando usar cada um.',
     image_alt: 'Trabalhador com EPI completo (capacete, luvas e cinto) em frente a equipamentos de protecao coletiva em obra.',
     published: true,
   },
@@ -619,7 +581,7 @@ const FALLBACK_POSTS = [
   <li><strong>Luvas de couro/raspa:</strong> Contra abrasao, cortes e projecao de particulas quentes.</li>
   <li><strong>Luvas anticorte:</strong> Para manipulacao de vidros, chapas metalicas e instrumentos cortantes.</li>
 </ul>
-<p>Adquira <a href="/produtos?categoria=linha-viva" title="Luvas de seguranca certificadas">luvas de seguranca com CA ativo</a> na EPI Marketplace.</p>
+<p>Adquira <a href="/nr-10" title="Luvas de seguranca certificadas">luvas de seguranca com CA ativo</a> na EPI Marketplace.</p>
 <h3>6. Protecao dos Pes e Pernas</h3>
 <ul>
   <li><strong>Calcados com bico de aco ou composite:</strong> Contra impactos nos pes.</li>
@@ -634,7 +596,7 @@ const FALLBACK_POSTS = [
   <li><strong>Coletes refletivos:</strong> Para trabalhos proximos a vias de transito.</li>
 </ul>
 <h3>8. Protecao do Corpo contra Quedas</h3>
-<p>Os <strong>cintos paraquedistas</strong> sao obrigatorios para trabalho acima de 2 metros (NR-35). Veja nosso catalogo de <a href="/produtos?categoria=altura" title="Cintos paraquedistas com CA NR-35">cintos paraquedistas certificados</a>.</p>
+<p>Os <strong>cintos paraquedistas</strong> sao obrigatorios para trabalho acima de 2 metros (NR-35). Veja nosso catalogo de <a href="/trabalho-em-altura" title="Cintos paraquedistas com CA NR-35">cintos paraquedistas certificados</a>.</p>
 <h2>O que NAO e considerado EPI pela NR-6</h2>
 <p>A NR-6 tambem especifica o que NAO e EPI:</p>
 <ul>
@@ -673,7 +635,7 @@ const FALLBACK_POSTS = [
 <h2>Lista completa de EPIs obrigatorios para eletricistas</h2>
 <h3>1. Luvas Isolantes de Borracha e Luvas de Cobertura</h3>
 <p>As <strong>luvas isolantes de borracha</strong> sao o principal equipamento para protecao contra choques eletricos. Elas sao classificadas de acordo com a tensao maxima de trabalho: Classe 00 (ate 500 V), Classe 0 (ate 1.000 V), Classe 1 (ate 7.500 V), Classe 2 (ate 17.000 V), Classe 3 (ate 26.500 V) e Classe 4 (ate 36.000 V). E obrigatorio utilizar uma <strong>luva de cobertura em vaqueta ou raspa</strong> sobre a luva isolante.</p>
-<p>Compre <a href="/produtos?categoria=linha-viva" title="Luvas isolantes para eletricista NR-10 com CA valido">luvas isolantes certificadas com CA ativo</a> na EPI Marketplace.</p>
+<p>Compre <a href="/nr-10" title="Luvas isolantes para eletricista NR-10 com CA valido">luvas isolantes certificadas com CA ativo</a> na EPI Marketplace.</p>
 <h3>2. Capacete de Seguranca Classe B</h3>
 <p>O <strong>capacete Classe B</strong> oferece protecao contra impactos e isolamento contra descargas eletricas de ate 30.000 Volts. Deve ser utilizado sempre acompanhado de jugular nao condutiva.</p>
 <h3>3. Vestimentas Especiais Antichama</h3>
@@ -683,7 +645,7 @@ const FALLBACK_POSTS = [
 <h3>5. Protetor Facial contra Arco Eletrico</h3>
 <p>Para trabalhos em paineis energizados, o uso de <strong>protetor facial com visor de policarbonato anti-arco</strong> e obrigatorio.</p>
 <h3>6. Cinto Paraquedista Dieletrico</h3>
-<p>Em atividades que combinam altura e eletricidade, deve-se utilizar <strong>cintos tipo paraquedista com argolas e fivelas dieletricas</strong>. Veja nosso catalogo de <a href="/produtos?categoria=altura" title="Cintos paraquedistas dieletricos NR-35 NR-10">cintos paraquedistas dieletricos com CA</a>.</p>
+<p>Em atividades que combinam altura e eletricidade, deve-se utilizar <strong>cintos tipo paraquedista com argolas e fivelas dieletricas</strong>. Veja nosso catalogo de <a href="/trabalho-em-altura" title="Cintos paraquedistas dieletricos NR-35 NR-10">cintos paraquedistas dieletricos com CA</a>.</p>
 <h2>Classes de Tensao das Luvas Isolantes</h2>
 <ul>
   <li><strong>Classe 00:</strong> ate 500 V (baixa tensao residencial)</li>
@@ -701,7 +663,7 @@ const FALLBACK_POSTS = [
       { q: 'Com que frequencia devo fazer o teste dieletrico das luvas?', a: 'Conforme a norma ABNT NBR 10622, luvas de Classe 00 e 0 devem ser testadas semestralmente. Luvas de Classe 1 a 4 usadas em campo devem ser testadas trimestralmente. Independente da classe, realize o teste pneumatico manual antes de cada turno de trabalho.' },
       { q: 'O que e ATPV em vestimentas antichama?', a: 'ATPV (Arc Thermal Performance Value) e a medida em cal/cm2 que indica a quantidade de energia de arco eletrico que uma vestimenta consegue absorver antes que o usuario sofra queimadura de segundo grau. A NR-10 exige o uso de vestimentas com ATPV compativel ao estudo de energia incidente de cada instalacao.' },
     ],
-    siloBox: { label: 'Catalogo Especializado NR-10', title: 'EPIs para Eletricista com CA Valido', desc: 'Todos os equipamentos listados neste artigo estao disponiveis em nosso catalogo com Certificado de Aprovacao ativo.', href: '/produtos?categoria=linha-viva', btnText: 'Ver EPIs para Linha Viva' },
+    siloBox: { label: 'Catalogo Especializado NR-10', title: 'EPIs para Eletricista com CA Valido', desc: 'Todos os equipamentos listados neste artigo estao disponiveis em nosso catalogo com Certificado de Aprovacao ativo.', href: '/nr-10', btnText: 'Ver EPIs para Linha Viva' },
     date: '2026-08-24',
     slug: 'epi-para-eletricista-equipamentos-obrigatorios-nr-10',
     meta_description: 'Lista completa de EPIs para eletricista exigidos pela NR-10: luvas isolantes, capacete Classe B, vestimentas antichama e botinas dieletricas com CA valido.',
@@ -818,7 +780,7 @@ const FALLBACK_POSTS = [
 </ul>
 <h3>Para atender a NR-35 (protecao contra queda):</h3>
 <ul>
-  <li><a href="/produtos?categoria=altura" title="Cintos paraquedistas com CA NR-35"><strong>Cinto paraquedista Classe A ou C</strong></a> com argolas e fivelas dieletricas;</li>
+  <li><a href="/trabalho-em-altura" title="Cintos paraquedistas com CA NR-35"><strong>Cinto paraquedista Classe A ou C</strong></a> com argolas e fivelas dieletricas;</li>
   <li>Talabarte tipo Y com duplo amortecedor de impacto;</li>
   <li>Trava-quedas deslizante certificado;</li>
   <li>Linha de vida ancorada em ponto fixo estrutural.</li>
@@ -832,10 +794,10 @@ const FALLBACK_POSTS = [
       { q: 'Qual a diferenca entre cinto Classe A e Classe C?', a: 'O cinto Classe A possui ancoragem dorsal e e projetado para parar quedas, sendo usado com talabarte Y anti-queda. O cinto Classe C possui ancoragem dorsal e ventral/lateral, sendo ideal para posicionamento em estruturas verticais como postes e torres. Ambas as classes devem atender a ABNT NBR 15834.' },
       { q: 'Todo eletricista precisa ter treinamento em NR-35?', a: 'Sim, se o eletricista realizar qualquer atividade acima de 2 metros. O treinamento minimo exigido pela NR-35 e de 8 horas teorico-praticas. A atualizacao deve ser feita sempre que houver mudanca nas condicoes de trabalho ou a cada 2 anos.' },
     ],
-    siloBox: { label: 'Catalogo NR-35 & NR-10', title: 'Cintos Paraquedistas e EPIs para Altura Eletrica', desc: 'Cintos dieletricos, talabartes Y, trava-quedas e luvas isolantes. Todos com CA valido e documentacao tecnica.', href: '/produtos?categoria=altura', btnText: 'Ver Cintos Paraquedistas' },
+    siloBox: { label: 'Catalogo NR-35 & NR-10', title: 'Cintos Paraquedistas e EPIs para Altura Eletrica', desc: 'Cintos dieletricos, talabartes Y, trava-quedas e luvas isolantes. Todos com CA valido e documentacao tecnica.', href: '/trabalho-em-altura', btnText: 'Ver Cintos Paraquedistas' },
     date: '2026-07-18',
     slug: 'nr-10-nr-35-guia-completo-sobre-as-normas-e-epis-necessarios',
-    meta_description: 'Entenda as normas NR-10 e NR-35 e quais EPIs sao obrigatorios para trabalhos seguros com eletricidade e em altura. Requisitos, treinamentos e cintos dieletricos.',
+    meta_description: 'Entenda as normas NR-10 e NR-35 e quais EPIs sao obrigatorios para trabalhos seguros com eletricidade e em altura. Requisitos e treinamentos.',
     image_alt: 'Trabalhador com capacete e talabartes de seguranca em trabalho em altura.',
     published: true,
   },
@@ -916,7 +878,11 @@ async function buildBlog() {
       "headline": post.title,
       "image": [imgUrl.startsWith('http') ? imgUrl : 'https://epimarketplace.com' + imgUrl],
       "datePublished": post.date || new Date().toISOString(),
-      "author": { "@type": "Person", "name": "Carolina Ferreira, M.Sc.", "jobTitle": "Engenheira de Seguranca do Trabalho" },
+      "author": {
+        "@type": "Organization",
+        "name": "Equipe Editorial EPI Marketplace",
+        "url": "https://epimarketplace.com/sobre"
+      },
       "publisher": { "@type": "Organization", "name": "EPI Marketplace", "logo": { "@type": "ImageObject", "url": "https://epimarketplace.com/img/logo.png" } },
       "description": post.meta_description || post.summary || ''
     };
@@ -950,15 +916,7 @@ async function buildBlog() {
     const siloHtml = post.siloBox ? siloBox(post.siloBox) : '';
     const faqHtml = faqItems.length > 0 ? faqAccordion(faqItems) : '';
     const videoHtml = post.video_url ? youtubeEmbed({ url: post.video_url, caption: post.video_caption || '' }) : '';
-    const socialProofHtml = post.social_proof
-      ? socialProof(post.social_proof)
-      : socialProof({
-          quote: `"A escolha correta dos EPIs com <strong>CA valido</strong> e a inspecao periodica sao a base da conformidade com as normas regulamentadoras brasileiras."`,
-          name: 'Eng. Ricardo Lopes, CREA-SP',
-          credential: 'Tecnico de Seguranca do Trabalho — 18 anos de experiencia em conformidade NR',
-          badge: 'Especialista NR-10 / NR-35'
-        });
-    const fullContent = `${videoHtml}${contentHtml}\n${siloHtml}\n${faqHtml}\n${socialProofHtml}\n${AUTHOR_BIO_HTML}`;
+    const fullContent = `${videoHtml}${contentHtml}\n${siloHtml}\n${faqHtml}\n${AUTHOR_BIO_HTML}`;
 
     html = html.replace(/<div id="loading" class="loading-spinner">[\s\S]*?<\/p>\s*<\/div>/i, '<div id="loading" class="loading-spinner" style="display: none;"></div>');
     html = html.replace(/<article id="article-view" class="blog-article"[^>]*>/i, '<article id="article-view" class="blog-article" style="display: block;">');
@@ -991,7 +949,7 @@ async function buildBlog() {
     console.log(`    Desc  (${descLen} chars): ${descOk}`);
     console.log('');
   });
-  console.log('  COMPONENTES EEAT INJETADOS: AuthorBio + SocialProof + FAQ + Silo CTA');
+  console.log('  COMPONENTES EEAT INJETADOS: assinatura editorial + FAQ + Silo CTA');
   console.log('  JSON-LD: Article + FAQPage por artigo (AI Overviews / SGE)');
   console.log('');
   console.log('  ACOES EXTERNAS OBRIGATORIAS:');

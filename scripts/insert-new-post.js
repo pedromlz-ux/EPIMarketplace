@@ -209,12 +209,6 @@ const NEW_POST = {
     href: '/produtos?categoria=epi',
     btnText: 'Ver Todos os EPIs na Loja'
   },
-  social_proof: {
-    quote: '"O fornecimento dos <strong>EPIs obrigatórios</strong> com CA ativo e a guarda da ficha de entrega assinada neutralizam até 90% dos passivos trabalhistas e salvam vidas diariamente."',
-    name: 'Eng. Ricardo Lopes, CREA-SP',
-    credential: 'Técnico e Engenheiro de Segurança do Trabalho — 18 anos de auditoria de conformidade NR',
-    badge: 'Auditor Técnico NR-6 / NR-18'
-  },
   faq: [
     {
       q: 'Quais são os 7 principais equipamentos de segurança no trabalho?',
@@ -262,7 +256,7 @@ async function run() {
     meta_description: NEW_POST.meta_description,
     summary: NEW_POST.summary,
     content: NEW_POST.content,
-    author: 'Carolina Ferreira, M.Sc.',
+    author: 'Equipe Editorial EPI Marketplace',
     has_footer: true,
     seo_score: 100
   };

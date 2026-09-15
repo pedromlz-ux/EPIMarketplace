@@ -47,6 +47,11 @@ export default defineConfig({
         contato: resolve(__dirname, 'contato.html'),
         privacidade: resolve(__dirname, 'privacidade.html'),
         termos: resolve(__dirname, 'termos.html'),
+        nr10: resolve(__dirname, 'nr-10.html'),
+        trabalhoEmAltura: resolve(__dirname, 'trabalho-em-altura.html'),
+        aterramento: resolve(__dirname, 'aterramento.html'),
+        epiParaEmpresas: resolve(__dirname, 'epi-para-empresas.html'),
+        consultarCaEpi: resolve(__dirname, 'consultar-ca-epi.html'),
       },
       output: {
         // Nomes com hash para cache busting automático
@@ -63,4 +68,3 @@ export default defineConfig({
     },
   },
 });
-
