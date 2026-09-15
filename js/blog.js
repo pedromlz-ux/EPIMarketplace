@@ -9,6 +9,8 @@ const SUPABASE_URL = 'https://knmkacjuyjgxiwdjpggz.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtubWthY2p1eWpneGl3ZGpwZ2d6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQxMzU2MjcsImV4cCI6MjA5OTcxMTYyN30.G28xb7vjtkcrtWrPKWTex--yUsySxMjUZvP7Q6eEPQc';
 
 const SLUG_IMAGE_MAP = {
+  'epis-obrigatorios-principais-equipamentos-seguranca':
+    '/img/blog/epis-obrigatorios-colete-refletivo-bota-seguranca.webp',
   'epi-para-trabalho-em-altura-nr-35':
     '/img/blog/epi-para-trabalho-em-altura-nr-35.jpg',
   'epi-para-eletricista-equipamentos-obrigatorios-nr-10':
@@ -64,7 +66,7 @@ function renderVisiblePosts() {
     }
     
     article.innerHTML = `
-      <img src="${imgUrl}" alt="${imgAlt}" class="blog-card__img" loading="lazy">
+      <img src="${imgUrl}" alt="${imgAlt}" class="blog-card__img" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='${DEFAULT_IMG}';">
       <div class="blog-card__body">
         <span class="blog-card__tag">${post.category || 'EPI'}</span>
         <h2 class="blog-card__title">${post.title}</h2>

@@ -62,7 +62,7 @@ function renderVisiblePosts() {
     article.style.animation = `cardEnter 0.45s ease-out ${idx * 0.1}s both`;
     
     article.innerHTML = `
-      <img src="${imgUrl}" alt="${imgAlt}" class="blog-card__img" loading="lazy">
+      <img src="${imgUrl}" alt="${imgAlt}" class="blog-card__img" loading="lazy" decoding="async" onerror="this.onerror=null; this.src='${DEFAULT_IMG}';">
       <div class="blog-card__body">
         <span class="blog-card__tag">${post.category || 'EPI'}</span>
         <h2 class="blog-card__title">${post.title}</h2>
