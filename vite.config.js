@@ -1,7 +1,17 @@
 import { defineConfig } from 'vite';
+import { existsSync, readdirSync } from 'fs';
 import { resolve } from 'path';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import viteCompression from 'vite-plugin-compression';
+
+const productDirectory = resolve(__dirname, 'produto');
+const productEntries = existsSync(productDirectory)
+  ? Object.fromEntries(
+      readdirSync(productDirectory)
+        .filter((file) => file.endsWith('.html'))
+        .map((file) => [`produto/${file.slice(0, -5)}`, resolve(productDirectory, file)]),
+    )
+  : {};
 
 export default defineConfig({
   plugins: [
@@ -60,6 +70,7 @@ export default defineConfig({
         travaQuedas: resolve(__dirname, 'trava-quedas.html'),
         detectorDeTensao: resolve(__dirname, 'detector-de-tensao.html'),
         varaDeManobra: resolve(__dirname, 'vara-de-manobra.html'),
+        ...productEntries,
       },
       output: {
         // Nomes com hash para cache busting automático

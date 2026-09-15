@@ -9,3 +9,6 @@ tmp
 .agents
 .vercel
 .env*
+produto/
+public/merchant/
+data/merchant-feed-report.json
