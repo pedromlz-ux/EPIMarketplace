@@ -42,7 +42,7 @@ function availabilityLabel(value) {
 function header() {
   return `
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-  <nav aria-label="Navegação principal" class="scrolled" id="navbar" role="navigation">
+  <nav aria-label="Navegação principal" class="product-navbar" id="navbar" role="navigation">
     <div class="container"><div class="navbar__inner">
       <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu" class="navbar__burger" id="burger-btn" type="button"><span></span><span></span><span></span></button>
       <a aria-label="EPI Marketplace — Página inicial" class="navbar__logo" href="/"><span class="product-brand">EPI Marketplace</span></a>
@@ -123,6 +123,10 @@ function pageHtml(product) {
   <meta property="og:description" content="${escapeHtml(metaDescription)}">
   <meta property="og:url" content="${product.url}">
   <meta property="og:image" content="${siteUrl}/${product.localImage}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,700;0,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
   <link rel="stylesheet" href="/css/tokens.css">
   <link rel="stylesheet" href="/css/global.css">
   <link rel="stylesheet" href="/css/product-page.css">
@@ -136,14 +140,14 @@ ${header()}
   <div class="product-page container">
     <nav aria-label="Caminho de navegação" class="product-breadcrumb"><a href="/">Início</a><span aria-hidden="true">›</span><a href="/produtos">Produtos</a><span aria-hidden="true">›</span><a href="${product.categoryHref}">${escapeHtml(product.categoryLabel)}</a><span aria-hidden="true">›</span><span aria-current="page">${escapeHtml(product.name)}</span></nav>
     <section class="product-layout" aria-labelledby="product-title">
-      <div class="product-media"><img src="/${product.localImage}" alt="${escapeHtml(product.name)} — referência ${escapeHtml(product.sku)}" width="900" height="900" fetchpriority="high"></div>
+      <div class="product-media product-media--interactive" data-image-motion><span class="product-media__orbit" aria-hidden="true"></span><img src="/${product.localImage}" alt="${escapeHtml(product.name)} — referência ${escapeHtml(product.sku)}" width="900" height="900" fetchpriority="high"><span class="product-media__hint" aria-hidden="true"><span class="product-media__hint-icon">↻</span> Mova para explorar</span></div>
       <div class="product-details">
         <p class="product-category"><a href="${product.categoryHref}">${escapeHtml(product.categoryLabel)}</a></p>
         <h1 id="product-title">${escapeHtml(product.name)}</h1>
         <p class="product-reference">Referência: <strong>${escapeHtml(product.sku)}</strong></p>
         <p class="product-summary"><strong>${escapeHtml(product.name)}</strong> é uma referência do catálogo para pesquisa técnica e solicitação de cotação.</p>
         ${priceBlock}
-        <div class="product-actions"><a class="btn btn--primary btn--lg" href="https://wa.me/${whatsappNumber}?text=${quoteText}" rel="noopener noreferrer" target="_blank">Solicitar cotação pelo WhatsApp</a><a class="btn btn--outline btn--lg" href="/contato?produto=${encodeURIComponent(product.sku)}">Pedir cotação por e-mail</a></div>
+        <div class="product-actions"><a class="btn btn--primary product-action-button" href="https://wa.me/${whatsappNumber}?text=${quoteText}" rel="noopener noreferrer" target="_blank">Solicitar cotação pelo WhatsApp</a><a class="btn btn--outline product-action-button" href="/contato?produto=${encodeURIComponent(product.sku)}">Pedir cotação por e-mail</a></div>
         <p class="product-purchase-note">A confirmação de especificação, preço, prazo e disponibilidade é feita antes do pedido.</p>
       </div>
     </section>
@@ -151,12 +155,13 @@ ${header()}
       <div class="product-content__main"><h2 id="technical-data-title">Descrição e dados técnicos</h2><p>${escapeHtml(product.description)}</p>${catalogSource}</div>
       <aside class="product-aside" aria-label="Orientações de compra"><h2>Antes de comprar</h2><ul><li>Confirme a referência e a aplicação prevista.</li><li>Valide especificações técnicas com a equipe responsável.</li><li>Para EPIs sujeitos a CA, confira a correspondência do certificado com o produto ofertado.</li></ul><a href="/consultar-ca-epi">Como consultar CA de EPI</a></aside>
     </section>
-    <section class="product-related" aria-labelledby="related-title"><p class="product-category">Explore a linha</p><h2 id="related-title">Outros equipamentos para ${escapeHtml(product.categoryLabel.toLowerCase())}</h2><p>Veja mais referências desta linha no catálogo completo ou navegue pela página especializada.</p><div class="product-related__actions"><a class="btn btn--outline" href="${product.categoryHref}">Ver ${escapeHtml(product.categoryLabel)}</a><a class="btn btn--outline" href="/produtos?categoria=${encodeURIComponent(product.category)}">Ver catálogo da categoria</a></div></section>
+    <section class="product-related" aria-labelledby="related-title"><div class="product-related__content"><p class="product-related__eyebrow">Continue explorando</p><h2 id="related-title">Encontre mais itens para a sua operação</h2><p>Veja referências relacionadas ou navegue pelo catálogo completo.</p><div class="product-related__actions"><a class="btn btn--outline" href="${product.categoryHref}">Ver produtos da categoria</a><a class="btn btn--outline" href="/produtos">Ver todo o catálogo</a></div></div></section>
   </div>
 </main>
 ${footer()}
 <a aria-label="Abrir conversa no WhatsApp" class="whatsapp-float" href="https://wa.me/${whatsappNumber}?text=${quoteText}" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a9.67 9.67 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413A11.815 11.815 0 0 0 12.05 0z"></path></svg></a>
 <script defer src="/js/main.js" type="module"></script>
+<script defer src="/js/product-image-motion.js" type="module"></script>
 </body>
 </html>`;
 }

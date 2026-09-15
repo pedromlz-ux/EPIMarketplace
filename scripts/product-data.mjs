@@ -17,7 +17,7 @@ export const categories = {
   grampos: { label: 'Grampos e cabeçotes', href: '/produtos?categoria=grampos' },
   guincho: { label: 'Guinchos e talhas', href: '/produtos?categoria=guincho' },
   'linha-viva': { label: 'Linha viva', href: '/linha-viva' },
-  'pega-poste': { label: 'Pega poste', href: '/produtos?categoria=pega-poste' },
+  'pega-poste': { label: 'Pega-poste', href: '/produtos?categoria=pega-poste' },
   selas: { label: 'Selas, cintas e colares', href: '/produtos?categoria=selas' },
   sinalizacao: { label: 'Sinalização', href: '/produtos?categoria=sinalizacao' },
 };
