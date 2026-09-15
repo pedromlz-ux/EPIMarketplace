@@ -173,6 +173,165 @@ const pages = [
   }
 ];
 
+const deepCategoryPages = [
+  {
+    slug: 'linha-viva',
+    title: 'Equipamentos para Linha Viva | EPI Marketplace',
+    description: 'Pesquise equipamentos para linha viva, manutenção de redes elétricas, ferramentas e acessórios para solicitar cotação em todo o Brasil.',
+    h1: 'Equipamentos para Linha Viva e Redes Elétricas',
+    eyebrow: 'Manutenção de redes',
+    term: 'equipamentos para linha viva',
+    specialty: 'operações em redes elétricas, manobras, manutenção e procedimentos definidos pela organização',
+    checks: 'a referência do item, o procedimento aplicável, a tensão, as limitações de uso e as instruções do fabricante',
+    catalog: [
+      { href: '/ferramentas-isoladas', title: 'Ferramentas isoladas', text: 'Alicates, chaves e itens para avaliação técnica.' },
+      { href: '/detector-de-tensao', title: 'Detectores de tensão', text: 'Opções para verificação conforme a aplicação.' },
+      { href: '/vara-de-manobra', title: 'Varas de manobra', text: 'Itens para operações e procedimentos específicos.' }
+    ]
+  },
+  {
+    slug: 'ferramentas-isoladas',
+    title: 'Ferramentas Isoladas para Eletricista | EPI Marketplace',
+    description: 'Pesquise ferramentas isoladas para eletricista e manutenção elétrica. Compare referências e solicite cotação para sua empresa.',
+    h1: 'Ferramentas Isoladas para Eletricista',
+    eyebrow: 'Manutenção elétrica',
+    term: 'ferramentas isoladas para eletricista',
+    specialty: 'atividades de manutenção elétrica que exigem ferramentas compatíveis com o procedimento de trabalho',
+    checks: 'a classe ou especificação declarada, a integridade do isolamento, a referência, a aplicação e as instruções do fabricante',
+    catalog: [
+      { href: '/linha-viva', title: 'Linha viva', text: 'Equipamentos e acessórios para manutenção de redes.' },
+      { href: '/nr-10', title: 'EPI NR-10', text: 'Orientação comercial para equipes elétricas.' },
+      { href: '/produtos?categoria=linha-viva', title: 'Ver itens no catálogo', text: 'Acesse a categoria de linha viva.' }
+    ]
+  },
+  {
+    slug: 'luvas-isolantes',
+    title: 'Luvas Isolantes para Eletricista | EPI Marketplace',
+    description: 'Pesquise luvas isolantes para eletricista, compare referências e confirme a aplicação, o CA e a documentação antes de comprar.',
+    h1: 'Luvas Isolantes para Eletricista',
+    eyebrow: 'Proteção das mãos',
+    term: 'luvas isolantes para eletricista',
+    specialty: 'serviços elétricos cuja seleção deve considerar o risco avaliado e a classe de proteção necessária',
+    checks: 'o CA quando aplicável, a classe de proteção, a referência, o estado de conservação e as limitações indicadas pelo fabricante',
+    catalog: [
+      { href: '/nr-10', title: 'EPI NR-10', text: 'Orientações para compras de equipes elétricas.' },
+      { href: '/consultar-ca-epi', title: 'Consultar CA', text: 'Aprenda a conferir o certificado no CAEPI.' },
+      { href: '/produtos?categoria=epi', title: 'Ver EPIs no catálogo', text: 'Acesse os itens de proteção disponíveis.' }
+    ]
+  },
+  {
+    slug: 'cinto-paraquedista',
+    title: 'Cinto Paraquedista para Trabalho em Altura | EPI Marketplace',
+    description: 'Pesquise cinto paraquedista para trabalho em altura, compare referências e solicite cotação para sua equipe em todo o Brasil.',
+    h1: 'Cinto Paraquedista para Trabalho em Altura',
+    eyebrow: 'Retenção de quedas',
+    term: 'cinto paraquedista para trabalho em altura',
+    specialty: 'atividades com risco de queda em que o equipamento integra um sistema de proteção planejado',
+    checks: 'os pontos de conexão, o tamanho, a compatibilidade com o sistema, a referência e as orientações do fabricante',
+    catalog: [
+      { href: '/trabalho-em-altura', title: 'Trabalho em altura', text: 'Página comercial para sistemas de proteção contra quedas.' },
+      { href: '/talabartes', title: 'Talabartes', text: 'Elementos de ligação para avaliação conforme a aplicação.' },
+      { href: '/trava-quedas', title: 'Trava-quedas', text: 'Dispositivos para sistemas específicos.' }
+    ]
+  },
+  {
+    slug: 'talabartes',
+    title: 'Talabartes para Trabalho em Altura | EPI Marketplace',
+    description: 'Pesquise talabartes para trabalho em altura, compare referências, conectores e aplicação antes de solicitar cotação para sua equipe.',
+    h1: 'Talabartes para Trabalho em Altura',
+    eyebrow: 'Elemento de ligação',
+    term: 'talabartes para trabalho em altura',
+    specialty: 'sistemas de proteção contra quedas em que o elemento de ligação precisa ser compatível com toda a configuração',
+    checks: 'a finalidade do modelo, os conectores, a extensão, a compatibilidade com o sistema e as limitações de uso',
+    catalog: [
+      { href: '/trabalho-em-altura', title: 'Trabalho em altura', text: 'Visão geral de sistemas e equipamentos.' },
+      { href: '/cinto-paraquedista', title: 'Cintos paraquedistas', text: 'Vestimenta de retenção para avaliar no conjunto.' },
+      { href: '/trava-quedas', title: 'Trava-quedas', text: 'Itens para sistemas específicos de proteção.' }
+    ]
+  },
+  {
+    slug: 'trava-quedas',
+    title: 'Trava-Quedas para Trabalho em Altura | EPI Marketplace',
+    description: 'Pesquise trava-quedas para trabalho em altura, confira referências e compatibilidade do sistema antes de solicitar cotação.',
+    h1: 'Trava-Quedas para Trabalho em Altura',
+    eyebrow: 'Sistema de proteção',
+    term: 'trava-quedas para trabalho em altura',
+    specialty: 'sistemas de retenção de queda cuja configuração depende da atividade, da ancoragem e do deslocamento previsto',
+    checks: 'o tipo de linha ou suporte, o conector, a compatibilidade do conjunto, a referência e as limitações de uso',
+    catalog: [
+      { href: '/trabalho-em-altura', title: 'Trabalho em altura', text: 'Pesquisa de equipamentos para proteção contra quedas.' },
+      { href: '/cinto-paraquedista', title: 'Cintos paraquedistas', text: 'Vestimenta que integra o sistema conforme a aplicação.' },
+      { href: '/talabartes', title: 'Talabartes', text: 'Elementos de ligação para comparar no conjunto.' }
+    ]
+  },
+  {
+    slug: 'detector-de-tensao',
+    title: 'Detector de Tensão para Serviços Elétricos | EPI Marketplace',
+    description: 'Pesquise detector de tensão para serviços elétricos, compare referências e solicite cotação com base no procedimento da sua equipe.',
+    h1: 'Detector de Tensão para Serviços Elétricos',
+    eyebrow: 'Verificação elétrica',
+    term: 'detector de tensão para serviços elétricos',
+    specialty: 'procedimentos de verificação de ausência ou presença de tensão definidos pela organização',
+    checks: 'o método de detecção, a faixa indicada, a referência, as instruções de uso e a compatibilidade com o procedimento',
+    catalog: [
+      { href: '/linha-viva', title: 'Linha viva', text: 'Equipamentos para manutenção e redes elétricas.' },
+      { href: '/nr-10', title: 'EPI NR-10', text: 'Pesquisa de itens relacionados a serviços elétricos.' },
+      { href: '/produtos?categoria=detector', title: 'Ver detectores no catálogo', text: 'Acesse os modelos disponíveis.' }
+    ]
+  },
+  {
+    slug: 'vara-de-manobra',
+    title: 'Vara de Manobra para Serviços Elétricos | EPI Marketplace',
+    description: 'Pesquise vara de manobra para serviços elétricos, compare referências e solicite cotação para operações e equipes técnicas.',
+    h1: 'Vara de Manobra para Serviços Elétricos',
+    eyebrow: 'Operação em redes',
+    term: 'vara de manobra para serviços elétricos',
+    specialty: 'operações em instalações e redes elétricas realizadas conforme procedimento e autorização aplicáveis',
+    checks: 'o comprimento, o cabeçote, a referência, a aplicação, a integridade e as orientações do fabricante',
+    catalog: [
+      { href: '/linha-viva', title: 'Linha viva', text: 'Equipamentos e acessórios para redes elétricas.' },
+      { href: '/aterramento', title: 'Aterramento temporário', text: 'Itens para procedimentos de segurança elétrica.' },
+      { href: '/produtos?categoria=linha-viva', title: 'Ver itens no catálogo', text: 'Acesse a categoria de linha viva.' }
+    ]
+  }
+];
+
+for (const category of deepCategoryPages) {
+  pages.push({
+    file: `${category.slug}.html`,
+    url: `/${category.slug}`,
+    title: category.title,
+    description: category.description,
+    h1: category.h1,
+    eyebrow: category.eyebrow,
+    lead: `Pesquise ${category.term}, compare referências e solicite cotação para sua equipe. A confirmação técnica e comercial deve considerar a aplicação, a documentação e a disponibilidade do item.`,
+    catalog: category.catalog,
+    sections: [
+      {
+        heading: `Como selecionar ${category.term}`,
+        body: `<p>A escolha de ${category.term} deve partir da análise da atividade e dos riscos envolvidos. Produtos para ${category.specialty} podem ter aparência semelhante, mas apresentar referências, limites e formas de uso diferentes. Por isso, a compra não deve se basear apenas no nome comercial ou em uma imagem do catálogo.</p><p>Antes de solicitar cotação, reúna informações do procedimento da empresa, da referência já utilizada e da necessidade da equipe. Esses dados ajudam a comparar opções com mais precisão e evitam que um item destinado a outra aplicação seja considerado equivalente.</p>`
+      },
+      {
+        heading: 'O que conferir na especificação',
+        body: `<p>Em uma compra técnica, confirme ${category.checks}. Quando houver EPI sujeito a Certificado de Aprovação, consulte o número no sistema público CAEPI e compare a descrição exibida com o produto e a ficha técnica. O CA não substitui a avaliação de risco, o procedimento ou a orientação de uso.</p><p>Também é importante avaliar se o item será usado junto com outros equipamentos. Em serviços elétricos e trabalho em altura, compatibilidade e planejamento do conjunto são decisivos. A definição final deve seguir as normas aplicáveis, o procedimento da organização e as instruções do fabricante ou importador.</p>`
+      },
+      {
+        heading: 'Como organizar uma cotação para a equipe',
+        body: `<p>Para acelerar o atendimento, envie a lista de referências, quantidades, aplicação prevista e dados da empresa. Caso já exista uma ficha técnica, um modelo homologado ou requisito interno, inclua essa documentação. Assim, a cotação comercial pode ser comparada de forma mais objetiva pela área de compras e pela equipe responsável.</p><p>A EPI Marketplace realiza vendas online e atendimento comercial para pedidos por quantidade. Preço, prazo, disponibilidade e documentação são confirmados antes do fechamento. Este conteúdo é informativo e não substitui análise de risco, treinamento, projeto ou procedimento de segurança.</p>`
+      },
+      {
+        heading: 'Compra técnica com informação verificável',
+        body: `<p>Use esta página como ponto de partida para a pesquisa comercial, não como especificação final. Antes de liberar qualquer item para uso, a organização deve confirmar a compatibilidade com a atividade, manter a documentação aplicável e seguir o planejamento de segurança. Quando houver divergência entre uma descrição comercial, uma ficha técnica e as instruções do fabricante ou importador, prevalece a informação técnica que corresponda à referência efetivamente adquirida.</p>`
+      }
+    ],
+    faq: [
+      [`Como escolher ${category.term}?`, `A escolha deve considerar a atividade, os riscos avaliados, a referência do produto, as limitações de uso e as instruções do fabricante ou importador.`],
+      ['O CA é suficiente para definir a compra?', 'Não. Quando aplicável, o CA deve corresponder ao produto consultado, mas a definição também depende de risco, aplicação, compatibilidade e procedimento de trabalho.'],
+      ['Como solicitar cotação?', 'Envie referências, quantidades, aplicação e dados da empresa pelo WhatsApp ou pela página de contato para atendimento comercial.']
+    ]
+  });
+}
+
 function escapeJson(value) {
   return JSON.stringify(value).replace(/</g, '\\u003c');
 }
@@ -197,6 +356,14 @@ function renderPage(page) {
         url: `https://epimarketplace.com${page.url}`,
         inLanguage: 'pt-BR',
         isPartOf: { '@id': 'https://epimarketplace.com/#website' }
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://epimarketplace.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Produtos', item: 'https://epimarketplace.com/produtos' },
+          { '@type': 'ListItem', position: 3, name: page.h1, item: `https://epimarketplace.com${page.url}` }
+        ]
       },
       {
         '@type': 'FAQPage',
@@ -244,6 +411,7 @@ function renderPage(page) {
       </div>
     </div>
   </nav>
+  <nav class="landing-breadcrumb container" aria-label="Navegação estrutural"><a href="/">Início</a><span aria-hidden="true">›</span><a href="/produtos">Produtos</a><span aria-hidden="true">›</span><span aria-current="page">${page.h1}</span></nav>
   <main id="conteudo">
     <header class="landing-hero">
       <div class="container">
@@ -275,6 +443,20 @@ function renderPage(page) {
 
 for (const page of pages) {
   fs.writeFileSync(path.join(projectRoot, page.file), `${renderPage(page)}\n`, 'utf8');
+}
+
+for (const sitemapFile of ['sitemap.xml', 'public/sitemap.xml']) {
+  const sitemapPath = path.join(projectRoot, sitemapFile);
+  let sitemap = fs.readFileSync(sitemapPath, 'utf8');
+  const missingEntries = pages
+    .filter(page => !sitemap.includes(`https://epimarketplace.com${page.url}`))
+    .map(page => `  <url>\n    <loc>https://epimarketplace.com${page.url}</loc>\n    <lastmod>2026-09-15</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>`)
+    .join('\n');
+
+  if (missingEntries) {
+    sitemap = sitemap.replace('  <!-- Artigos do Blog', `${missingEntries}\n\n  <!-- Artigos do Blog`);
+    fs.writeFileSync(sitemapPath, sitemap, 'utf8');
+  }
 }
 
 console.log(`Geradas ${pages.length} páginas SEO indexáveis.`);

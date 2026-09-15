@@ -33,6 +33,21 @@
 .landing-nav__links a { font-size: .9rem; opacity: .9; }
 .landing-nav__links a:hover { opacity: 1; text-decoration: underline; }
 
+.landing-breadcrumb {
+  align-items: center;
+  color: #52657d;
+  display: flex;
+  font-size: .875rem;
+  gap: .5rem;
+  overflow: hidden;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  white-space: nowrap;
+}
+
+.landing-breadcrumb a { color: inherit; }
+.landing-breadcrumb [aria-current="page"] { overflow: hidden; text-overflow: ellipsis; }
+
 .landing-hero {
   background: linear-gradient(125deg, var(--landing-ink), var(--landing-blue));
   color: #fff;

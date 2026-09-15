@@ -117,8 +117,8 @@ const FALLBACK_POSTS = [
   published: true,
   image_url: '/img/blog/epis-obrigatorios-colete-refletivo-bota-seguranca.webp',
   image_alt: 'Engenheiro e trabalhadora da construção com colete refletivo EPI, óculos escuros, bota de segurança e capacete em canteiro industrial.',
-  meta_description: 'Conheça os EPIs obrigatórios por lei, os 7 principais equipamentos com CA do MTE, regras da CLT, multas e baixe modelo de ficha de EPI.',
-  summary: 'Guia completo sobre os EPIs obrigatórios por lei: conheça os 7 principais equipamentos de proteção individual, exigências do CA MTE, regras da CLT, cálculo de multas e modelo de ficha de EPI.',
+  meta_description: 'Conheça EPIs obrigatórios, os principais equipamentos com CA, regras de fornecimento e orientações para escolher a proteção adequada ao risco.',
+  summary: 'Guia sobre EPIs obrigatórios, exigências de CA, regras de fornecimento e critérios para selecionar a proteção adequada ao risco ocupacional.',
   content: `<h2>O que a legislação brasileira define sobre os EPIs obrigatórios?</h2>
 <p>Saber quais são os <strong>EPIs obrigatórios</strong> no ambiente corporativo e industrial é um dever legal de toda empresa e um direito fundamental de qualquer trabalhador. A segurança ocupacional no Brasil é regida pela Consolidação das Leis do Trabalho (CLT) e regulamentada pelas Normas Regulamentadoras (NRs) emitidas pelo Ministério do Trabalho e Emprego (MTE).</p>
 <p>De acordo com o item 6.2 da <strong>Norma Regulamentadora nº 6 (NR-6)</strong>, considera-se Equipamento de Proteção Individual todo dispositivo ou produto de uso individual utilizado pelo trabalhador, destinado à proteção contra riscos suscetíveis de ameaçar a segurança e a saúde no trabalho. Conforme o <strong>Artigo 166 da CLT</strong>, a empresa é obrigada a fornecer gratuitamente aos colaboradores o EPI adequado ao risco, em perfeito estado de conservação e funcionamento, acompanhado de treinamento e fiscalização contínua.</p>
@@ -221,11 +221,11 @@ const FALLBACK_POSTS = [
 </table>
 
 <h2>Como consultar a validade do CA EPI MTE?</h2>
-<p>O <strong>Certificado de Aprovação (CA)</strong> emitido pelo Ministério do Trabalho e Emprego é o único documento que atesta a eficácia técnica e a conformidade legal de um equipamento de proteção no território brasileiro. Utilizar, comercializar ou fornecer EPI sem CA válido constitui infração grave com sanções civis e criminais.</p>
-<p>Para verificar o <strong>CA EPI MTE</strong>, siga os passos recomendados pelos engenheiros de segurança da EPI Marketplace:</p>
+<p>O <strong>Certificado de Aprovação (CA)</strong> identifica o EPI aprovado pelo órgão competente. A NR-6 determina que o EPI seja comercializado com CA válido; a seleção do equipamento também deve considerar o risco, a referência do produto, as limitações de uso e as orientações do fabricante ou importador.</p>
+<p>Para verificar o <strong>CA EPI MTE</strong>, siga estes passos:</p>
 <ol style='margin: var(--space-4) 0 var(--space-4) 20px; line-height: 2;'>
   <li>Localize o número do CA gravado de forma legível e indelével na carcaça, etiqueta ou tecido do equipamento.</li>
-  <li>Acesse o portal oficial do governo federal: <strong>consultaca.mte.gov.br</strong>.</li>
+  <li>Acesse a <a href="https://caepi.trabalho.gov.br/internet/ConsultaCAInternet.aspx" target="_blank" rel="noopener noreferrer">consulta pública do CAEPI</a>.</li>
   <li>Digite o número no campo de busca e verifique o status cadastral: ativo, vencido ou cancelado.</li>
   <li>Confira se a descrição dos laudos laboratoriais corresponde exatamente à atividade executada na sua empresa.</li>
 </ol>
@@ -276,15 +276,15 @@ const FALLBACK_POSTS = [
   </table>
 </div>
 
-<h2>Legislação, CLT e Multas por descumprimento de EPI</h2>
-<p>O descumprimento das normas de segurança gera graves consequências jurídicas e financeiras para ambas as partes da relação trabalhista:</p>
+<h2>Responsabilidades no fornecimento e uso de EPI</h2>
+<p>As organizações e os trabalhadores devem observar as responsabilidades previstas na legislação e nas normas de segurança aplicáveis:</p>
 
 <h3>Responsabilidades do Empregador (Empresa)</h3>
 <p>Se a empresa não fornecer os EPIs obrigatórios, fornecer equipamentos inadequados ou sem Certificado de Aprovação válido, estará sujeita a:</p>
 <ul style='margin: var(--space-3) 0 var(--space-4) 18px; line-height: 1.8;'>
-  <li><strong>Multas Administrativas da NR-28:</strong> Variam entre R$ 2.000,00 e R$ 6.000,00 por infração, multiplicadas pelo número de trabalhadores prejudicados.</li>
-  <li><strong>Pagamento de Adicional de Insalubridade:</strong> Conforme a <strong>Súmula 289 do TST</strong>, a simples entrega do EPI não afasta o pagamento da insalubridade caso a empresa não comprove fiscalização efetiva e treinamento contínuo.</li>
-  <li><strong>Ação Civil Pública e Indenizações por Danos Morais:</strong> Em caso de acidente de trabalho com óbito ou sequelas incapacitantes, os gestores respondem nas esferas cível e criminal por omissão ou negligência.</li>
+  <li><strong>Conformidade:</strong> a organização deve observar a NR-6, a NR-1 e demais regras aplicáveis, mantendo os registros e procedimentos exigidos.</li>
+  <li><strong>Seleção e orientação:</strong> a escolha deve considerar os riscos avaliados, a atividade, a adequação do equipamento e as informações do fabricante ou importador.</li>
+  <li><strong>Atualização:</strong> requisitos e penalidades podem mudar; em dúvidas jurídicas ou de fiscalização, consulte a regulamentação vigente e profissional habilitado.</li>
 </ul>
 
 <h3>Deveres e Penalidades para o Trabalhador</h3>
@@ -297,7 +297,7 @@ const FALLBACK_POSTS = [
 </ol>
 
 <h2>Onde comprar EPIs com Certificado de Aprovação (CA) ativo?</h2>
-<p>A compra de equipamentos corporativos exige confiança no fornecedor, agilidade logística e suporte técnico qualificado. Na <strong>loja de EPI</strong> da <a href='/produtos?categoria=epi' title='Catálogo completo de EPIs de segurança com CA válido'>EPI Marketplace</a>, você encontra catálogo homologado das melhores marcas nacionais com CA ativo emitido pelo Ministério do Trabalho.</p>
+<p>A compra de equipamentos corporativos exige confiança no fornecedor, agilidade logística e suporte técnico qualificado. No catálogo da <strong>loja de EPI</strong> da <a href='/produtos' title='Catálogo de EPIs e equipamentos de segurança'>EPI Marketplace</a>, confirme a referência, a ficha técnica e, quando aplicável, o CA correspondente antes de concluir o pedido.</p>
 <p>Atendemos clientes corporativos (CNPJ) em todo o Brasil com condições diferenciadas no atacado, suporte técnico consultivo para as NRs e emissão de notas fiscais com rastreabilidade total. Solicite um orçamento B2B rápido pelo nosso canal no WhatsApp ou consulte nosso catálogo completo online.</p>`,
   siloBox: {
     label: 'Catálogo Oficial de EPIs',
@@ -320,8 +320,8 @@ const FALLBACK_POSTS = [
       a: 'Não. O uso do EPI fornecido pelo empregador é uma obrigação legal do empregado (Art. 158 da CLT e item 6.7.2 da NR-6). A recusa injustificada constitui ato de indisciplina ou insubordinação, passível de advertência verbal, advertência por escrito, suspensão disciplinar (Art. 474 da CLT) e demissão por justa causa (Art. 482, alínea h, da CLT).'
     },
     {
-      q: 'Qual é o valor da multa por falta de fornecimento ou uso de EPI?',
-      a: 'As penalidades são graduadas conforme a Norma Regulamentadora nº 28 (NR-28) do Ministério do Trabalho e Emprego, variando conforme a gravidade da infração e o número de funcionários da empresa. As multas por falta de fornecimento de EPI ou manutenção de equipamentos sem Certificado de Aprovação (CA) válido iniciam em torno de R$ 2.000,00 e podem ultrapassar R$ 6.000,00 por trabalhador desprotegido, além do embargo da obra ou interdição da máquina.'
+      q: 'Quais cuidados a empresa deve ter com o fornecimento de EPI?',
+      a: 'O descumprimento pode sujeitar a organização às medidas e penalidades previstas na legislação trabalhista vigente. A avaliação depende da situação concreta e da regulamentação atualizada; para orientação jurídica, consulte profissional habilitado.'
     },
     {
       q: 'Quem usa EPI obrigatório tem direito a adicional de insalubridade?',
@@ -329,7 +329,7 @@ const FALLBACK_POSTS = [
     },
     {
       q: 'Como consultar se o CA do EPI está válido no Ministério do Trabalho?',
-      a: 'A verificação da autenticidade e validade do Certificado de Aprovação deve ser feita diretamente no portal oficial do Ministério do Trabalho e Emprego através do sistema CAEPI (consultaca.mte.gov.br) ou pela plataforma gov.br. Basta digitar o número gravado no corpo do equipamento para conferir a data de validade, o fabricante legal e os ensaios laboratoriais aprovados.'
+      a: 'A verificação deve ser feita na consulta pública do CAEPI do Ministério do Trabalho e Emprego. Pesquise o número indicado no EPI e compare fabricante, descrição, proteção informada e situação do certificado com a referência e a ficha técnica do item.'
     },
     {
       q: 'Qual a diferença entre EPI e EPC na hierarquia de segurança?',
@@ -607,12 +607,12 @@ const FALLBACK_POSTS = [
 </ul>
 <p>Para ser EPI, o equipamento DEVE ter <strong>Certificado de Aprovacao (CA) valido</strong> emitido pelo MTE.</p>
 <h2>Obrigacoes do empregador quanto ao EPI</h2>
-<p>A NR-6 e o Art. 166 da CLT estabelecem que o empregador e obrigado a: fornecer o EPI gratuitamente e em perfeito estado de conservacao; treinar o trabalhador sobre uso correto e limitacoes; substituir imediatamente quando danificado ou com CA vencido; e registrar o fornecimento em ficha individual assinada pelo empregado. O descumprimento sujeita a empresa a multas de ate R$ 181.284,00 por ocorrencia.</p>`,
+<p>A NR-6 e o Art. 166 da CLT estabelecem que o empregador e obrigado a: fornecer o EPI gratuitamente e em perfeito estado de conservacao; treinar o trabalhador sobre uso correto e limitacoes; substituir imediatamente quando danificado ou com CA vencido; e registrar o fornecimento em ficha individual assinada pelo empregado. O descumprimento deve ser avaliado conforme a legislação e as normas vigentes.</p>`,
     faq: [
       { q: 'O que e EPI na seguranca do trabalho?', a: 'EPI (Equipamento de Protecao Individual) e qualquer dispositivo de uso individual utilizado pelo trabalhador para neutralizar riscos que ameacem sua seguranca e saude. O uso e regulamentado pela NR-6 do MTE e e obrigatorio sempre que o risco nao puder ser eliminado por medidas de protecao coletiva (EPC).' },
       { q: 'O que e considerado EPI pela NR-6?', a: 'Para ser considerado EPI, o equipamento deve ter Certificado de Aprovacao (CA) valido emitido pelo MTE, ser de uso individual e ter funcao especifica de protecao contra risco ocupacional identificado. Uniformes comuns, calcados sem certificacao e produtos de higiene NAO sao EPIs.' },
       { q: 'Quais sao os tipos de EPI existentes?', a: 'A NR-6 classifica os EPIs por parte do corpo protegida: cabeca (capacetes), olhos e face (oculos e escudos), auditiva (abafadores e plugs), respiratoria (mascaras e respiradores), maos (luvas), pes e pernas (calcados e perneiras), tronco (aventais e vestimentas) e corpo inteiro contra quedas (cintos paraquedistas).' },
-      { q: 'A empresa e obrigada a fornecer EPI gratuitamente?', a: 'Sim. A NR-6 e o Art. 166 da CLT obrigam o empregador a fornecer EPIs gratuitamente e em perfeito estado de conservacao. O descumprimento sujeita a empresa a multas de ate R$ 181.284,00 por ocorrencia e pode resultar em responsabilidade civil em caso de acidente.' },
+      { q: 'A empresa e obrigada a fornecer EPI gratuitamente?', a: 'A NR-6 estabelece o fornecimento gratuito de EPI adequado ao risco, em perfeito estado de conservação e funcionamento, nas situações previstas na NR-1.' },
     ],
     siloBox: { label: 'Comprar EPIs Certificados', title: 'Todos os Tipos de EPI com CA Valido', desc: 'Capacetes, luvas, cintos, calcados, protetores e vestimentas com CA ativo e entrega em todo o Brasil.', href: '/produtos', btnText: 'Ver Catalogo de EPIs' },
     date: '2026-08-29',
@@ -679,13 +679,13 @@ const FALLBACK_POSTS = [
     content: `<h2>Por que o uso correto de EPI salva vidas?</h2>
 <p>O uso correto de Equipamentos de Protecao Individual (EPIs) e indispensavel em qualquer ambiente de trabalho que apresente riscos a saude ou integridade fisica do trabalhador. Segundo dados do Observatorio de Seguranca e Saude no Trabalho, o Brasil registra mais de 600.000 acidentes de trabalho por ano.</p>
 <h2>Por que o EPI e obrigatorio por lei?</h2>
-<p>A <strong>NR-6 do Ministerio do Trabalho</strong> determina que o empregador e obrigado a fornecer aos trabalhadores, gratuitamente, EPI adequado ao risco, em perfeito estado de conservacao e funcionamento. O nao cumprimento sujeita a empresa a multas de R$ 1.814,00 a R$ 181.284,00 por ocorrencia (Portaria MTP 667/2021).</p>
+<p>A <strong>NR-6 do Ministerio do Trabalho</strong> determina que o empregador e obrigado a fornecer aos trabalhadores, gratuitamente, EPI adequado ao risco, em perfeito estado de conservacao e funcionamento. O descumprimento deve ser avaliado conforme a legislação e as normas vigentes.</p>
 <h2>Como realizar a Analise Preliminar de Risco (APR)?</h2>
 <p>Antes de adquirir qualquer equipamento, e fundamental realizar a <strong>Analise Preliminar de Risco (APR)</strong> do ambiente de trabalho. A APR identifica os perigos existentes em cada fase da atividade e define as medidas de controle necessarias, incluindo o tipo de EPI exigido.</p>
 <h2>Como escolher o EPI correto?</h2>
 <ul>
   <li><strong>Tipo de risco:</strong> Fisico, quimico, biologico, ergonomico ou de acidentes.</li>
-  <li><strong>CA valido:</strong> Consulte o numero do CA no portal CNCA antes de comprar.</li>
+  <li><strong>CA valido:</strong> Consulte o número no sistema público CAEPI e compare a referência, o fabricante e a proteção informada.</li>
   <li><strong>Conforto e adaptabilidade:</strong> Um EPI desconfortavel nao e usado.</li>
   <li><strong>Durabilidade:</strong> EPIs de qualidade reduzem a frequencia de reposicao.</li>
 </ul>
@@ -701,8 +701,8 @@ const FALLBACK_POSTS = [
 <h2>Descarte correto de EPIs vencidos ou danificados</h2>
 <p>Estabeleca um fluxo claro de descarte: EPIs danificados devem ser inutilizados fisicamente antes de serem descartados como residuo industrial, seguindo as normas ABNT NBR 10004.</p>`,
     faq: [
-      { q: 'O empregador e obrigado a fornecer EPI gratuitamente?', a: 'Sim. A NR-6 e o Artigo 166 da CLT obrigam o empregador a fornecer EPIs gratuitamente, adequados ao risco, em perfeito estado de conservacao. O descumprimento sujeita a empresa a multas de R$ 1.814,00 a R$ 181.284,00 por ocorrencia.' },
-      { q: 'Como sei se o EPI tem CA valido?', a: 'Acesse o portal CNCA em consultacnca.trabalho.gov.br, insira o numero do CA impresso no produto e verifique se a situacao e Valido.' },
+      { q: 'O empregador e obrigado a fornecer EPI gratuitamente?', a: 'A NR-6 estabelece o fornecimento gratuito de EPI adequado ao risco, em perfeito estado de conservação e funcionamento, nas situações previstas na NR-1.' },
+      { q: 'Como sei se o EPI tem CA valido?', a: 'Consulte o número do CA no sistema público CAEPI do Ministério do Trabalho e Emprego e compare fabricante, descrição e proteção com a referência do produto.' },
       { q: 'Com que frequencia devo trocar os EPIs?', a: 'Siga o prazo de vida util indicado pelo fabricante no laudo tecnico e substitua imediatamente qualquer item que sofra dano visivel, impacto severo ou exposicao quimica.' },
     ],
     siloBox: { label: 'Catalogo Completo de EPIs', title: 'EPIs para Todos os Setores com CA Valido', desc: 'Capacetes, luvas, cintos, calcados e vestimentas de protecao com Certificado de Aprovacao ativo e entrega rapida.', href: '/produtos', btnText: 'Ver Catalogo Completo' },
@@ -719,29 +719,29 @@ const FALLBACK_POSTS = [
     readtime: '6 min',
     summary: 'Descubra tudo sobre o CA de EPI, como consultar a validade no sistema do Ministerio do Trabalho e por que garantir esse certificado e crucial para sua empresa.',
     content: `<h2>O que e o Certificado de Aprovacao (CA) de EPI?</h2>
-<p>O <strong>Certificado de Aprovacao (CA)</strong> e o documento emitido pelo Ministerio do Trabalho e Emprego (MTE) que atesta a eficiencia e qualidade de um Equipamento de Protecao Individual. Sem o CA valido, nenhum EPI pode ser comercializado legalmente no pais.</p>
+<p>O <strong>Certificado de Aprovacao (CA)</strong> é a identificação expedida pelo órgão competente para o Equipamento de Proteção Individual. A NR-6 determina que o EPI seja comercializado com CA válido; além disso, a escolha deve observar o risco, a referência e as instruções do fabricante ou importador.</p>
 <h2>Onde o numero do CA deve estar no produto?</h2>
 <p>Todo EPI comercializado legalmente no Brasil deve ter o <strong>numero do CA impresso no produto, na embalagem e na nota fiscal</strong>. Em luvas, o numero fica gravado no punho. Em capacetes, na aba lateral ou na jugular. Em calcados, na palmilha interna ou na caixa.</p>
 <h2>Como consultar a validade do CA no portal do MTE</h2>
 <ul>
-  <li><strong>1.</strong> Acesse o portal <strong>CNCA</strong> em: consultacnca.trabalho.gov.br</li>
+  <li><strong>1.</strong> Acesse a consulta pública do <strong>CAEPI</strong> em: caepi.trabalho.gov.br/internet/ConsultaCAInternet.aspx</li>
   <li><strong>2.</strong> Digite o numero do CA no campo de busca (somente numeros).</li>
   <li><strong>3.</strong> Verifique a situacao: deve estar como <strong>Valido</strong>.</li>
   <li><strong>4.</strong> Confirme se o produto consultado corresponde ao que esta na embalagem.</li>
 </ul>
 <h2>Riscos de comprar EPI sem CA valido</h2>
 <ul>
-  <li><strong>Multas administrativas:</strong> ate R$ 181.284,00 por ocorrencia (Portaria MTP 667/2021).</li>
+  <li><strong>Conformidade:</strong> a organização deve cumprir as obrigações previstas na legislação e nas normas aplicáveis.</li>
   <li><strong>Interdicao das atividades:</strong> Em casos de risco grave e iminente.</li>
   <li><strong>Responsabilidade civil e criminal:</strong> Em caso de acidente com EPI irregular.</li>
   <li><strong>Perda de contratos:</strong> Empresas podem perder contratos ao apresentar EPIs com CA irregular.</li>
 </ul>
-<p>Na <a href="/produtos" title="Comprar EPIs com CA valido">EPI Marketplace</a>, todos os produtos possuem CA ativo. Solicite a ficha tecnica pelo <a href="/contato">formulario de contato</a>.</p>
+<p>No catálogo da <a href="/produtos" title="Catálogo de EPIs e equipamentos de segurança">EPI Marketplace</a>, confirme a ficha técnica e, quando aplicável, o CA correspondente à referência antes de concluir o pedido. Solicite a documentação comercial pelo <a href="/contato">formulário de contato</a>.</p>
 <h2>Periodicidade de renovacao do CA</h2>
-<p>O CA possui validade limitada (geralmente de 2 a 5 anos). Empresas que armazenam grandes volumes de EPIs devem manter um controle de CA por lote de compra, com alertas de vencimento programados. O uso de EPI com CA vencido configura infracao as normas regulamentadoras.</p>`,
+<p>O prazo do CA está vinculado à avaliação da conformidade definida pela autoridade competente. Na compra, confirme a situação do certificado; após a aquisição, controle o armazenamento e o prazo de validade do equipamento informado pelo fabricante ou importador.</p>`,
     faq: [
-      { q: 'O que acontece se eu usar um EPI com CA vencido?', a: 'O uso de EPI com CA vencido configura infracao a NR-6, sujeitando a empresa a multas de ate R$ 181.284,00 por ocorrencia. Em caso de acidente com o EPI irregular, o empregador responde civilmente por indenizacao e pode responder criminalmente.' },
-      { q: 'Como verificar o CA de um EPI online?', a: 'Acesse o portal CNCA em consultacnca.trabalho.gov.br, digite o numero do CA e verifique se a situacao esta como Valido. Confirme se o fabricante, modelo e tipo de EPI correspondem ao produto que voce possui.' },
+      { q: 'O que acontece se eu usar um EPI com CA vencido?', a: 'Antes da compra, verifique se o CA estava válido na comercialização e se corresponde ao fabricante, à descrição e à proteção do produto. Depois da aquisição, observe também o armazenamento e a validade indicada pelo fabricante ou importador.' },
+      { q: 'Como verificar o CA de um EPI online?', a: 'Acesse a consulta pública do CAEPI, informe o número do CA e compare fabricante, descrição, proteção e situação do certificado com o produto e a ficha técnica.' },
       { q: 'Com que frequencia devo verificar os CAs dos EPIs da minha empresa?', a: 'Idealmente, no momento da compra e semestralmente durante o estoque. Mantenha um controle de CA por lote de compra com alertas programados para renovacao antecipada.' },
     ],
     siloBox: { label: 'Comprar com Seguranca', title: 'Todos os Nossos EPIs Tem CA Valido', desc: 'Documentacao tecnica disponivel para auditoria. Solicite a ficha tecnica de qualquer produto.', href: '/contato', btnText: 'Solicitar Orcamento B2B' },

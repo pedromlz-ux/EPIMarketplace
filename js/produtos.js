@@ -131,6 +131,7 @@
     // 1. Clicar em qualquer bloco de categoria
     const catBlock = e.target.closest('.cat-block');
     if (catBlock) {
+      if (catBlock.dataset.seoPage !== undefined) return;
       e.preventDefault();
       const cat = catBlock.dataset.category || new URL(catBlock.href, window.location.origin).searchParams.get('categoria');
       if (cat) {

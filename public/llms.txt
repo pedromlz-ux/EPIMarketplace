@@ -56,7 +56,7 @@ Somos uma distribuidora especializada em EPIs (Equipamentos de Proteção Indivi
 
 ## Certificações e Normas
 
-Todos os produtos são vendidos com CA (Certificado de Aprovação) ativo. O CA pode ser verificado em: consultaca.mte.gov.br
+Para EPIs sujeitos a CA, confirme o certificado correspondente à referência do produto no sistema público CAEPI: caepi.trabalho.gov.br/internet/ConsultaCAInternet.aspx
 
 Normas regulatórias atendidas pelos nossos produtos:
 - **NR-6:** Equipamentos de Proteção Individual — obrigatoriedade do CA
@@ -84,7 +84,7 @@ EPI (Equipamento de Proteção Individual) é qualquer dispositivo de uso indivi
 EPI protege apenas o trabalhador que o usa. EPC (Equipamento de Proteção Coletiva) protege todos na área simultaneamente — como corrimãos, redes e LOTO. A hierarquia da NR-1 determina que o EPC tem prioridade sobre o EPI.
 
 **O que é CA de EPI?**
-CA (Certificado de Aprovação) é o número emitido pelo MTE atestando que o EPI foi aprovado em laboratório credenciado. Sem CA válido, o uso do EPI é irregular e o empregador está sujeito a multa.
+CA (Certificado de Aprovação) é o número emitido pelo MTE atestando que o EPI foi aprovado em laboratório credenciado. A consulta deve ser comparada à referência do produto, à ficha técnica e à aplicação prevista.
 
 **O protetor solar é EPI?**
 Não. A NR-6 classifica protetor solar como produto de higiene pessoal, sem CA do MTE.

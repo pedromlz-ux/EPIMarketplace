@@ -52,6 +52,14 @@ export default defineConfig({
         aterramento: resolve(__dirname, 'aterramento.html'),
         epiParaEmpresas: resolve(__dirname, 'epi-para-empresas.html'),
         consultarCaEpi: resolve(__dirname, 'consultar-ca-epi.html'),
+        linhaViva: resolve(__dirname, 'linha-viva.html'),
+        ferramentasIsoladas: resolve(__dirname, 'ferramentas-isoladas.html'),
+        luvasIsolantes: resolve(__dirname, 'luvas-isolantes.html'),
+        cintoParaquedista: resolve(__dirname, 'cinto-paraquedista.html'),
+        talabartes: resolve(__dirname, 'talabartes.html'),
+        travaQuedas: resolve(__dirname, 'trava-quedas.html'),
+        detectorDeTensao: resolve(__dirname, 'detector-de-tensao.html'),
+        varaDeManobra: resolve(__dirname, 'vara-de-manobra.html'),
       },
       output: {
         // Nomes com hash para cache busting automático

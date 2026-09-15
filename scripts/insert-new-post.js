@@ -128,7 +128,7 @@ const NEW_POST = {
 <p>Para verificar o <strong>CA EPI MTE</strong>, siga os passos recomendados pelos engenheiros de segurança da EPI Marketplace:</p>
 <ol style='margin: var(--space-4) 0 var(--space-4) 20px; line-height: 2;'>
   <li>Localize o número do CA gravado de forma legível e indelével na carcaça, etiqueta ou tecido do equipamento.</li>
-  <li>Acesse o portal oficial do governo federal: <strong>consultaca.mte.gov.br</strong>.</li>
+  <li>Acesse o portal oficial do governo federal: <strong>caepi.trabalho.gov.br/internet/ConsultaCAInternet.aspx</strong>.</li>
   <li>Digite o número no campo de busca e verifique o status cadastral: ativo, vencido ou cancelado.</li>
   <li>Confira se a descrição dos laudos laboratoriais corresponde exatamente à atividade executada na sua empresa.</li>
 </ol>
@@ -185,7 +185,7 @@ const NEW_POST = {
 <h3>Responsabilidades do Empregador (Empresa)</h3>
 <p>Se a empresa não fornecer os EPIs obrigatórios, fornecer equipamentos inadequados ou sem Certificado de Aprovação válido, estará sujeita a:</p>
 <ul style='margin: var(--space-3) 0 var(--space-4) 18px; line-height: 1.8;'>
-  <li><strong>Multas Administrativas da NR-28:</strong> Variam entre R$ 2.000,00 e R$ 6.000,00 por infração, multiplicadas pelo número de trabalhadores prejudicados.</li>
+  <li><strong>Conformidade:</strong> a organização deve observar a NR-6, a NR-1 e demais regras aplicáveis, mantendo os registros e procedimentos exigidos.</li>
   <li><strong>Pagamento de Adicional de Insalubridade:</strong> Conforme a <strong>Súmula 289 do TST</strong>, a simples entrega do EPI não afasta o pagamento da insalubridade caso a empresa não comprove fiscalização efetiva e treinamento contínuo.</li>
   <li><strong>Ação Civil Pública e Indenizações por Danos Morais:</strong> Em caso de acidente de trabalho com óbito ou sequelas incapacitantes, os gestores respondem nas esferas cível e criminal por omissão ou negligência.</li>
 </ul>
@@ -232,7 +232,7 @@ const NEW_POST = {
     },
     {
       q: 'Como consultar se o CA do EPI está válido no Ministério do Trabalho?',
-      a: 'A verificação da autenticidade e validade do Certificado de Aprovação deve ser feita diretamente no portal oficial do Ministério do Trabalho e Emprego através do sistema CAEPI (consultaca.mte.gov.br) ou pela plataforma gov.br. Basta digitar o número gravado no corpo do equipamento para conferir a data de validade, o fabricante legal e os ensaios laboratoriais aprovados.'
+      a: 'A verificação da autenticidade e validade do Certificado de Aprovação deve ser feita diretamente no portal oficial do Ministério do Trabalho e Emprego através do sistema CAEPI (caepi.trabalho.gov.br/internet/ConsultaCAInternet.aspx) ou pela plataforma gov.br. Basta digitar o número gravado no corpo do equipamento para conferir a data de validade, o fabricante legal e os ensaios laboratoriais aprovados.'
     },
     {
       q: 'Qual a diferença entre EPI e EPC na hierarquia de segurança?',
