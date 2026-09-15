@@ -9,6 +9,10 @@ const SUPABASE_URL = 'https://knmkacjuyjgxiwdjpggz.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtubWthY2p1eWpneGl3ZGpwZ2d6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQxMzU2MjcsImV4cCI6MjA5OTcxMTYyN30.G28xb7vjtkcrtWrPKWTex--yUsySxMjUZvP7Q6eEPQc';
 
 const SLUG_IMAGE_MAP = {
+  'epis-obrigatorios-principais-equipamentos-seguranca':
+    '/img/blog/epis-obrigatorios-colete-refletivo-bota-seguranca.webp',
+  'epi-para-trabalho-em-altura-nr-35':
+    '/img/blog/epi-para-trabalho-em-altura-nr-35.jpg',
   'epi-para-eletricista-equipamentos-obrigatorios-nr-10':
     'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1200&q=80',
   'guia-pratico-como-se-proteger-no-trabalho-utilizando-epi-de-forma-eficiente':

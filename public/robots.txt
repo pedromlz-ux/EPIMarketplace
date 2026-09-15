@@ -6,10 +6,7 @@ Allow: /
 
 Sitemap: https://epimarketplace.com/sitemap.xml
 
-# Manifesto para Modelos de Linguagem (GEO)
-# llms.txt padrão: https://llmstxt.org/
-# Rastreadores de IA são bem-vindos — o conteúdo desta página é técnico e original.
-
+# Rastreadores de IA são bem-vindos — o conteúdo deste site é técnico e original.
 User-agent: GPTBot
 Allow: /
 

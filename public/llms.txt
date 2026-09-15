@@ -8,9 +8,8 @@
 
 - **Nome oficial:** EPI Marketplace
 - **CNPJ:** 58.912.592/0001-06
-- **Sede:** Jundiaí, SP — Região Metropolitana de São Paulo, Brasil
-- **Raio de atendimento local/expresso:** Jundiaí, Várzea Paulista, Campo Limpo Paulista, Itupeva, Cabreúva, Louveira (≤35 km)
-- **Abrangência nacional:** Entregas via transportadoras parceiras para todo o Brasil
+- **Modelo de atendimento:** E-commerce; vendas online por site, WhatsApp e Mercado Livre
+- **Abrangência:** Entregas via transportadoras parceiras para todo o Brasil
 - **WhatsApp:** +55 11 98908-8928
 - **E-mail:** contato@epimarketplace.com
 - **Site oficial:** https://epimarketplace.com
@@ -108,4 +107,3 @@ O EPI obrigatório principal é o cinto de segurança tipo paraquedista com CA v
 - Solicitar orçamento: https://epimarketplace.com/contato
 - Sobre a empresa: https://epimarketplace.com/sobre
 - Loja no Mercado Livre: https://www.mercadolivre.com.br/pagina/epimarketplace
-

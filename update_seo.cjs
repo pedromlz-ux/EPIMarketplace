@@ -16,8 +16,8 @@ const seoData = {
   },
   'sobre.html': {
     title: 'Sobre a EPI Marketplace | Distribuidora de EPIs com CA',
-    description: 'Conheça a EPI Marketplace: distribuidora especializada em EPIs certificados para NR-10 e NR-35, com entrega em todo o Brasil e sede em Jundiaí/SP.',
-    keywords: 'empresa de EPI, sobre EPI marketplace, segurança do trabalho, distribuidora EPI Jundiaí, fornecedor EPI'
+    description: 'Conheça a EPI Marketplace: e-commerce especializado em EPIs certificados para NR-10 e NR-35, com entrega em todo o Brasil.',
+    keywords: 'empresa de EPI, sobre EPI marketplace, segurança do trabalho, e-commerce de EPI, fornecedor EPI'
   },
   'contato.html': {
     title: 'Contato e Orçamentos B2B | EPI Marketplace',
@@ -53,18 +53,13 @@ const jsonLd = `
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": ["Organization", "OnlineStore"],
     "name": "EPI Marketplace",
     "description": "Distribuidora de Equipamentos de Proteção Individual (EPIs) com CA, especializada em NR-10 e NR-35.",
     "url": "https://epimarketplace.com/",
     "telephone": "+5511989088928",
     "email": "contato@epimarketplace.com.br",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "São Paulo",
-      "addressRegion": "SP",
-      "addressCountry": "BR"
-    },
+    "areaServed": { "@type": "Country", "name": "Brasil" },
     "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-12:00"
   }
   </script>`;
@@ -108,4 +103,3 @@ for (const [filename, seo] of Object.entries(seoData)) {
   fs.writeFileSync(filePath, content);
   console.log(`Updated SEO for ${filename}`);
 }
-

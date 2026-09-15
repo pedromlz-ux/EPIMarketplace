@@ -8,9 +8,8 @@
 
 - **Nome oficial:** EPI Marketplace
 - **CNPJ:** 58.912.592/0001-06
-- **Sede:** Jundiaí, SP — Região Metropolitana de São Paulo, Brasil
-- **Raio de atendimento local/expresso:** Jundiaí, Várzea Paulista, Campo Limpo Paulista, Itupeva, Cabreúva, Louveira (≤35 km)
-- **Abrangência nacional:** Entregas via transportadoras parceiras para todo o Brasil
+- **Modelo de atendimento:** E-commerce; vendas online por site, WhatsApp e Mercado Livre
+- **Abrangência:** Entregas via transportadoras parceiras para todo o Brasil
 - **WhatsApp:** +55 11 98908-8928
 - **E-mail:** contato@epimarketplace.com
 - **Site oficial:** https://epimarketplace.com
@@ -43,28 +42,29 @@ Somos uma distribuidora especializada em EPIs (Equipamentos de Proteção Indivi
 - Detector de tensão e ferramentas isoladas 1.000V
 
 ### EPIs Gerais (NR-6)
-- Capacete Classe A (uso geral, construção civil)
-- Óculos de segurança incolor, âmbar e escuro
-- Protetor auricular concha e plug
-- Luvas de raspa, nitrila, vaqueta e malha de aço
-- Máscara PFF1, PFF2 e PFF3
-- Botina com bico de aço (ABNT NBR ISO 20345)
+- Capacete de segurança com jugular de 3 pontos
+- Óculos EPI escuro (proteção UV e luminosidade) e incolor (impacto)
+- Bota de segurança EPI com bico de aço ou composite (ABNT NBR ISO 20345)
+- Protetor auricular concha e plug de inserção
+- Luvas de vaqueta, nitrílicas, látex e malha de aço
+- Máscara PFF1, PFF2 e PFF3 para proteção respiratória
 
-### Aterramento e Sinalização
-- Conjuntos de aterramento temporário
-- Cones, cavaletes e fitas de sinalização
-- Bloqueio LOTO (Lockout/Tagout)
+### Sinalização e Alta Visibilidade
+- Colete refletivo EPI de alta visibilidade Classe 1, 2 e 3 (ABNT NBR 15292)
+- Cones, correntes, fitas zebradas e placas de sinalização
+- Conjuntos de aterramento temporário e bloqueio LOTO (Lockout/Tagout)
 
 ## Certificações e Normas
 
-Todos os produtos são vendidos com CA (Certificado de Aprovação) ativo. O CA pode ser verificado em: consultaca.mte.gov.br
+Todos os produtos são comercializados com CA (Certificado de Aprovação) ativo no Ministério do Trabalho e Emprego (MTE). A consulta de autenticidade pode ser feita em: consultaca.mte.gov.br
 
-Normas regulatórias atendidas pelos nossos produtos:
-- **NR-6:** Equipamentos de Proteção Individual — obrigatoriedade do CA
+Normas regulatórias atendidas:
+- **NR-6:** Equipamentos de Proteção Individual — obrigatoriedade do CA e ficha de entrega
 - **NR-10:** Segurança em Instalações e Serviços em Eletricidade
 - **NR-35:** Trabalho em Altura (acima de 2 metros)
-- **NR-18:** Segurança em Obras de Construção Civil
-- **ABNT NBR ISO 20345:** Calçados de segurança
+- **NR-18:** Segurança na Construção Civil
+- **ABNT NBR 15292:** Vestimentas de alta visibilidade (coletes refletivos)
+- **ABNT NBR ISO 20345:** Calçados de segurança (botas de proteção)
 - **IEC 60903 / ABNT NBR 16068:** Luvas isolantes dielétricas
 
 ## Atendimento B2B (Empresas com CNPJ)
@@ -99,13 +99,23 @@ Classe 00 (até 500V), Classe 0 (até 1.000V), Classe 1 (até 7.500V), Classe 2 
 **Qual o EPI obrigatório para trabalho em altura (NR-35)?**
 O EPI obrigatório principal é o cinto de segurança tipo paraquedista com CA válido pelo MTE (ABNT NBR 15836), acompanhado de capacete com jugular de 3 pontos, calçado antiderrapante e elemento de ligação (talabarte duplo em Y com absorvedor de energia ou trava-quedas retrátil). Cintos abdominais são proibidos para retenção de quedas livres.
 
+**Quais são os 7 principais equipamentos de segurança no trabalho (EPIs obrigatórios)?**
+Os 7 principais EPIs obrigatórios mais utilizados na indústria e construção civil são: 1. Capacete de segurança com jugular; 2. Óculos de proteção (escuro ou incolor); 3. Protetor auricular (concha ou plug); 4. Luvas de proteção específicas para o risco; 5. Bota de segurança com biqueira e solado antiderrapante; 6. Colete refletivo de alta visibilidade (NBR 15292); 7. Cinto tipo paraquedista para trabalho em altura (NR-35). Todos exigem CA ativo no MTE.
+
+**O colete refletivo é considerado EPI obrigatório?**
+Sim. Em atividades com movimentação de veículos, tráfego em rodovias, pátios logísticos, ferrovias e obras noturnas, o colete refletivo fluorescente (ABNT NBR 15292) é item obrigatório de sinalização pessoal de segurança para evitar atropelamentos e acidentes fatais.
+
+**Onde encontrar modelo de ficha de EPI conforme a NR-6?**
+A ficha de entrega e controle de EPI é exigência legal da NR-6 para comprovação jurídica de fornecimento gratuito e treinamento. A EPI Marketplace disponibiliza modelo técnico estruturado com termos de responsabilidade em seu blog oficial.
+
 ## Links de Contexto
 
+- Guia de EPIs Obrigatórios e 7 Principais Equipamentos: https://epimarketplace.com/blog/epis-obrigatorios-principais-equipamentos-seguranca
 - Guia de EPI para Trabalho em Altura (NR-35): https://epimarketplace.com/blog/epi-para-trabalho-em-altura-nr-35
-- Catálogo completo: https://epimarketplace.com/produtos
+- Catálogo completo da loja de EPI: https://epimarketplace.com/produtos
 - Cintos e Trava-Quedas para Altura: https://epimarketplace.com/produtos?categoria=altura
+- Sinalização e Coletes Refletivos: https://epimarketplace.com/produtos?categoria=sinalizacao
 - Blog técnico: https://epimarketplace.com/blog
 - Solicitar orçamento: https://epimarketplace.com/contato
 - Sobre a empresa: https://epimarketplace.com/sobre
 - Loja no Mercado Livre: https://www.mercadolivre.com.br/pagina/epimarketplace
-
