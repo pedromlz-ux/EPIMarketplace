@@ -6,6 +6,52 @@
   --landing-border: #dbe3f0;
 }
 
+/* Shared site shell for all technical SEO pages. */
+#navbar.landing-site-navbar,
+#navbar.landing-site-navbar.scrolled {
+  background: oklch(100% 0 0 / 0.95);
+  max-width: var(--container-max);
+  width: calc(100% - var(--space-8)) !important;
+}
+
+#navbar.landing-site-navbar.scrolled .navbar__inner {
+  gap: var(--space-8);
+}
+
+.landing-site-brand {
+  color: var(--clr-navy);
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 1.6vw, 1.55rem);
+  font-weight: var(--weight-black);
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: var(--space-6);
+  z-index: var(--z-toast);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.skip-link:focus-visible {
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  clip-path: none;
+  padding: var(--space-3) var(--space-5);
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  background: var(--clr-orange);
+  color: white;
+}
+
 .landing-nav {
   background: var(--landing-ink);
   color: #fff;
@@ -43,6 +89,7 @@
   padding-bottom: 1rem;
   padding-top: 1rem;
   white-space: nowrap;
+  margin-top: calc(72px + var(--space-8));
 }
 
 .landing-breadcrumb a { color: inherit; }

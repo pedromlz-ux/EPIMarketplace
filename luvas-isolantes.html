@@ -24,17 +24,19 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Inter:wght@400;600;700;800&display=swap">
 </head>
 <body>
+
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-  <nav class="landing-nav" aria-label="Navegação principal">
-    <div class="container landing-nav__inner">
-      <a class="landing-nav__brand" href="/">EPI Marketplace</a>
-      <div class="landing-nav__links">
-        <a href="/produtos">Produtos</a><a href="/nr-10">NR-10</a><a href="/trabalho-em-altura">Trabalho em Altura</a><a href="/epi-para-empresas">Para Empresas</a><a href="/blog">Blog</a>
-      </div>
-    </div>
+  <nav aria-label="Navegação principal" class="landing-site-navbar" id="navbar" role="navigation">
+    <div class="container"><div class="navbar__inner">
+      <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menu" class="navbar__burger" id="burger-btn" type="button"><span></span><span></span><span></span></button>
+      <a aria-label="EPI Marketplace — Página inicial" class="navbar__logo" href="/"><span class="landing-site-brand">EPI Marketplace</span></a>
+      <div class="navbar__links" role="menubar"><a href="/produtos" role="menuitem">Produtos</a><a href="/epi-para-empresas" role="menuitem">Para empresas</a><a href="/blog" role="menuitem">Blog</a><a href="/contato" role="menuitem">Contato</a></div>
+      <a aria-label="Solicitar orçamento pelo WhatsApp" class="navbar__cta" href="https://wa.me/5511989088928?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento%20de%20EPIs." rel="noopener noreferrer" target="_blank">Solicitar orçamento</a>
+    </div><div aria-hidden="true" class="navbar__mobile" id="mobile-menu" role="menu"><a href="/produtos" role="menuitem">Produtos</a><a href="/epi-para-empresas" role="menuitem">Para empresas</a><a href="/blog" role="menuitem">Blog</a><a href="/contato" role="menuitem">Contato</a></div></div>
   </nav>
-  <nav class="landing-breadcrumb container" aria-label="Navegação estrutural"><a href="/">Início</a><span aria-hidden="true">›</span><a href="/produtos">Produtos</a><span aria-hidden="true">›</span><span aria-current="page">Luvas Isolantes para Eletricista</span></nav>
+  <div aria-hidden="true" class="navbar__overlay" id="nav-overlay"></div>
   <main id="conteudo">
+    <nav class="landing-breadcrumb container" aria-label="Navegação estrutural"><a href="/">Início</a><span aria-hidden="true">›</span><a href="/produtos">Produtos</a><span aria-hidden="true">›</span><span aria-current="page">Luvas Isolantes para Eletricista</span></nav>
     <header class="landing-hero">
       <div class="container">
         <p class="landing-eyebrow">Proteção das mãos</p>
@@ -58,6 +60,12 @@
       </div>
     </div>
   </main>
-  <footer class="landing-footer"><div class="container landing-footer__inner"><span>© EPI Marketplace — E-commerce nacional de equipamentos de segurança.</span><a href="/termos">Termos e condições</a></div></footer>
+
+  <footer role="contentinfo"><div class="container"><div class="footer__grid">
+    <div><div class="footer__brand-name">EPI Marketplace</div><p class="footer__brand-desc">E-commerce nacional de EPIs, EPCs e equipamentos de segurança.</p><address class="footer__contact" style="font-style:normal"><a href="tel:+5511989088928">(11) 98908-8928</a><a href="mailto:contato@epimarketplace.com">contato@epimarketplace.com</a></address></div>
+    <div><div class="footer__col-title">Categorias</div><nav aria-label="Categorias" class="footer__col-links"><a href="/nr-10">NR-10</a><a href="/trabalho-em-altura">Trabalho em altura</a><a href="/aterramento">Aterramento</a><a href="/linha-viva">Linha viva</a></nav></div>
+    <div><div class="footer__col-title">Compras</div><nav aria-label="Canais de compra" class="footer__col-links"><a href="/epi-para-empresas">Para empresas</a><a href="/contato">Cotação por e-mail</a><a href="https://wa.me/5511989088928?text=Olá!%20Vim%20pelo%20site%20e%20quero%20um%20orçamento%20de%20EPIs." rel="noopener noreferrer" target="_blank">WhatsApp</a></nav></div>
+  </div><div class="footer__bottom"><p class="footer__bottom-text">© 2026 EPI Marketplace · CNPJ: 58.912.592/0001-06</p><nav aria-label="Links legais" class="footer__bottom-links"><a href="/privacidade">Privacidade</a><a href="/termos">Termos de uso</a></nav></div></div></footer>
+  <script defer src="/js/main.js" type="module"></script>
 </body>
 </html>
