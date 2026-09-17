@@ -3,6 +3,17 @@
   "outputDirectory": "dist",
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.epimarketplace.com"
+        }
+      ],
+      "destination": "https://epimarketplace.com/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
