@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { ferramentasIsoladasPost } from './local-ferramentas-isoladas-post.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -28,6 +29,8 @@ const SLUG_IMAGE_MAP = {
     '/img/blog/o-que-e-epi-significado-tipos-e-exemplos.jpg',
   'epi-e-epc-qual-a-diferenca-exemplos-e-quando-usar':
     '/img/blog/epi-e-epc-qual-a-diferenca-exemplos-e-quando-usar.jpg',
+  'ferramentas-isoladas-1000v-guia-para-eletricistas':
+    '/img/blog/ferramentas-isoladas-1000v-manutencao-eletrica.webp',
 };
 
 const AUTHOR_BIO_HTML = `
@@ -802,6 +805,8 @@ const FALLBACK_POSTS = [
     published: true,
   },
 ];
+
+FALLBACK_POSTS.push(ferramentasIsoladasPost);
 
 async function fetchPosts() {
   const controller = new AbortController();

@@ -27,6 +27,8 @@ const SLUG_IMAGE_MAP = {
     '/img/blog/o-que-e-epi-significado-tipos-e-exemplos.jpg',
   'epi-e-epc-qual-a-diferenca-exemplos-e-quando-usar':
     '/img/blog/epi-e-epc-qual-a-diferenca-exemplos-e-quando-usar.jpg',
+  'ferramentas-isoladas-1000v-guia-para-eletricistas':
+    '/img/blog/ferramentas-isoladas-1000v-manutencao-eletrica.webp',
 };
 
 const DEFAULT_IMG = '/img/blog/o-que-e-epi-significado-tipos-e-exemplos.jpg';
@@ -41,6 +43,16 @@ function getImageForPost(post) {
 
 let allPosts = [];
 let visibleCount = 3;
+
+const LOCAL_FEATURED_POSTS = [{
+  title: 'Ferramentas Isoladas 1000V: Guia para Eletricistas',
+  category: 'Eletricidade & NR-10',
+  slug: 'ferramentas-isoladas-1000v-guia-para-eletricistas',
+  date: '2026-10-29',
+  image_url: '/img/blog/ferramentas-isoladas-1000v-manutencao-eletrica.webp',
+  image_alt: 'Ferramentas isoladas 1000V, incluindo alicates e chaves isoladas, organizadas em bancada de manutenção elétrica.',
+  summary: 'Guia para escolher ferramentas isoladas 1000V conforme a atividade, a documentação do fabricante e o procedimento de manutenção elétrica.',
+}];
 
 function renderVisiblePosts() {
   const grid = document.getElementById('blog-grid');
@@ -111,10 +123,11 @@ async function loadBlogPosts() {
 
     if (error) throw error;
 
-    if (posts && posts.length > 0) {
-      allPosts = posts;
-      renderVisiblePosts();
-    }
+    const remotePosts = posts || [];
+    const remoteSlugs = new Set(remotePosts.map((post) => post.slug));
+    allPosts = [...LOCAL_FEATURED_POSTS.filter((post) => !remoteSlugs.has(post.slug)), ...remotePosts]
+      .sort((a, b) => new Date(b.date) - new Date(a.date));
+    renderVisiblePosts();
   } catch (err) {
     console.warn('Blog: erro ao carregar posts do Supabase.', err.message);
   }

@@ -112,6 +112,12 @@
 
   <!-- Artigos do Blog (Dinâmicos via slug) -->
   <url>
+    <loc>https://epimarketplace.com/blog/ferramentas-isoladas-1000v-guia-para-eletricistas</loc>
+    <lastmod>2026-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://epimarketplace.com/blog/epis-obrigatorios-principais-equipamentos-seguranca</loc>
     <lastmod>2026-09-14</lastmod>
     <changefreq>monthly</changefreq>
