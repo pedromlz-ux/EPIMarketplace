@@ -23,7 +23,7 @@ function titleFor(product) {
 }
 
 function descriptionFor(product) {
-  return truncate(`${product.name}: ${product.description} Solicite cotação e confirme a disponibilidade para entrega em todo o Brasil.`, 135);
+  return truncate(`${product.name}: confira especificações, documentação aplicável e disponibilidade. Solicite cotação para compra técnica em todo o Brasil.`, 145);
 }
 
 function formatPrice(value) {
@@ -37,6 +37,32 @@ function availabilityLabel(value) {
     preorder: 'Pré-venda',
     backorder: 'Sob encomenda',
   }[value] || 'Disponibilidade a confirmar';
+}
+
+function applicationContext(product) {
+  return {
+    altura: 'sistemas de proteção contra quedas e atividades em altura',
+    aterramento: 'procedimentos de segurança em instalações e redes elétricas',
+    'linha-viva': 'operações e manutenção em redes elétricas',
+    detector: 'verificação em serviços elétricos conforme o procedimento da operação',
+    grampos: 'montagens e procedimentos de aterramento temporário',
+    epi: 'atividades que exigem avaliação de proteção individual e coletiva',
+    bolsas: 'transporte, organização e apoio à operação',
+    sinalizacao: 'sinalização e delimitação de áreas de trabalho',
+  }[product.category] || 'operações que exigem confirmação prévia da referência e da aplicação';
+}
+
+function specificationsMarkup(product) {
+  const specifications = product.specifications.length ? product.specifications : [product.description];
+  return `<ul class="product-specifications">${specifications.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}</ul>`;
+}
+
+function relatedProductsMarkup(product, products) {
+  const related = products
+    .filter((candidate) => candidate.sku !== product.sku && candidate.category === product.category)
+    .slice(0, 3);
+  if (!related.length) return '';
+  return `<div class="product-related__items">${related.map((item) => `<a href="${item.path}"><strong>${escapeHtml(item.name)}</strong><span>Ref. ${escapeHtml(item.sku)}</span></a>`).join('')}</div>`;
 }
 
 function header() {
@@ -62,7 +88,7 @@ function footer() {
   </div><div class="footer__bottom"><p class="footer__bottom-text">© 2026 EPI Marketplace · CNPJ: 58.912.592/0001-06</p><nav aria-label="Links legais" class="footer__bottom-links"><a href="/privacidade">Privacidade</a><a href="/termos">Termos de uso</a></nav></div></div></footer>`;
 }
 
-function pageHtml(product) {
+function pageHtml(product, products) {
   const title = titleFor(product);
   const metaDescription = descriptionFor(product);
   const commercial = hasDisplayCommercialData(product.override);
@@ -135,6 +161,7 @@ function pageHtml(product) {
   <script type="application/ld+json">${jsonLd(breadcrumbSchema)}</script>
 </head>
 <body>
+<p class="sr-only">${escapeHtml(product.name)}: ficha técnica e cotação.</p>
 ${header()}
 <main id="conteudo">
   <div class="product-page container">
@@ -147,15 +174,15 @@ ${header()}
         <p class="product-reference">Referência: <strong>${escapeHtml(product.sku)}</strong></p>
         <p class="product-summary"><strong>${escapeHtml(product.name)}</strong> é uma referência do catálogo para pesquisa técnica e solicitação de cotação.</p>
         ${priceBlock}
-        <div class="product-actions"><a class="btn btn--primary product-action-button" href="https://wa.me/${whatsappNumber}?text=${quoteText}" rel="noopener noreferrer" target="_blank">Solicitar cotação pelo WhatsApp</a><a class="btn btn--outline product-action-button" href="/contato?produto=${encodeURIComponent(product.sku)}">Pedir cotação por e-mail</a></div>
+        <div class="product-actions"><a class="btn btn--primary product-action-button" href="https://wa.me/${whatsappNumber}?text=${quoteText}" rel="noopener noreferrer" target="_blank">Consultar preço e disponibilidade</a><a class="btn btn--outline product-action-button" href="/contato?produto=${encodeURIComponent(product.sku)}">Solicitar cotação para empresa</a></div>
         <p class="product-purchase-note">A confirmação de especificação, preço, prazo e disponibilidade é feita antes do pedido.</p>
       </div>
     </section>
     <section class="product-content" aria-labelledby="technical-data-title">
-      <div class="product-content__main"><h2 id="technical-data-title">Descrição e dados técnicos</h2><p>${escapeHtml(product.description)}</p>${catalogSource}</div>
+      <div class="product-content__main"><h2 id="technical-data-title">Especificações da referência</h2><p>O ${escapeHtml(product.name)} é uma referência do catálogo para ${applicationContext(product)}. Use os dados abaixo para comparar o item, mas confirme a compatibilidade com a atividade antes de fechar o pedido.</p>${specificationsMarkup(product)}${catalogSource}<h2>Aplicação, documentação e compatibilidade</h2><p>Em compras técnicas, confirme a referência, os limites de uso, a composição do conjunto e as instruções do fabricante ou importador. Quando o item for classificado como EPI, solicite a documentação aplicável e verifique se o CA informado corresponde exatamente ao produto ofertado.</p></div>
       <aside class="product-aside" aria-label="Orientações de compra"><h2>Antes de comprar</h2><ul><li>Confirme a referência e a aplicação prevista.</li><li>Valide especificações técnicas com a equipe responsável.</li><li>Para EPIs sujeitos a CA, confira a correspondência do certificado com o produto ofertado.</li></ul><a href="/consultar-ca-epi">Como consultar CA de EPI</a></aside>
     </section>
-    <section class="product-related" aria-labelledby="related-title"><div class="product-related__content"><p class="product-related__eyebrow">Continue explorando</p><h2 id="related-title">Encontre mais itens para a sua operação</h2><p>Veja referências relacionadas ou navegue pelo catálogo completo.</p><div class="product-related__actions"><a class="btn btn--outline" href="${product.categoryHref}">Ver produtos da categoria</a><a class="btn btn--outline" href="/produtos">Ver todo o catálogo</a></div></div></section>
+    <section class="product-related" aria-labelledby="related-title"><div class="product-related__content"><p class="product-related__eyebrow">Continue explorando</p><h2 id="related-title">Referências relacionadas para a sua operação</h2><p>Compare itens da mesma categoria ou navegue pelo catálogo completo.</p>${relatedProductsMarkup(product, products)}<div class="product-related__actions"><a class="btn btn--outline" href="${product.categoryHref}">Ver produtos da categoria</a><a class="btn btn--outline" href="/produtos">Ver todo o catálogo</a></div></div></section>
   </div>
 </main>
 ${footer()}
@@ -172,17 +199,24 @@ function updateCatalogCards(products) {
   const original = fs.readFileSync(file, 'utf8');
   let updatedCount = 0;
   const updated = original.replace(/<article\b[\s\S]*?<\/article>/g, (card) => {
-    if (card.includes('product-card__details')) return card;
-    const sku = card.match(/Ref\/Cód:\s*([^<\n]+)/i)?.[1]?.trim().toUpperCase();
+    // Keep technical references intact while expanding catalogue shorthand in
+    // the visitor-facing card text ("c/" → "com", "p/" → "para").
+    const publicCard = card.replace(/\b([pcs])\/\s*/gi, (_, abbreviation) => ({
+      p: 'para ',
+      c: 'com ',
+      s: 'sem ',
+    }[abbreviation.toLowerCase()]));
+    if (publicCard.includes('product-card__details')) return publicCard;
+    const sku = publicCard.match(/Ref\/Cód:\s*([^<\n]+)/i)?.[1]?.trim().toUpperCase();
     const product = productsBySku.get(sku);
-    if (!product) return card;
+    if (!product) return publicCard;
     updatedCount += 1;
-    return card.replace(
+    return publicCard.replace(
       '<div class="product-card__actions">',
       `<div class="product-card__actions"><a class="btn btn--outline btn--sm product-card__details" href="${product.path}">Ver detalhes</a>`,
     );
   });
-  if (updatedCount) fs.writeFileSync(file, updated, 'utf8');
+  if (updated !== original) fs.writeFileSync(file, updated, 'utf8');
   return updatedCount;
 }
 
@@ -202,7 +236,7 @@ fs.rmSync(productDirectory, { recursive: true, force: true });
 fs.mkdirSync(productDirectory, { recursive: true });
 const products = loadProducts();
 for (const product of products) {
-  fs.writeFileSync(path.join(productDirectory, `${product.slug}.html`), pageHtml(product), 'utf8');
+  fs.writeFileSync(path.join(productDirectory, `${product.slug}.html`), pageHtml(product, products), 'utf8');
 }
 const linkedCards = updateCatalogCards(products);
 updateSitemaps(products);

@@ -27,6 +27,17 @@
   let currentCategory = null;
   let searchTerm      = '';
 
+  // Faceted views are useful to visitors, but they are not independent SEO
+  // landing pages. Keep their canonical at /produtos and ask crawlers not to
+  // index parameter combinations that could otherwise multiply endlessly.
+  function syncFilterRobots() {
+    const hasFilters = new URLSearchParams(window.location.search).toString().length > 0;
+    const robots = document.querySelector('meta[name="robots"]');
+    if (robots) robots.content = hasFilters
+      ? 'noindex,follow,max-image-preview:large'
+      : 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1';
+  }
+
   function getCardNorm(card) {
     const cat = (card.dataset.category || '').toLowerCase();
     if (['linha-viva', 'aterramento', 'detector'].includes(cat)) return 'nr10';
@@ -88,6 +99,7 @@
       const url = new URL(window.location.href);
       url.searchParams.delete('categoria');
       window.history.pushState({ view: 'categories' }, '', url.pathname);
+      syncFilterRobots();
     }
   }
 
@@ -123,6 +135,7 @@
       const url = new URL(window.location.href);
       url.searchParams.set('categoria', slug);
       window.history.pushState({ view: 'products', category: slug }, '', url.toString());
+      syncFilterRobots();
     }
   }
 
@@ -169,6 +182,7 @@
 
   // Histórico de navegação (botão Voltar/Avançar do navegador)
   window.addEventListener('popstate', () => {
+    syncFilterRobots();
     const params = new URLSearchParams(window.location.search);
     const cat = params.get('categoria');
     if (cat && CATEGORY_DATA[cat]) {
@@ -180,6 +194,7 @@
 
   // Inicialização no carregamento da página
   function init() {
+    syncFilterRobots();
     const params = new URLSearchParams(window.location.search);
     const cat = params.get('categoria');
     if (cat && CATEGORY_DATA[cat]) {

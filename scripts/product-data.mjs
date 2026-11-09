@@ -36,7 +36,9 @@ export function slugify(value = '') {
 }
 
 export function productSlug(product) {
-  return `${slugify(product.name)}-${slugify(product.sku)}`;
+  // Product URLs may already be indexed. Keep their slug based on the
+  // original catalogue label even when the public display label is expanded.
+  return `${slugify(product.catalogName || product.name)}-${slugify(product.sku)}`;
 }
 
 export function productPath(product) {
@@ -56,6 +58,27 @@ function textOnly(value = '') {
     .replace(/&quot;/gi, '"')
     .replace(/\s+/g, ' ')
     .trim();
+}
+
+// The supplier catalogue uses abbreviations appropriate to an internal list
+// (for example, "c/" and "p/"). Expand them only for public-facing copy;
+// the original reference remains available through the SKU and source data.
+export function expandCatalogText(value = '') {
+  return textOnly(value)
+    .replace(/^descri[çc][ãa]o\s*[:•-]?\s*/i, '')
+    .replace(/\bp\/\s*/gi, 'para ')
+    .replace(/\bc\/\s*/gi, 'com ')
+    .replace(/\bs\/\s*/gi, 'sem ')
+    .replace(/\s+([,.;:])/g, '$1')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
+}
+
+function splitSpecifications(description = '') {
+  return expandCatalogText(description)
+    .split(/[•\n]+/)
+    .map((item) => item.trim())
+    .filter(Boolean);
 }
 
 function readJson(relativePath, fallback) {
@@ -147,11 +170,14 @@ export function loadProducts() {
     const card = cardsBySku.get(normalizeSku(source.sku));
     const category = card?.category || 'epi';
     const override = overrides.products[String(source.sku)] || {};
-    const description = textOnly(source.description) || card?.specifications || 'Consulte a ficha técnica e confirme a aplicação desta referência no atendimento.';
+    const rawName = textOnly(source.name || card?.name);
+    const description = expandCatalogText(source.description || card?.specifications || 'Consulte a ficha técnica e confirme a aplicação desta referência no atendimento.');
     const product = {
-      name: textOnly(source.name || card?.name),
+      name: expandCatalogText(rawName),
+      catalogName: rawName,
       sku: String(source.sku),
       description,
+      specifications: splitSpecifications(description),
       localImage: (source.localImage || card?.image || '').replace(/^\//, ''),
       sourceUrl: source.url,
       category,

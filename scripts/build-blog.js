@@ -1,7 +1,6 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { ferramentasIsoladasPost } from './local-ferramentas-isoladas-post.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -29,8 +28,14 @@ const SLUG_IMAGE_MAP = {
     '/img/blog/o-que-e-epi-significado-tipos-e-exemplos.jpg',
   'epi-e-epc-qual-a-diferenca-exemplos-e-quando-usar':
     '/img/blog/epi-e-epc-qual-a-diferenca-exemplos-e-quando-usar.jpg',
+  'como-escolher-luva-isolante-para-eletricista':
+    '/img/blog/como-escolher-luva-isolante-eletricista.webp',
+  'como-escolher-capacete-seguranca-construcao':
+    '/img/blog/como-escolher-capacete-seguranca-construcao.webp',
   'ferramentas-isoladas-1000v-guia-para-eletricistas':
     '/img/blog/ferramentas-isoladas-1000v-manutencao-eletrica.webp',
+  'talabarte-nr-35-simples-ou-duplo':
+    '/img/blog/talabarte-nr-35-simples-ou-duplo.webp',
 };
 
 const AUTHOR_BIO_HTML = `
@@ -804,9 +809,277 @@ const FALLBACK_POSTS = [
     image_alt: 'Trabalhador com capacete e talabartes de seguranca em trabalho em altura.',
     published: true,
   },
-];
+  {
+    id: 'local-post-luva-isolante-20260928',
+    title: 'Luva Isolante: Como Escolher para Eletricista',
+    category: 'Eletricidade & NR-10',
+    readtime: '7 min',
+    target_keyword: 'luva isolante',
+    long_tail_keyword: 'como escolher luva isolante para eletricista',
+    slug: 'como-escolher-luva-isolante-para-eletricista',
+    date: '2026-09-28',
+    published: true,
+    image_url: '/img/blog/como-escolher-luva-isolante-eletricista.webp',
+    image_alt: 'Eletricista inspecionando um par de luvas isolantes de borracha laranja antes de uma atividade de manutenção elétrica.',
+    meta_description: 'Luva isolante: saiba como escolher para eletricista, conferir classe, CA, conservação e compatibilidade antes da compra técnica.',
+    summary: 'Veja como escolher luva isolante para eletricista com critérios de aplicação, documentação, CA, conservação e cotação técnica.',
+    content: `<p><strong>Luva isolante</strong> é um termo de busca comum, mas a compra segura não começa pela cor, pelo preço ou pela expressão “alta tensão”. Para entender <strong>como escolher luva isolante para eletricista</strong>, é preciso relacionar a referência à atividade, ao risco identificado e ao procedimento de trabalho. Esta é uma decisão técnica: a luva não substitui desenergização, medidas coletivas, bloqueio, sinalização, treinamento ou planejamento da atividade.</p>
 
-FALLBACK_POSTS.push(ferramentasIsoladasPost);
+<p>O objetivo deste guia é ajudar a organizar a compra e a conferência documental. A definição final do equipamento deve seguir a análise de risco da organização, as normas aplicáveis e as instruções do fabricante ou importador da referência que será adquirida.</p>
+
+<h2>Por que a luva isolante não deve ser escolhida apenas pelo material</h2>
+<p>Uma luva de borracha, uma luva de vaqueta e uma luva anunciada genericamente para eletricista podem ter funções diferentes. A proteção elétrica depende da referência, da classe declarada, das limitações de uso e das condições em que o equipamento será utilizado. Por isso, dois pares visualmente parecidos não devem ser tratados como equivalentes.</p>
+
+<p>Comece identificando se a tarefa envolve possibilidade de contato ou aproximação de partes energizadas, qual procedimento será seguido e quais outros controles já fazem parte da operação. A tensão, o ambiente, a necessidade de destreza, a exposição mecânica e a compatibilidade com os demais componentes influenciam a especificação. A equipe responsável pela segurança e pela atividade deve validar esse conjunto antes da compra.</p>
+
+<h2>Como escolher luva isolante para eletricista: 5 pontos de conferência</h2>
+
+<h3>1. Parta da atividade e da análise de risco</h3>
+<p>Descreva a tarefa antes de pedir cotação: manutenção, medição, manobra, atendimento de emergência ou outra operação. Informe também a instalação, o procedimento previsto e as referências que a empresa já homologou. Isso evita comparar produtos apenas pelo nome comercial e reduz o risco de solicitar uma luva destinada a outra aplicação.</p>
+
+<h3>2. Confirme a classe e a documentação da referência</h3>
+<p>A classe de isolamento e os limites declarados precisam ser compatíveis com a aplicação definida pela equipe técnica. Solicite a ficha técnica e confira se o fabricante, a descrição e o código da referência são os mesmos do item cotado. Não use uma tabela genérica da internet como substituta da documentação que acompanha o produto efetivamente adquirido.</p>
+
+<h3>3. Verifique o CA quando a referência for classificada como EPI</h3>
+<p>Para ser comercializado ou utilizado como EPI, o produto precisa estar relacionado no Anexo I da NR-6 e possuir Certificado de Aprovação, conforme o serviço oficial do Ministério do Trabalho e Emprego. Na consulta, compare o número do CA com o fabricante, a descrição e o tipo de proteção exibidos. A EPI Marketplace também mantém um <a href="/consultar-ca-epi">guia para consultar CA de EPI</a> antes da compra.</p>
+
+<h3>4. Avalie tamanho, conservação e inspeção</h3>
+<p>O tamanho precisa permitir o trabalho com controle e sem comprometer o ajuste. Antes do uso, siga a inspeção indicada pelo fabricante ou importador e observe a integridade do equipamento, suas marcações e as condições de armazenamento. Se houver dano, alteração ou dúvida sobre a condição da luva, interrompa a utilização e siga o procedimento da organização.</p>
+
+<h3>5. Confira a compatibilidade com o sistema de proteção</h3>
+<p>Em determinadas aplicações, a luva isolante pode exigir componentes complementares ou proteção mecânica conforme a referência e a orientação do fabricante. Verifique também a compatibilidade com mangas, ferramentas isoladas, proteção para face, vestimenta e os demais controles definidos no procedimento. A seleção deve considerar o sistema inteiro, e não apenas as mãos.</p>
+
+<h2>Checklist para a compra técnica</h2>
+<ul>
+  <li><strong>Referência:</strong> código e descrição exatos do produto solicitado.</li>
+  <li><strong>Aplicação:</strong> atividade, procedimento e risco a que a equipe estará exposta.</li>
+  <li><strong>Documentação:</strong> ficha técnica, instruções de uso e dados do fabricante ou importador.</li>
+  <li><strong>CA:</strong> quando aplicável, número consultado e correspondência com a referência adquirida.</li>
+  <li><strong>Conservação:</strong> requisitos de transporte, armazenamento e inspeção definidos para o produto.</li>
+  <li><strong>Quantidade:</strong> tamanhos, reposição e padronização para a equipe.</li>
+</ul>
+
+<h2>Erros que devem ser evitados</h2>
+<p>Evite comprar apenas pelo menor preço, por uma foto de catálogo ou por uma descrição genérica. Também não é seguro assumir que toda luva de couro, borracha ou “para eletricista” oferece a mesma proteção. O CA, quando aplicável, é uma etapa importante de conferência, mas não resolve sozinho a seleção: o certificado deve corresponder ao item e a referência precisa atender à atividade planejada.</p>
+
+<p>Outro erro recorrente é fechar uma compra sem registrar fabricante, SKU, classe, tamanho e documentos. Em pedidos empresariais, manter essas informações facilita reposição, inspeção, rastreabilidade e comparação entre propostas. Ao cotar, envie a lista de referências e quantidades, além da aplicação prevista.</p>
+
+<h2>Onde encontrar luvas isolantes e itens relacionados</h2>
+<p>Use a página de <a href="/luvas-isolantes">luvas isolantes</a> para pesquisar a linha disponível e a página de <a href="/nr-10">EPI NR-10</a> para contextualizar a compra em serviços elétricos. Para produtos do catálogo, confirme preço, disponibilidade e documentação no atendimento antes de finalizar o pedido.</p>`,
+    faq: [
+      { q: 'Como escolher luva isolante para eletricista?', a: 'Comece pela atividade, análise de risco e procedimento. Depois confirme a classe, a referência, a ficha técnica, o tamanho, as condições de uso e, quando aplicável, o CA correspondente ao produto.' },
+      { q: 'Toda luva de borracha protege contra eletricidade?', a: 'Não. O material ou o nome comercial não comprovam a aplicação. A proteção depende da referência, das características declaradas pelo fabricante ou importador e da compatibilidade com a atividade planejada.' },
+      { q: 'Como conferir o CA de uma luva isolante?', a: 'Quando a referência for classificada como EPI, consulte o número no sistema público CAEPI e compare fabricante, descrição e tipo de proteção com a ficha técnica e o produto ofertado.' },
+    ],
+    siloBox: { label: 'Pesquisa e cotação técnica', title: 'Luvas isolantes para serviços elétricos', desc: 'Compare referências, confirme documentação aplicável e solicite cotação para a sua equipe.', href: '/luvas-isolantes', btnText: 'Ver luvas isolantes' },
+  },
+  {
+    id: 'local-post-capacete-seguranca-20261005',
+    title: 'Capacete de Segurança: Como Escolher para Obra',
+    category: 'Construção & Proteção da Cabeça',
+    readtime: '7 min',
+    target_keyword: 'capacete de segurança',
+    long_tail_keyword: 'como escolher capacete de segurança para construção',
+    slug: 'como-escolher-capacete-seguranca-construcao',
+    date: '2026-10-05',
+    published: true,
+    image_url: '/img/blog/como-escolher-capacete-seguranca-construcao.webp',
+    image_alt: 'Profissional de obra inspecionando a suspensão interna de um capacete de segurança branco em canteiro de construção.',
+    meta_description: 'Capacete de segurança: saiba como escolher para construção, conferir ajuste, CA, jugular e documentação antes da compra técnica.',
+    summary: 'Aprenda como escolher capacete de segurança para construção com critérios de risco, ajuste, CA, jugular e conservação.',
+    content: `<p>O <strong>capacete de segurança</strong> é um dos itens mais reconhecidos em uma obra, mas escolher o modelo certo não se resume à cor ou ao preço. Para entender <strong>como escolher capacete de segurança para construção</strong>, a organização deve começar pelos riscos da atividade e pelo procedimento de trabalho. O equipamento precisa integrar as medidas de prevenção já definidas, não substituí-las.</p>
+
+<p>Queda de objetos, impacto contra estruturas, exposição elétrica e trabalho em altura exigem avaliações diferentes. A referência adequada depende do risco identificado, das informações do fabricante ou importador e da compatibilidade com os demais EPIs. Este guia ajuda a organizar uma cotação técnica; a validação final deve ser feita pela equipe responsável pela segurança e pela atividade.</p>
+
+<h2>Por que o risco vem antes do modelo</h2>
+<p>Dois capacetes visualmente parecidos podem ter características, acessórios e limitações distintas. Antes de pesquisar catálogo, descreva onde a equipe irá trabalhar, quais perigos permanecem após os controles coletivos e quais tarefas serão executadas. Em uma construção, por exemplo, podem existir risco de impacto no topo ou nas laterais da cabeça, circulação sob cargas suspensas, acesso a níveis elevados e interferências elétricas.</p>
+
+<p>A NR-6 orienta que a seleção do EPI seja realizada pela organização e considere a atividade, os riscos avaliados, a eficácia necessária, as exigências legais e a adequação ao trabalhador. Consulte sempre a <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-06-atualizada-2025.pdf" target="_blank" rel="noopener noreferrer">NR-6 vigente</a> e a documentação da referência que será adquirida.</p>
+
+<h2>Como escolher capacete de segurança para construção: 6 verificações</h2>
+
+<h3>1. Relacione o capacete aos riscos da frente de trabalho</h3>
+<p>Informe no pedido de cotação se há risco de queda de materiais, impactos contra vigas ou andaimes, contato com umidade, uso próximo a instalações elétricas ou atividade em altura. Essa descrição evita receber uma indicação genérica. Quando o cenário muda, a análise de risco e a seleção do equipamento também podem precisar de revisão.</p>
+
+<h3>2. Confira a referência e a proteção declarada</h3>
+<p>Peça a ficha técnica da referência exata, não apenas uma foto ou a descrição de uma família de produtos. Confira o uso previsto, as limitações, a forma correta de ajuste, a compatibilidade com acessórios e as condições de conservação. Se a operação exigir uma característica específica, ela deve estar documentada para aquele modelo.</p>
+
+<h3>3. Valide o CA e a descrição do produto</h3>
+<p>Para ser vendido ou usado como EPI, o produto deve ter a indicação do Certificado de Aprovação emitido pelo órgão competente. Na consulta, compare o número do CA com o fabricante ou importador, a descrição e o tipo de proteção da referência cotada. O nosso <a href="/consultar-ca-epi">guia para consultar CA de EPI</a> mostra o que conferir antes da compra. O CA é uma etapa importante, mas não substitui a escolha baseada no risco.</p>
+
+<h3>4. Avalie ajuste, suspensão e conforto</h3>
+<p>O casco precisa permanecer estável sem causar pressão excessiva. A suspensão interna, a carneira e o sistema de regulagem devem ser conferidos conforme as instruções do fabricante. Um capacete inadequadamente ajustado pode se deslocar durante a movimentação e comprometer a função de proteção. Quando houver usuários diferentes, considere tamanhos, ajustes e a higienização prevista pela empresa.</p>
+
+<h3>5. Defina a jugular conforme a aplicação</h3>
+<p>A necessidade e o tipo de jugular devem ser compatíveis com o procedimento e com o capacete. Em atividades com risco de perda do equipamento, como deslocamentos em altura, a retenção precisa ser avaliada junto com os demais itens do sistema. Não adapte peças de outro modelo sem a indicação expressa do fabricante ou importador.</p>
+
+<h3>6. Verifique compatibilidade com outros EPIs</h3>
+<p>Óculos, protetor facial, abafador de ruído, respirador e vestimentas podem alterar o ajuste e o conforto. Confirme quais acessórios são previstos para a referência e se podem ser usados em conjunto. A decisão deve considerar o conjunto de proteção: um acessório incompatível pode afetar o encaixe ou criar uma condição não prevista na documentação.</p>
+
+<h2>Checklist para comprar capacete de segurança</h2>
+<ul>
+  <li><strong>Atividade e risco:</strong> frente de trabalho, perigos identificados e procedimento aplicável.</li>
+  <li><strong>Referência:</strong> marca, código, descrição e proteção declarada para o modelo cotado.</li>
+  <li><strong>Documentação:</strong> ficha técnica, instruções de uso, conservação e limitações.</li>
+  <li><strong>CA:</strong> consulta da numeração e correspondência com a referência ofertada.</li>
+  <li><strong>Ajuste:</strong> suspensão, regulagem, tamanho e estabilidade no usuário.</li>
+  <li><strong>Acessórios:</strong> jugular e complementos autorizados para o modelo.</li>
+  <li><strong>Reposição:</strong> quantidade por equipe, rastreabilidade e orientação de descarte.</li>
+</ul>
+
+<h2>Inspeção e conservação fazem parte da escolha</h2>
+<p>O desempenho do capacete também depende do estado em que ele chega ao uso. A equipe deve seguir as instruções de limpeza, armazenamento, inspeção e substituição fornecidas pelo fabricante ou importador. Antes de utilizar, observe o casco, a suspensão, os pontos de fixação e as marcações. Dano, alteração, impacto relevante ou dúvida sobre a integridade devem levar à retirada do item de uso conforme o procedimento da organização.</p>
+
+<p>Evite pintar, furar, colar acessórios não autorizados ou expor o equipamento a condições não previstas na documentação. Essas práticas podem comprometer características do produto e dificultar a inspeção. Registre a referência entregue, a data e as orientações fornecidas à equipe para facilitar controle, reposição e auditorias internas.</p>
+
+<h2>Onde cotar EPI para sua obra</h2>
+<p>Para montar uma lista de compra, consulte o <a href="/produtos">catálogo de EPIs</a> e envie ao atendimento a atividade, a referência desejada, os tamanhos e a quantidade. Se o serviço incluir risco de queda, complemente a análise com o guia de <a href="/trabalho-em-altura">EPI para trabalho em altura</a>. A disponibilidade, os documentos e a aplicação devem ser confirmados antes do fechamento do pedido.</p>`,
+    faq: [
+      { q: 'Como escolher capacete de segurança para construção?', a: 'Comece pela atividade e pelos riscos avaliados. Depois confira a referência, a proteção declarada, as instruções do fabricante ou importador, o ajuste, a compatibilidade com acessórios e o CA correspondente quando o produto for EPI.' },
+      { q: 'Todo capacete de obra serve para qualquer atividade?', a: 'Não. Modelos podem ter aplicações, acessórios e limitações diferentes. A escolha deve considerar os riscos da frente de trabalho e a documentação da referência específica, em vez de apenas aparência, cor ou preço.' },
+      { q: 'Como verificar o CA de um capacete de segurança?', a: 'Localize o número indicado no produto ou na documentação e consulte-o no sistema público CAEPI. Compare fabricante ou importador, descrição e tipo de proteção com a referência que será comprada.' },
+      { q: 'Quando a jugular deve ser usada no capacete?', a: 'A necessidade depende da análise de risco, do procedimento e da orientação do fabricante ou importador para aquele modelo. Em atividades nas quais o capacete pode se deslocar ou cair, avalie a retenção junto com todo o sistema de proteção.' },
+    ],
+    siloBox: { label: 'Cotação para obras e equipes', title: 'EPIs para construção e manutenção', desc: 'Envie a atividade e as referências desejadas para conferir disponibilidade e documentação antes da compra.', href: '/epi-para-empresas', btnText: 'Solicitar cotação' },
+  },
+  {
+    id: 'local-post-talabarte-nr35-20261109',
+    title: 'Talabarte NR-35: Simples ou Duplo?',
+    category: 'Trabalho em Altura & NR-35',
+    readtime: '7 min',
+    target_keyword: 'talabarte NR-35',
+    long_tail_keyword: 'talabarte simples ou duplo',
+    slug: 'talabarte-nr-35-simples-ou-duplo',
+    date: '2026-11-09',
+    published: true,
+    image_url: '/img/blog/talabarte-nr-35-simples-ou-duplo.webp',
+    image_alt: 'Profissional em treinamento de trabalho em altura usando cinto paraquedista e talabarte duplo em Y com absorvedor de energia.',
+    meta_description: 'Talabarte NR-35: entenda quando avaliar modelos simples ou duplos, absorvedor de energia, ancoragem e compra técnica para equipes.',
+    summary: 'Entenda o que avaliar ao comparar talabarte simples ou duplo para trabalho em altura, sempre conforme análise de risco e sistema de proteção.',
+    content: `<p><strong>Talabarte NR-35</strong> é uma busca comum de equipes que precisam comprar ou padronizar equipamentos para trabalho em altura. Entre as dúvidas recorrentes está a comparação entre <strong>talabarte simples ou duplo</strong>. A resposta não deve partir apenas do formato do produto: ela depende da atividade, da análise de risco, do sistema de proteção contra quedas e das orientações do fabricante ou importador para a referência escolhida.</p>
+
+<p>O talabarte é um elemento de ligação do sistema. Por isso, antes de solicitar uma cotação, é importante identificar como será feito o deslocamento, quais são os pontos de ancoragem disponíveis, a necessidade de conexão contínua, a zona livre de queda e a compatibilidade entre cinto, conectores, trava-quedas e demais componentes. A <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-35-atualizada-2025.pdf" target="_blank" rel="noopener noreferrer">NR-35 vigente</a> trata esses fatores como parte da seleção do sistema, não como detalhes acessórios.</p>
+
+<h2>Talabarte simples ou duplo: qual é a diferença?</h2>
+<p>O talabarte simples tem, em geral, uma perna de ligação. Já o talabarte duplo, frequentemente chamado de modelo em Y, possui duas pernas. Essa diferença física pode apoiar determinados métodos de deslocamento, mas não transforma um modelo em solução universal. A definição precisa considerar o planejamento da atividade e o procedimento aprovado pela organização.</p>
+
+<p>Em situações em que a análise de risco indica necessidade de manter uma conexão durante a mudança entre pontos de ancoragem, um modelo duplo pode fazer parte da solução planejada. Ainda assim, a forma de transição, os conectores, a resistência e a localização das ancoragens precisam ser compatíveis com o sistema inteiro. A conexão não deve ser improvisada nem baseada apenas em uma foto de catálogo.</p>
+
+<h2>O que a NR-35 orienta para a escolha</h2>
+<p>A norma estabelece que a análise de risco deve considerar, entre outros elementos, a necessidade de conexão contínua, a distância livre de queda, o fator de queda, a força máxima de impacto e a compatibilidade dos componentes. Isso significa que dois serviços realizados na mesma obra podem exigir avaliações diferentes, mesmo quando ambos envolvem altura.</p>
+
+<p>Quando o talabarte é utilizado como elemento de ligação de um sistema de retenção de queda, a NR-35 prevê absorvedor de energia integrado. Há também uma restrição importante: salvo especificação expressa do fabricante e respeitando as limitações previstas, o talabarte não deve ser conectado a outro talabarte, conector ou extensor. Consulte a <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/norma-regulamentadora-no-35-nr-35" target="_blank" rel="noopener noreferrer">página oficial da NR-35</a> e valide a aplicação com a pessoa responsável pelo planejamento do trabalho.</p>
+
+<h2>5 critérios para escolher talabarte NR-35</h2>
+
+<h3>1. Parta da tarefa e do deslocamento</h3>
+<p>Descreva a frente de trabalho, a estrutura, o acesso e o percurso do profissional. Haverá movimentação entre pontos? O ponto de ancoragem é existente, projetado para a aplicação e identificado no planejamento? Essas respostas ajudam a equipe técnica a avaliar o tipo de sistema, sem supor que o formato do talabarte resolve sozinho o risco de queda.</p>
+
+<h3>2. Confira o uso previsto para a referência</h3>
+<p>Nome comercial não substitui ficha técnica. Peça código, fabricante ou importador, comprimento, tipo de conector, orientação de uso, limitações e documentação da referência exata. O mesmo cuidado se aplica à inspeção antes do uso: costuras, fitas, conectores, absorvedor e marcações precisam ser verificados de acordo com o procedimento e as instruções do produto.</p>
+
+<h3>3. Avalie o absorvedor de energia</h3>
+<p>O absorvedor é parte crítica quando o talabarte integra um sistema de retenção de queda. Sua presença, aplicação e compatibilidade devem ser verificadas para o modelo ofertado. Não altere, dê nós, encurte ou adapte o equipamento sem autorização expressa do fabricante ou importador e sem revisão do procedimento de trabalho.</p>
+
+<h3>4. Garanta a compatibilidade do sistema</h3>
+<p>Cinto paraquedista, conectores, ponto de ancoragem, trava-quedas e talabarte precisam funcionar como conjunto. Antes da compra, compare as conexões previstas e a aplicação real; componentes aparentemente semelhantes podem ter limitações diferentes. Na página de <a href="/trabalho-em-altura">EPI para trabalho em altura</a>, você encontra famílias de equipamentos para começar a pesquisa comercial.</p>
+
+<h3>5. Organize a compra para a equipe</h3>
+<p>Para empresas, uma lista clara reduz erros de comparação e facilita reposição. Informe quantidade de usuários, atividade, pontos de ancoragem previstos, referências homologadas, tipo de conector desejado e necessidade de documentação. A página de <a href="/epi-para-empresas">EPI para empresas</a> pode apoiar o envio de uma cotação organizada.</p>
+
+<h2>Checklist de cotação de talabarte</h2>
+<ul>
+  <li><strong>Atividade e local:</strong> manutenção, montagem, acesso a estrutura ou outra aplicação planejada.</li>
+  <li><strong>Sistema previsto:</strong> cinto, ponto de ancoragem, conectores e outros componentes já definidos.</li>
+  <li><strong>Referência:</strong> modelo, comprimento, quantidade e preferência por fabricante ou importador.</li>
+  <li><strong>Documentação:</strong> ficha técnica, instruções de uso e, quando aplicável, CA correspondente.</li>
+  <li><strong>Conservação:</strong> rotina de inspeção, armazenamento e retirada de uso conforme o fabricante.</li>
+</ul>
+
+<h2>Erros comuns ao comparar talabarte simples e duplo</h2>
+<p>O primeiro erro é escolher apenas pelo menor preço ou pelo número de mosquetões. Outro é assumir que um talabarte duplo sempre autoriza transições sem avaliar ancoragem, distância livre de queda e método de trabalho. A escolha deve ser feita antes da compra e integrada à análise de risco, à capacitação e ao planejamento de resgate da organização.</p>
+
+<p>Também é arriscado usar componentes de origens diferentes sem confirmar compatibilidade. Quando houver dúvidas sobre CA de um item classificado como EPI, use o guia de <a href="/consultar-ca-epi">como consultar CA de EPI</a> e compare o certificado com a referência realmente ofertada. A validação técnica e comercial deve acontecer antes da aprovação do pedido.</p>
+
+<h2>Onde pesquisar talabartes para trabalho em altura</h2>
+<p>Acesse a categoria de <a href="/trabalho-em-altura">trabalho em altura</a> para pesquisar cintos paraquedistas, talabartes, trava-quedas e acessórios. Para uma cotação precisa, envie a aplicação e as referências desejadas. A EPI Marketplace confirma disponibilidade, documentação e condições comerciais no atendimento.</p>`,
+    faq: [
+      { q: 'Talabarte duplo é obrigatório para trabalho em altura?', a: 'Não necessariamente. A escolha deve seguir a análise de risco, o método de trabalho, o sistema de proteção contra quedas e a documentação da referência específica.' },
+      { q: 'Posso conectar um talabarte a outro talabarte?', a: 'Não, exceto se houver especificação expressa do fabricante e dentro das limitações previstas. A NR-35 estabelece essa restrição para evitar conexões improvisadas.' },
+      { q: 'Quando o talabarte precisa ter absorvedor de energia?', a: 'Quando for utilizado como elemento de ligação de um sistema de retenção de queda, a NR-35 prevê absorvedor de energia integrado. Confirme sempre a aplicação e as instruções da referência.' },
+      { q: 'O que informar ao pedir cotação de talabarte?', a: 'Informe a atividade, o sistema já previsto, referências desejadas, comprimento, conectores, quantidade, documentação necessária e qualquer exigência de padronização da empresa.' },
+    ],
+    siloBox: { label: 'Pesquisa e cotação técnica', title: 'Talabartes e sistemas para trabalho em altura', desc: 'Envie a atividade e as referências desejadas para confirmar disponibilidade e documentação antes da compra.', href: '/trabalho-em-altura', btnText: 'Ver trabalho em altura' },
+  },
+  {
+    id: 'local-post-ferramentas-isoladas-20261029',
+    title: 'Ferramentas Isoladas 1000V: Guia para Eletricistas',
+    category: 'Eletricidade & NR-10',
+    readtime: '8 min',
+    target_keyword: 'ferramentas isoladas 1000V',
+    long_tail_keyword: 'como escolher ferramentas isoladas 1000V para eletricista',
+    slug: 'ferramentas-isoladas-1000v-guia-para-eletricistas',
+    date: '2026-10-29',
+    published: true,
+    image_url: '/img/blog/ferramentas-isoladas-1000v-manutencao-eletrica.webp',
+    image_alt: 'Ferramentas isoladas 1000V, incluindo alicates e chaves isoladas, organizadas em bancada de manutenção elétrica.',
+    meta_description: 'Ferramentas isoladas 1000V: veja como escolher referências para manutenção elétrica, conferir documentação e solicitar cotação técnica.',
+    summary: 'Guia para escolher ferramentas isoladas 1000V conforme a atividade, a documentação do fabricante e o procedimento de manutenção elétrica.',
+    content: `<p><strong>Ferramentas isoladas 1000V</strong> são pesquisadas por profissionais e empresas que precisam compor kits para manutenção elétrica. A escolha segura, porém, não começa pelo cabo colorido ou pelo número gravado na ferramenta. Ela começa pela atividade planejada, pela análise de risco e pelo procedimento de trabalho adotado pela organização.</p>
+
+<p>Em serviços com eletricidade, uma ferramenta isolada é apenas uma parte das medidas de controle. Ela não substitui desenergização, bloqueio, sinalização, aterramento temporário, capacitação ou autorização para executar a tarefa. A <a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/arquivos/normas-regulamentadoras/nr-10.pdf" target="_blank" rel="noopener noreferrer">NR-10 vigente</a> estabelece que intervenções em instalações elétricas devem adotar medidas preventivas com base em análise de risco.</p>
+
+<h2>O que avaliar antes de comprar ferramentas isoladas 1000V</h2>
+<p>O termo 1000V costuma aparecer em chaves, alicates, soquetes e outros itens manuais. Ainda assim, a referência correta depende da tarefa, do ambiente, do método de trabalho e das orientações do fabricante. Antes da cotação, descreva quais operações serão realizadas, quais dimensões e tipos de ponta são necessários e se a equipe já utiliza referências homologadas internamente.</p>
+
+<p>A documentação da ferramenta deve ser tratada como parte da compra. Solicite a ficha técnica, as instruções de uso, a identificação da referência e as limitações informadas pelo fabricante ou importador. Para contexto técnico adicional, a Fundacentro inclui ferramentas manuais com isolamento elétrico entre os temas abordados na sua <a href="https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2021/agosto/segunda-edicao-da-rtp-no-05-esta-disponivel-para-leitura" target="_blank" rel="noopener noreferrer">RTP sobre segurança em instalações elétricas</a>.</p>
+
+<h2>Como escolher ferramentas isoladas 1000V: 6 critérios</h2>
+
+<h3>1. Comece pelo procedimento, não pelo kit pronto</h3>
+<p>Liste as tarefas que a equipe executará: aperto de conexões, montagem de painéis, manutenção predial, inspeção ou outra aplicação. Depois, relacione os perfis, medidas e geometrias de ferramenta necessários. Um kit genérico pode conter itens que não atendem à rotina e deixar de fora referências importantes para o trabalho.</p>
+
+<h3>2. Confirme a identificação da referência</h3>
+<p>Ao comparar propostas, registre fabricante ou importador, código, dimensão, tipo de ponta e descrição completa. Fotos e nomes comerciais parecidos não bastam para provar equivalência. Em compras corporativas, essa conferência facilita reposição, padronização e rastreabilidade do conjunto entregue à equipe.</p>
+
+<h3>3. Leia a documentação de uso e as limitações</h3>
+<p>As características declaradas devem ser analisadas para a referência efetivamente cotada. Confira a tensão indicada, as recomendações de inspeção, as condições de armazenamento e as limitações de aplicação. Se houver dúvida, valide com o responsável técnico e com o fabricante ou importador antes de incluir a ferramenta no procedimento.</p>
+
+<h3>4. Inspecione a integridade antes do uso</h3>
+<p>Trincas, cortes, desgaste, deformação, contaminação ou alterações no revestimento exigem avaliação conforme o procedimento interno e as orientações do fabricante. Não improvise reparos no isolamento e não utilize ferramentas cuja identificação ou condição esteja comprometida. Uma inspeção visual organizada também ajuda a identificar perdas e necessidades de reposição.</p>
+
+<h3>5. Monte o kit como parte do sistema de segurança</h3>
+<p>O kit pode precisar trabalhar em conjunto com outros controles e equipamentos, conforme o risco: bloqueio e etiquetagem, sinalização, detecção de tensão, aterramento temporário, proteção para mãos, cabeça e face. A página de <a href="/nr-10">EPI para NR-10</a> ajuda a pesquisar as famílias de itens relacionadas à manutenção elétrica, mas a definição final deve seguir o procedimento da operação.</p>
+
+<h3>6. Planeje transporte, organização e reposição</h3>
+<p>Ferramentas guardadas sem proteção podem sofrer danos ou perder identificação. Defina como serão transportadas, armazenadas e conferidas entre as frentes de trabalho. Para pedidos por equipe, informe quantidades, referências, medidas e a aplicação para receber uma cotação mais objetiva.</p>
+
+<h2>Checklist para solicitar cotação</h2>
+<ul>
+  <li><strong>Atividade:</strong> manutenção, montagem, medição ou outra tarefa prevista.</li>
+  <li><strong>Referências:</strong> tipo de ferramenta, perfil, medida e quantidade de cada item.</li>
+  <li><strong>Documentação:</strong> ficha técnica, orientações de uso e dados do fabricante ou importador.</li>
+  <li><strong>Conservação:</strong> método de transporte, armazenamento e inspeção adotado pela equipe.</li>
+  <li><strong>Integração:</strong> demais controles e EPIs previstos no procedimento de trabalho.</li>
+  <li><strong>Rastreabilidade:</strong> padrão de referência para reposição e controle interno.</li>
+</ul>
+
+<h2>Erros que aumentam o risco na compra</h2>
+<p>Evite escolher apenas pelo preço, pela aparência da empunhadura ou por uma descrição curta de marketplace. Também não trate uma ferramenta isolada como autorização para trabalhar em condição de risco sem os controles aplicáveis. A NR-10 exige planejamento e procedimentos específicos; o ferramental precisa ser compatível com a tarefa, e não substituir o processo de segurança.</p>
+
+<p>Outro erro comum é misturar referências sem registrar os códigos e dimensões. Isso dificulta a conferência de propostas e a reposição futura. Ao organizar a solicitação, envie uma lista consolidada e peça confirmação de disponibilidade, documentação e prazo antes da aprovação do pedido.</p>
+
+<h2>Onde pesquisar ferramentas isoladas</h2>
+<p>Conheça a página de <a href="/ferramentas-isoladas">ferramentas isoladas para eletricista</a> e, para navegar por itens relacionados, acesse a categoria de <a href="/produtos?categoria=linha-viva">Linha Viva</a>. A EPI Marketplace atende compras por catálogo e cotação; a referência, a aplicação, os documentos e a disponibilidade devem ser confirmados no atendimento antes da compra.</p>`,
+    faq: [
+      { q: 'Ferramentas isoladas 1000V substituem outras medidas de segurança?', a: 'Não. Elas são parte do sistema de proteção e não substituem análise de risco, desenergização, bloqueio, sinalização, capacitação, autorização ou o procedimento de trabalho aplicável.' },
+      { q: 'Como escolher ferramentas isoladas 1000V para eletricista?', a: 'Comece pela tarefa e pelo procedimento. Depois confira a referência exata, as dimensões, a documentação, as orientações do fabricante ou importador, a integridade do item e sua compatibilidade com os demais controles da operação.' },
+      { q: 'O que conferir em uma cotação de ferramentas isoladas?', a: 'Registre fabricante ou importador, código, tipo de ferramenta, medida, quantidade, ficha técnica, orientações de uso e condições de disponibilidade. Isso reduz comparações incorretas entre itens parecidos.' },
+      { q: 'Ferramentas isoladas são EPI?', a: 'A classificação depende do produto e da regulamentação aplicável. Ferramentas são ferramental de trabalho e a sua seleção deve ser integrada aos controles e EPIs definidos para a atividade.' },
+    ],
+    siloBox: { label: 'Pesquisa e cotação técnica', title: 'Ferramentas isoladas para manutenção elétrica', desc: 'Pesquise referências e envie a lista de medidas e quantidades para uma cotação comercial.', href: '/ferramentas-isoladas', btnText: 'Ver ferramentas isoladas' },
+  },
+];
 
 async function fetchPosts() {
   const controller = new AbortController();
@@ -863,7 +1136,13 @@ async function buildBlog() {
     const imgUrl = SLUG_IMAGE_MAP[slug] || post.image_url || '/img/blog/o-que-e-epi-significado-tipos-e-exemplos.jpg';
     let postDate = '';
     if (post.date) {
-      try { postDate = new Date(post.date).toLocaleDateString('pt-BR'); } catch { postDate = post.date; }
+      try {
+        // Dates without a time are parsed as UTC by JavaScript and can render
+        // as the previous day in Brazilian time zones. Use local midday for
+        // date-only editorial fields so the published date is preserved.
+        const value = /^\d{4}-\d{2}-\d{2}$/.test(post.date) ? `${post.date}T12:00:00` : post.date;
+        postDate = new Date(value).toLocaleDateString('pt-BR');
+      } catch { postDate = post.date; }
     }
 
     let html = templateHtml;

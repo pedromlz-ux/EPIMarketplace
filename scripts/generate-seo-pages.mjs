@@ -109,10 +109,10 @@ const pages = [
     file: 'epi-para-empresas.html',
     url: '/epi-para-empresas',
     title: 'EPI para Empresas e Atacado | EPI Marketplace',
-    description: 'Compre EPI para empresas e atacado: equipamentos com CA válido, suporte comercial, cotação por quantidade e envio para todo o Brasil.',
+    description: 'Compre EPI para empresas e atacado com suporte comercial, cotação por quantidade e confirmação de documentação para todo o Brasil.',
     h1: 'EPI para Empresas, Atacado e Compras Corporativas',
     eyebrow: 'Compras B2B',
-    lead: 'EPI para empresas, compras corporativas e pedidos por quantidade. Pesquise equipamentos com CA válido e solicite cotação para entrega em todo o Brasil.',
+    lead: 'EPI para empresas, compras corporativas e pedidos por quantidade. Pesquise equipamentos, confirme a documentação aplicável e solicite cotação para entrega em todo o Brasil.',
     catalog: [
       { href: '/nr-10', title: 'EPI NR-10', text: 'Pesquisa para eletricistas e manutenção elétrica.' },
       { href: '/trabalho-em-altura', title: 'EPI NR-35', text: 'Pesquisa para trabalho em altura e retenção de quedas.' },

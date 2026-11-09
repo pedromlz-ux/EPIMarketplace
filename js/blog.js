@@ -27,8 +27,14 @@ const SLUG_IMAGE_MAP = {
     '/img/blog/o-que-e-epi-significado-tipos-e-exemplos.jpg',
   'epi-e-epc-qual-a-diferenca-exemplos-e-quando-usar':
     '/img/blog/epi-e-epc-qual-a-diferenca-exemplos-e-quando-usar.jpg',
+  'como-escolher-luva-isolante-para-eletricista':
+    '/img/blog/como-escolher-luva-isolante-eletricista.webp',
+  'como-escolher-capacete-seguranca-construcao':
+    '/img/blog/como-escolher-capacete-seguranca-construcao.webp',
   'ferramentas-isoladas-1000v-guia-para-eletricistas':
     '/img/blog/ferramentas-isoladas-1000v-manutencao-eletrica.webp',
+  'talabarte-nr-35-simples-ou-duplo':
+    '/img/blog/talabarte-nr-35-simples-ou-duplo.webp',
 };
 
 const DEFAULT_IMG = '/img/blog/o-que-e-epi-significado-tipos-e-exemplos.jpg';
@@ -44,15 +50,44 @@ function getImageForPost(post) {
 let allPosts = [];
 let visibleCount = 3;
 
-const LOCAL_FEATURED_POSTS = [{
-  title: 'Ferramentas Isoladas 1000V: Guia para Eletricistas',
-  category: 'Eletricidade & NR-10',
-  slug: 'ferramentas-isoladas-1000v-guia-para-eletricistas',
-  date: '2026-10-29',
-  image_url: '/img/blog/ferramentas-isoladas-1000v-manutencao-eletrica.webp',
-  image_alt: 'Ferramentas isoladas 1000V, incluindo alicates e chaves isoladas, organizadas em bancada de manutenção elétrica.',
-  summary: 'Guia para escolher ferramentas isoladas 1000V conforme a atividade, a documentação do fabricante e o procedimento de manutenção elétrica.',
-}];
+const LOCAL_FEATURED_POSTS = [
+  {
+    title: 'Talabarte NR-35: Simples ou Duplo?',
+    category: 'Trabalho em Altura & NR-35',
+    slug: 'talabarte-nr-35-simples-ou-duplo',
+    date: '2026-11-09',
+    image_url: '/img/blog/talabarte-nr-35-simples-ou-duplo.webp',
+    image_alt: 'Profissional em treinamento de trabalho em altura usando cinto paraquedista e talabarte duplo em Y com absorvedor de energia.',
+    summary: 'Entenda o que avaliar ao comparar talabarte simples ou duplo para trabalho em altura, sempre conforme análise de risco e sistema de proteção.',
+  },
+  {
+    title: 'Ferramentas Isoladas 1000V: Guia para Eletricistas',
+    category: 'Eletricidade & NR-10',
+    slug: 'ferramentas-isoladas-1000v-guia-para-eletricistas',
+    date: '2026-10-29',
+    image_url: '/img/blog/ferramentas-isoladas-1000v-manutencao-eletrica.webp',
+    image_alt: 'Ferramentas isoladas 1000V, incluindo alicates e chaves isoladas, organizadas em bancada de manutenção elétrica.',
+    summary: 'Guia para escolher ferramentas isoladas 1000V conforme a atividade, a documentação do fabricante e o procedimento de manutenção elétrica.',
+  },
+  {
+    title: 'Capacete de Segurança: Como Escolher para Obra',
+    category: 'Construção & Proteção da Cabeça',
+    slug: 'como-escolher-capacete-seguranca-construcao',
+    date: '2026-10-05',
+    image_url: '/img/blog/como-escolher-capacete-seguranca-construcao.webp',
+    image_alt: 'Profissional de obra inspecionando a suspensão interna de um capacete de segurança branco em canteiro de construção.',
+    summary: 'Aprenda como escolher capacete de segurança para construção com critérios de risco, ajuste, CA, jugular e conservação.',
+  },
+  {
+    title: 'Luva Isolante: Como Escolher para Eletricista',
+    category: 'Eletricidade & NR-10',
+    slug: 'como-escolher-luva-isolante-para-eletricista',
+    date: '2026-09-28',
+    image_url: '/img/blog/como-escolher-luva-isolante-eletricista.webp',
+    image_alt: 'Eletricista inspecionando um par de luvas isolantes de borracha laranja antes de uma atividade de manutenção elétrica.',
+    summary: 'Veja como escolher luva isolante para eletricista com critérios de aplicação, documentação, CA, conservação e cotação técnica.',
+  },
+];
 
 function renderVisiblePosts() {
   const grid = document.getElementById('blog-grid');
@@ -130,6 +165,8 @@ async function loadBlogPosts() {
     renderVisiblePosts();
   } catch (err) {
     console.warn('Blog: erro ao carregar posts do Supabase.', err.message);
+    // Keep the server-rendered cards visible when the remote feed is down.
+    // The local featured post is included in that static fallback.
   }
 }
 
